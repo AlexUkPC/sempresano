@@ -4512,6 +4512,9 @@ header.megamenu_stuck {
 				color: $color_3;
 				transition: 0.5s;
 				position: relative;
+				@media (max-width: 639px) {
+					display: none;
+				}
 				&:before {
 					content: '';
 					display: block;
@@ -4647,7 +4650,7 @@ header.megamenu_stuck {
 		.header_cart_items {
 			width: 29px;
 			height: 29px;
-			line-height: 28px;
+			line-height: 24px;
 			background: $color_3;
 			color: $color_1;
 			top: 0px;
@@ -4736,7 +4739,7 @@ header.megamenu_stuck {
 		height: 21px;
 		line-height: 21px;
 		text-align: center;
-		font-size: 12px;
+		font-size: 16px;
 		background: $color_4;
 		color: $color_3;
 		position: absolute;

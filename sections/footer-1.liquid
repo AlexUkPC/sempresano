@@ -31,7 +31,7 @@
 									
 										<input type="hidden" name="contact[tags]" value="Newsletter subscriber">
 										<div class="form_wrapper">
-											<input type="email" name="contact[email]" class="input-group__field newsletter__input" placeholder="Enter your email">
+											<input type="email" name="contact[email]" class="input-group__field newsletter__input" placeholder="Introduceți adresa de email">
 											<button class="btn" type="submit">{{ 'layout.footer.subscribe_button' | t }}</button>
 										</div>
 										
@@ -116,10 +116,14 @@
 
 		<div class="footer_row__2"> 
 			<div class="footer_bottom_pannel container_big">
-				{% if section.settings.powered_toggle %}
+				{% if section.settings.powered_toggle or section.settings.copyright_toggle %}
 					{% assign copyright_year = "now" | date: "%Y" %}
 					<div class="footer_wrap_2 footer_copyright">
-						© {{ copyright_year }}. {{ powered_by_link }}
+						© {{ copyright_year }}. {% if section.settings.copyright_toggle %}
+								<a href="{{ section.settings.copyright_link }}">{{ section.settings.copyright_text }}</a>
+							{% else %}
+								{{ powered_by_link }}
+							{% endif %}
 					</div>
 				{% endif %}
 
@@ -258,6 +262,27 @@
 			"label": "Newsletter text"
 		},
 
+		// Copyright /////////////////////////////////////////////////////////////////////////////
+		{
+			"type": "header",
+			"content": "Copyright link"
+		},
+		{
+			"type": "checkbox",
+			"id": "copyright_toggle",
+			"label": "Show Copyright company",
+			"default": false
+		},
+		{
+			"type": "text",
+			"id": "copyright_text",
+			"label": "Copyright text"
+		},
+		{
+			"type": "text",
+			"id": "copyright_link",
+			"label": "Copyright link"
+		},
 		// POWERED BY /////////////////////////////////////////////////////////////////////////////
 		{
 			"type": "header",

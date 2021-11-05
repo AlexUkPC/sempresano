@@ -31,7 +31,7 @@
 								<div class="item_desc">
 									<a class="product_title" href="{{ item.product.url }}">{{ item.product.title | truncate:25 }}</a>
 									<span class="money">{{ item.price | money }}</span>
-									<p class="product_quantity">Quantity: {{ item.quantity }}</p>
+									<p class="product_quantity">Cantitate: {{ item.quantity }}</p>
 									<a class="item_remove_btn" href="#" item-id="{{ item.id }}">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M7 0H13V2H18V4H2V2H7V0Z"/>
@@ -46,7 +46,7 @@
 					<div class="box_footer">
 						<a id="clear_cart_all_items" class="cart_clear" href="/cart/clear">{{ 'pages.cart.clear_cart' | t }}</a>
 						<p class="cart_total"><b>{{ 'pages.cart.total_price' | t }}: </b><span class="money">{{ cart.total_price | money }}</span></p>
-						<a class="btn btn_inverted" href="/checkout">Checkout</a>
+						<a class="btn btn_inverted" href="/checkout">Plătește</a>
 						<a class="btn" href="/cart">{{ 'pages.cart.go_to_cart' | t }}</a>
 					</div>
 
