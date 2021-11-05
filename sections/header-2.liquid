@@ -9,9 +9,9 @@
 	<div class="page_container">
       	<div class="header_banner">
           <div class="container_big">
-            <h3>{{ section.settings.announcement_pannel_text_1 }}</h3>
-            <h3>{{ section.settings.announcement_pannel_text_2 }}</h3>
-            <h3>{{ section.settings.announcement_pannel_text_3 }}</h3>
+            <{{ section.settings.announcement_pannel_h_1 }}>{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
+            <{{ section.settings.announcement_pannel_h_2 }}>{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
+            <{{ section.settings.announcement_pannel_h_3 }}>{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
             <a class="btn btn_alt" href="#">{{ section.settings.announcement_pannel_btn_text }}</a>
           </div>
         </div>
@@ -569,14 +569,83 @@
 			"label": "Announcement pannel text 1"
 		},
 		{
+			"type": "radio",
+			"id": "announcement_pannel_h_1",
+			"label": "Announcement pannel 1 H type",
+			"options": [
+				{
+					"value": "h2",
+					"label": "h2"
+				},
+				{
+					"value": "h3",
+					"label": "h3"
+				},
+				{
+					"value": "h4",
+					"label": "h4"
+				},
+				{
+					"value": "h5",
+					"label": "h5"
+				}
+			]
+		},
+		{
 			"type": "text",
 			"id": "announcement_pannel_text_2",
 			"label": "Announcement pannel text 2"
 		},
 		{
+			"type": "radio",
+			"id": "announcement_pannel_h_2",
+			"label": "Announcement pannel 2 H type",
+			"options": [
+				{
+					"value": "h2",
+					"label": "h2"
+				},
+				{
+					"value": "h3",
+					"label": "h3"
+				},
+				{
+					"value": "h4",
+					"label": "h4"
+				},
+				{
+					"value": "h5",
+					"label": "h5"
+				}
+			]
+		},
+		{
 			"type": "text",
 			"id": "announcement_pannel_text_3",
 			"label": "Announcement pannel text 3"
+		},
+		{
+			"type": "radio",
+			"id": "announcement_pannel_h_3",
+			"label": "Announcement pannel 3 H type",
+			"options": [
+				{
+					"value": "h2",
+					"label": "h2"
+				},
+				{
+					"value": "h3",
+					"label": "h3"
+				},
+				{
+					"value": "h4",
+					"label": "h4"
+				},
+				{
+					"value": "h5",
+					"label": "h5"
+				}
+			]
 		},
 		{
 			"type": "text",
