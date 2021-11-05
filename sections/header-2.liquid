@@ -9,10 +9,10 @@
 	<div class="page_container">
       	<div class="header_banner">
           <div class="container_big">
-            <h3>Luni - Vineri 09:00 - 19:00 </h3>
-            <h3>Telefon: 0765340108 / 0731141396</h3>
-            <h3>Pentru comenzi in weekend precomanda cu 48 de ore inainte!</h3>
-            <a class="btn btn_alt" href="#">Comanda acum!</a>
+            <h3>{{ section.settings.announcement_pannel_text_1 }}</h3>
+            <h3>{{ section.settings.announcement_pannel_text_2 }}</h3>
+            <h3>{{ section.settings.announcement_pannel_text_3 }}</h3>
+            <a class="btn btn_alt" href="#">{{ section.settings.announcement_pannel_btn_text }}</a>
           </div>
         </div>
 		<div class="top_pannel" {% if section.settings.background_toggle %} style="background-color: {{ section.settings.bg_color }}"{% endif %}>
@@ -559,6 +559,30 @@
 			"label": "Logo slogan"
 		},
 		// TOP PANNEL ===================================================================================
+		{
+			"type": "header",
+			"content": "Announcement pannel"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_1",
+			"label": "Announcement pannel text 1"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_2",
+			"label": "Announcement pannel text 2"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_3",
+			"label": "Announcement pannel text 3"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_btn_text",
+			"label": "Announcement pannel btn text"
+		},
 		{
 			"type": "header",
 			"content": "Top pannel background"
