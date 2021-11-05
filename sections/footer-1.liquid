@@ -1,9 +1,9 @@
 <footer class="footer_type_1"> 
   	<div class="banner">
       <div class="container">
-        <h3>Pofta Buna!</h3>
-        <h4>Pentru comenzi in weekend precomanda cu 48 de ore inainte!</h4>
-      	<a class="btn" href="#">Comanda acum!</a>
+        <{{section.settings.footer_pannel_h_1}}>{{ section.settings.footer_pannel_text_1 }}</{{section.settings.footer_pannel_h_1}}>
+        <{{section.settings.footer_pannel_h_2}}>{{ section.settings.footer_pannel_text_2 }}</{{section.settings.footer_pannel_h_2}}>
+      	<a class="btn" href="#">{{ section.settings.footer_pannel_btn_text }}</a>
       </div>  
     </div>
   
@@ -171,7 +171,75 @@
 	"name": "Footer type 2",
 	"max_blocks": 4,
 	"settings": [
-		
+		{
+			"type": "header",
+			"content": "Footer top pannel"
+		},
+		{
+			"type": "text",
+			"id": "footer_pannel_text_1",
+			"label": "Footer pannel text 1"
+		},
+		{
+			"type": "radio",
+			"id": "footer_pannel_h_1",
+			"label": "Footer pannel 1 H type",
+			"options": [
+				{
+					"value": "h2",
+					"label": "h2"
+				},
+				{
+					"value": "h3",
+					"label": "h3"
+				},
+				{
+					"value": "h4",
+					"label": "h4"
+				},
+				{
+					"value": "h5",
+					"label": "h5"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"id": "footer_pannel_text_2",
+			"label": "Footer pannel text 2"
+		},
+		{
+			"type": "radio",
+			"id": "footer_pannel_h_2",
+			"label": "Footer pannel 2 H type",
+			"options": [
+				{
+					"value": "h2",
+					"label": "h2"
+				},
+				{
+					"value": "h3",
+					"label": "h3"
+				},
+				{
+					"value": "h4",
+					"label": "h4"
+				},
+				{
+					"value": "h5",
+					"label": "h5"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"id": "footer_pannel_btn_text",
+			"label": "Footer pannel btn text"
+		},
+		{
+			"type": "header",
+			"content": "Newsletter"
+		},
 		{
 			"type": "checkbox",
 			"id": "newsletter",
