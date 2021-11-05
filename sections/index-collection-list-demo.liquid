@@ -1,0 +1,126 @@
+{% case section.settings.collections_layout %}
+	{% when 'full_width'  %}
+		{%- assign item_size = '428x428' -%}	
+	{% when 'boxed'  %}
+		{%- assign item_size = '268x268' -%}
+{% endcase %}
+
+{%- assign img_alignment = section.settings.img_alignment -%}
+	
+<div class="collection_listing_wrap{% if section.settings.collections_layout == 'boxed' %} container{% endif %}">
+	{% if section.settings.section_title.size > 0 %}
+		{% if section.settings.collections_layout == 'full_width' %}
+			<div class="container">
+		{% endif %}
+			<h4 class="section_heading">{{ section.settings.section_title | escape }}</h4>
+		{% if section.settings.collections_layout == 'full_width' %}
+			</div>
+		{% endif %}
+	{% endif %}
+
+	<div class="row collection_listing__main collection_listing_size_{{ section.settings.collections_layout }}">
+		{% for block in section.blocks %}
+			{% assign collection = collections[block.settings.item_collection] %}
+			{% assign collection_image = false %}
+			{% if block.settings.item_img %}
+				{% assign collection_image = true %}
+				{% assign collection_image_src = block.settings.image %}
+			{% endif %}
+		
+			<div class="col-sm-3 {{ section.settings.style }}">
+				{% include 'collection-listing-item' with item_size, img_alignment, collection_image, collection_image_src %}
+			</div>
+
+		{% endfor %}
+	</div>
+
+	{% if section.settings.show_view_all %}
+		<div class="view_all__wrap">
+			<a href="/collections/" class="btn">{{ 'layout.collection_listing.view_all' | t }}</a>
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Collection list",
+	"class": "section section_homepage section_collection-list section_collection-list_demo",
+	"max_blocks": 12,
+	"settings": [
+		{
+			"type": "text",
+			"id": "section_title",
+			"label": "Heading",
+			"default": "Collections"
+		},
+		{
+			"type": "select",
+			"id": "collections_layout",
+			"label": "Collections layout",
+			"options": [
+				{
+					"label": "Full width",
+					"value": "full_width"
+				},
+				{
+					"label": "Boxed",
+					"value": "boxed"
+				}
+			],
+			"default": "boxed"
+		},
+		{
+			"type": "select",
+			"id": "style",
+			"label": "Item style",
+			"options": [
+				{
+					"value": "type_1",
+					"label": "Style 1"
+				},
+				{
+					"value": "type_2",
+					"label": "Style 2"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "img_alignment",
+			"label": "Image alignment",
+			"options": [
+				{
+					"value": "top",
+					"label": "Top"
+				},
+				{
+					"value": "center",
+					"label": "Middle"
+				},
+				{
+					"value": "bottom",
+					"label": "Bottom"
+				}
+			]
+		},
+		{
+			"type": "checkbox",
+			"id": "show_view_all",
+			"label": "Show 'View all' button"
+		}
+	],
+	"blocks": [
+		{
+			"type": "featured_collection",
+			"name": "Collection",
+			"settings": [
+				{
+					"label": "Collection",
+					"id": "item_collection",
+					"type": "collection"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

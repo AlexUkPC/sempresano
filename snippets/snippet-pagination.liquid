@@ -1,0 +1,55 @@
+<div class="pagination">
+	{% if paginate.pages > 1 %}
+		{% assign A = paginate.current_offset | plus:1 %}
+		{% assign B = paginate.items %}
+		{% assign C = paginate.current_offset | plus:paginate.page_size %}
+
+		{% if paginate.current_page == paginate.pages %}
+			{% if A == B %}
+				<p>{{ A }} {{ pagination_items }} {{ paginate.items }}</p>
+			{% else %}
+				<p>{{ A }} – {{ B }} {{ pagination_items }} {{ paginate.items }}</p>
+			{% endif %}
+		{% else %}
+			<p>{{ A }} – {{ C }} {{ pagination_items }} {{ paginate.items }}</p>
+		{% endif %}
+
+		<ul>
+			<li class="pagination_prev">
+				{% if paginate.previous.is_link %}
+					<a href="{{ paginate.previous.url }}" title="{{ 'layout.pagination.previous' | t }}">
+						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.2222 6.77776V5.22221H3.88883L6.99995 2.1111L6.22217 0.555542L0.777724 5.99999L6.22217 11.4444L6.99995 9.88888L3.88883 6.77776H13.2222Z" fill="#9FA1A4"/>
+						</svg>
+
+					</a>
+				{% endif %}
+			</li>
+
+			{% for part in paginate.parts %}
+				{% if part.is_link %}
+					<li class="pagination_el"><a href="{{ part.url }}">{{ part.title }}</a></li>
+				{% else %}
+					{% if part.title == paginate.current_page %}
+						<li class="pagination_current pagination_el"><span>{{ part.title }}</span></li>
+					{% else %}
+						<li class="pagination_el"><span>{{ part.title }}</span></li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+
+			<li class="pagination_next">
+				{% if paginate.next.is_link %}
+					<a href="{{ paginate.next.url }}" title="{{ 'layout.pagination.next' | t }}">
+						<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.777832 6.77776V5.22221H10.1112L7.00005 2.1111L7.77783 0.555542L13.2223 5.99999L7.77783 11.4444L7.00005 9.88888L10.1112 6.77776H0.777832Z" fill="#171717"/>
+						</svg>
+
+					</a>
+				{% endif %}
+			</li>
+		</ul>
+	{% else %}
+		<p>1 – {{ paginate.items }} {{ pagination_items }} {{ paginate.items }}</p>
+	{% endif %}
+</div>

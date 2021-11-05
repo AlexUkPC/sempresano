@@ -1,0 +1,78 @@
+{% if section.settings.hide_section == false %}
+<div class="container">
+	<div class="row">
+		<div class="section_wrap" {% if section.settings.background_toggle %} style="background-color: {{ section.settings.bg_color }}"{% endif %}>
+			<div class="section_text">
+				{% if section.settings.title %}
+					<h3>{{section.settings.title}}</h3>
+				{% endif %}
+		
+				{% if section.settings.subtitle %}
+					<p>{{section.settings.subtitle}}</p>
+				{% endif %}
+	
+				{% if section.settings.button_link.size > 0 and section.settings.button_text.size > 0 %}
+					<a class="btn" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+
+{% schema %}
+{
+	"name": "Info strip",
+	"class": "section section_info-strip",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "hide_section",
+			"label": "Hide section",
+			"default":   false
+		},
+
+
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Header text"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Section text"
+		},
+
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button text"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "Button link"
+		},
+		{
+			"type": "checkbox",
+			"id": "background_toggle",
+			"label": "Show background color",
+			"default": true
+		},
+		{
+			"type": "color",
+			"id": "bg_color",
+			"label": "Background color",
+			"default": "#ffffff"
+		}
+	],
+	"presets": [
+		{
+			"name": "Info strip",
+			"category": "Text"
+		}
+	]
+}
+{% endschema %}

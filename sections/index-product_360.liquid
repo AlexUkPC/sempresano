@@ -1,0 +1,93 @@
+{%- assign product = all_products[section.settings.single_product] -%}
+
+{% if product.empty? %}
+	{%- assign single_product_exist = false -%}
+{% else %}
+	{%- assign single_product_exist = true -%}
+{% endif %}
+
+{% if single_product_exist %}
+
+	<div id="index_section_product__360__{{ section.id }}" data-section="{{ section.id }}" style="overflow: hidden;">
+		<div class="container">
+			<div class="img_wrapper">
+				<div class="product_img_wrap" id="product">
+					{% for image in product.images %}
+						<div class="swiper-slide">
+							<img src="{{ image.src | product_img_url: '280x280', crop: 'center' }}" alt="">
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+			
+			<div class="info_wrapper">
+				{% if section.settings.heading_txt.size > 0 %}<h2>{{ section.settings.heading_txt }}</h2>{% endif %}
+				{% if section.settings.subheading_txt.size > 0 %}<h3>{{ section.settings.subheading_txt }}</h3>{% endif %}
+				{% if section.settings.description_txt.size > 0 %}<p>{{ section.settings.description_txt }}</p>{% endif %}
+				{% if section.settings.button_txt.size > 0 %}
+					<a class="btn panorama_btn" href="{{ product.url }}">{{ section.settings.button_txt }}</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+{% endif %}
+
+{% schema %}
+{
+	"name": "Product 360",
+	"class": "section section_homepage index-section section_product__360",
+	"settings": [
+
+
+		// PRODUCT //////////////////////////////////////////////////////////
+		{
+			"type": "header",
+			"content": "Product"
+		},
+		{
+			"type": "product",
+			"id": "single_product",
+			"label": "Choose product"
+		},
+		{
+			"type": "text",
+			"id": "heading_txt",
+			"label": "Heading",
+			"default": "360&deg;"
+		},
+		{
+			"type": "text",
+			"id": "subheading_txt",
+			"label": "Subheading",
+			"default": "View"
+		},
+		{
+			"type": "text",
+			"id": "description_txt",
+			"label": "Description",
+			"default": "Tell your brand's story"
+		},
+		{
+			"type": "text",
+			"id": "button_txt",
+			"label": "Button text",
+			"default": "View more"
+		}
+
+	],
+	"presets": [
+		{
+			"name": "Single product 360",
+			"category": "Products"
+		}
+	]
+}
+{% endschema %}
+
+{% javascript %}
+jQuery(document).ready(function($) {
+	jQuery('#product').j360();
+});
+{% endjavascript %}
+

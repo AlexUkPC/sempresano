@@ -1,0 +1,214 @@
+{% assign star_active = '<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" fill="#222222"/></svg>' %}
+{% assign star_active_invert = '<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" fill="#ffffff"/></svg>' %}
+{% assign star_notactive = '<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" fill="#e0e0e0"/></svg>' %}
+{% assign star_notactive_invert = '<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5142 7.51048H12.7417L10.3409 0L7.93265 7.51048L0.160156 7.50287L6.45468 12.1493L4.0464 19.6522L10.3409 15.0133L16.6279 19.6522L14.2272 12.1493L20.5142 7.51048Z" fill="#505050"/></svg>' %}
+
+<div class="container">
+	{% if section.settings.title.size > 0 %}
+		<h4 class="section_heading">{{ section.settings.title | escape }}</h4>
+	{% endif %}
+	<div class="testimonials_caption">
+		{% if section.settings.caption_text.size > 0 %}
+			<p class="testimonials_caption__text">{{ section.settings.caption_text | escape }}</p>	
+		{% endif %} 
+		{% if section.settings.header_logo %}
+			<img src="{{ section.settings.header_logo | img_url: '185x45', crop: 'center' }}" alt="{{ section.settings.header_logo.alt }}">
+		{% endif %}
+	</div>
+
+	<div class="testimonials_slider swiper-container" id="testimonials_{{ section.id }}">
+		<div class="swiper-wrapper">
+			{% for block in section.blocks %}
+				<div class="swiper-slide">
+					<div class="testimonial_slide__item style_{{ section.settings.style }}">
+						{% if block.settings.star != 'none' %}
+							<div class="testimonials_item__stars">
+								{% for i in (1..5) %}
+									<span class="star_item">
+										{% assign star_setting = block.settings.star | abs %}
+										{% if i <= star_setting %}
+											{% if section.settings.style == 'type_2' %}
+												{{ star_active_invert }}
+											{% else %}
+												{{ star_active }}
+											{% endif %}
+										{% else %}
+											{% if section.settings.style == 'type_2' %}
+												{{ star_notactive_invert }}
+											{% elsif section.settings.style == 'type_3' %}
+												{{ star_active_invert }}
+											{% else %}
+												{{ star_notactive }}
+											{% endif %}
+										{% endif %}
+									</span>
+								{% endfor %}
+							</div>
+						{% endif %}
+
+						<blockquote class="testimonials_item">
+							{% if block.settings.quote.size > 0 %}
+								<p class="testimonials_item__text">{{ block.settings.quote }}</p>
+							{% endif %}
+
+							{% if block.settings.author.size > 0 %}
+								<cite class="testimonials_item__author">{{ block.settings.author | escape }}</cite>
+							{% endif %}
+						</blockquote>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		    
+		{% unless section.settings.style == 'type_3' %}
+			<div id="pagination_{{ section.id }}" class="swiper_pagination"></div>
+		{% endunless %}
+
+		{% if section.settings.style == 'type_3' %}
+			<div id="arrow_nav_left_{{ section.id }}" class="swiper_btn swiper_btn__prev"></div>
+			<div id="arrow_nav_right_{{ section.id }}" class="swiper_btn swiper_btn__next"></div>
+		{% endif %}
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Testimonials",
+	"class": "section section_homepage index_section_testimonials",
+	"max_blocks": 9,
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Heading",
+			"default": "Testimonials"
+		},
+		{
+			"type": "select",
+			"id": "style",
+			"label": "Testimonials Style",
+			"default": "type_1",
+			"options": [
+				{
+					"value": "type_1",
+					"label": "Type #1"
+				},
+				{
+					"value": "type_2",
+					"label": "Type #2"
+				},
+				{
+					"value": "type_3",
+					"label": "Type #3"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"id": "caption_text",
+			"label": "Caption Text",
+			"default": "Reviews from:"
+		},
+		{
+			"type": "image_picker",
+			"id": "header_logo",
+			"label": "Header logo image (185x45px)"
+		}
+	],
+	"blocks": [
+		{
+			"type": "quote",
+			"name": "Quote",
+			"settings": [
+				{
+					"type": "select",
+					"id": "star",
+					"label": "Review Stars",
+					"default": "none",
+					"options": [
+						{
+							"value": "none",
+							"label": "None"
+						},
+						{
+							"value": "1",
+							"label": "1"
+						},
+						{
+							"value": "2",
+							"label": "2"
+						},
+						{
+							"value": "3",
+							"label": "3"
+						},
+						{
+							"value": "4",
+							"label": "4"
+						},
+						{
+							"value": "5",
+							"label": "5"
+						}
+					]
+				},
+				{
+					"type": "textarea",
+					"id": "quote",
+					"label": "Quote Text",
+					"default": "Add customer reviews and testimonials to showcase your store’s happy customers."
+				},
+				{
+					"type": "text",
+					"id": "author",
+					"label": "Quote Author",
+					"default": "Author's name"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Testimonials",
+			"category": "Text",
+			"blocks": [
+				{
+					"type": "quote"
+				},
+				{
+					"type": "quote"
+				},
+				{
+					"type": "quote"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+
+{% javascript %}
+jQuery(document).ready(function($) {
+	$('.testimonials_slider').each(function() {
+		var pagination = '#' + $(this).attr('id').replace('testimonials_','pagination_');
+		var navLeft = '#' + $(this).attr('id').replace('testimonials_','arrow_nav_left_');
+		var navRight = '#' + $(this).attr('id').replace('testimonials_','arrow_nav_right_');
+		var testimonialSlider = new Swiper( '#' + $(this).attr('id'), {
+			pagination: {
+				el: pagination,
+				clickable: true
+			},
+			navigation: {
+				nextEl: navRight,
+				prevEl: navLeft
+			}
+		});	
+	});
+});
+{% endjavascript %}
+	
+

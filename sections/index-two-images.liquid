@@ -1,0 +1,177 @@
+{% if section.settings.hide_section == false %}
+
+
+{% case section.settings.img_size %}
+	{% when 'small'  %}{%- assign img_size = '500x500' -%}{%- assign img_min_size = '119x119' -%}{%- assign img_2_size = '367x473' -%}{%- assign img_2_min_size = '200x257' -%}
+	{% when 'medium' %}{%- assign img_size = '600x600' -%}{%- assign img_min_size = '164x164' -%}{%- assign img_2_size = '467x602' -%}{%- assign img_2_min_size = '200x257' -%}
+	{% when 'large'  %}{%- assign img_size = '700x700' -%}{%- assign img_min_size = '209x209' -%}{%- assign img_2_size = '567x731' -%}{%- assign img_2_min_size = '200x257' -%}
+{% endcase %}
+
+<div class="container_big">
+	<div class="row">
+		<div class="item_img_1 col-sm-6 {% if section.settings.layout == 'right' %}image_right{% endif %}">
+			<div class="banner_1_item">
+				{% if section.settings.image.size > 0 %}
+					<img style="width: 100%" class="blur-up lazyload" src="{{ section.settings.image | img_url: img_min_size, crop: section.settings.img_alignment }}" alt="{{ section.settings.image.alt }}"data-src="{{ section.settings.image | img_url: img_size, crop: section.settings.img_alignment }}">
+				{% else %}
+					<div class="img_placeholder__wrap img_placeholder__{{ section.settings.img_size }}">
+						{{ 'image' | placeholder_svg_tag: 'img_placeholder' }}
+					</div>
+				{% endif %}
+				<div class="banner_1_caption">
+					{% if section.settings.title.size > 0 %}
+						<h3>{{ section.settings.title }}</h3>
+					{% endif %}
+					{% if section.settings.subtitle.size > 0 %}
+						<h4>{{ section.settings.subtitle }}</h4>
+					{% endif %}
+					{% if section.settings.button_link.size > 0 and section.settings.button_text.size > 0 %}
+						<a class="btn" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+		<div class="item_img_2 col-sm-6">
+			<div class="banner_2_item">
+				{% if section.settings.image_2.size > 0 %}
+					<img style="width: 100%" class="blur-up lazyload" src="{{ section.settings.image_2 | img_url: img_2_min_size, crop: section.settings.img_alignment }}" alt="{{ section.settings.image_2.alt }}"data-src="{{ section.settings.image_2 | img_url: img_2_size, crop: section.settings.img_alignment }}">
+				{% else %}
+					<div class="img_placeholder__wrap img_placeholder__{{ section.settings.img_size }}">
+						{{ 'image' | placeholder_svg_tag: 'img_placeholder' }}
+					</div>
+				{% endif %}
+				<a href="{{ section.settings.banner_link }}" class="banner_2_caption">
+					{% if section.settings.richtitle.size > 0 %}
+						<div class="richtitle">{{ section.settings.richtitle }}</div>
+					{% endif %}
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+{% endif %}
+
+{% schema %}
+{
+	"name": "Two images",
+	"class": "section section_homepage section_two-images",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "hide_section",
+			"label": "Hide section",
+			"default":   false
+		},
+		{
+			"type": "select",
+			"id": "layout",
+			"label": "Layout",
+			"default": "left",
+			"options": [
+				{
+					"value": "left",
+					"label": "Standart"
+				},
+				{
+					"value": "right",
+					"label": "Reverse"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "img_size",
+			"label": "Image size",
+			"options": [
+				{
+					"value": "small",
+					"label": "Small (500x500)"
+				},
+				{
+					"value": "medium",
+					"label": "Medium (600x600)"
+				},
+				{
+					"value": "large",
+					"label": "Large (700x700)"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "img_alignment",
+			"label": "Image alignment",
+			"options": [
+				{
+					"value": "top",
+					"label": "Top"
+				},
+				{
+					"value": "center",
+					"label": "Middle"
+				},
+				{
+					"value": "bottom",
+					"label": "Bottom"
+				}
+			]
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image 1"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Header text"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subheader text"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "Button link"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button text"
+		},
+
+		{
+			"type": "image_picker",
+			"id": "image_2",
+			"label": "Image 2"
+		},
+		{
+			"type": "richtext",
+			"id": "richtitle",
+			"label": "Header text 2"
+		},
+		{
+			"type": "url",
+			"id": "banner_link",
+			"label": "banner 2 link"
+		}
+	],
+
+	"presets": [
+		{
+			"name": "Two custom images",
+			"category": "Image"
+		}
+	]
+}
+{% endschema %}
+
+
+{% stylesheet 'scss' %}
+
+{% endstylesheet %}

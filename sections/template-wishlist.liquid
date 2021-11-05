@@ -1,0 +1,196 @@
+{% if settings.wishlist_toggle %}
+	
+	{% if settings.sidebar_toggle %}
+		{%- assign img_size = '313x470' -%}
+		{%- assign img_min_size = '100x150' -%}
+	{% else %}
+		{%- assign img_size = '380x565' -%}
+		{%- assign img_min_size = '100x149' -%}
+	{% endif %}
+
+	{%- assign img_alignment = section.settings.product_img_alignment -%}
+
+	<div class="wishlist_page" id="wishlist_page" data-customer="{% if customer %}true{% else %}false{% endif %}">
+		<div {% unless settings.sidebar_toggle %} class="container"{% endunless %}>
+			{% assign A = 'layout.wishlist.wishlist_items' | t %}{% if A.size == 0 %}{% assign A = 'item(s)' %}{% endif %}
+			<h1 class="page_heading">{{ page.title }}{% if customer %} — <span id="wishlist_products_number"></span> {{ A }}{% endif %}</h1>
+
+			<div class="page_content">
+				{% if page.content.size > 0 %}
+					<div class="rte">
+						{{ page.content }}
+					</div>
+				{% endif %}
+
+				{% if customer %}
+					<div class="product_listing_main row">
+						{% assign wishlist = customer.metafields.zemez_modules.wishlist %}
+						{% for item in wishlist %}
+							{% assign product = all_products[item] %}
+
+							{% if product.id.size > 0 %}
+								<div id="+0{{ item }}" class="col-xs-6 col-sm-6 {% if settings.sidebar_toggle %} col-md-4 {% else %} col-md-3 {% endif %} product product_wishlist">
+									<div class="product_wrapper">
+										<div class="product_image_wrap">
+											<a class="product_img" href="{{ product.url }}">
+												<img style="width: 100%" src="{{ product.featured_image.src | img_url: img_min_size, crop: img_alignment }}" class="lazyload blur-up" data-src="{{ product.featured_image.src | img_url: img_size, crop: img_alignment }}"  alt="{{ product.title | escape }}">	
+											</a>
+
+											<a class="quick_view_btn" href="{{ product.url }}" title="{{ 'layout.product.quick_view_button' | t }}">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8 6H10V8H12V10H10V12H8V10H6V8H8V6Z"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 18.5787L16.2437 14.8223C17.4619 13.2995 18.2741 11.269 18.2741 9.13706C18.2741 4.06091 14.2132 0 9.13706 0C4.06091 0 0 4.06091 0 9.13706C0 14.2132 4.06091 18.2741 9.13706 18.2741C11.269 18.2741 13.2995 17.5635 14.8223 16.2437L18.5787 20L20 18.5787ZM2.03046 9.13706C2.03046 5.17766 5.17766 2.03046 9.13706 2.03046C13.0964 2.03046 16.2437 5.17766 16.2437 9.13706C16.2437 13.0964 13.0964 16.2437 9.13706 16.2437C5.17766 16.2437 2.03046 13.0964 2.03046 9.13706Z"/>
+												</svg>
+											</a>
+											<script type="application/json" class="product_json">  
+												{{ product | json }}
+											</script> 
+
+											<div class="product_links">
+												<form method="post" action="/cart/add">
+													{% if product.available %}
+														{% if product.variants.size == 1 %}    
+															{% for variant in product.variants limit:1 %}
+																<input type="hidden" name="id" value="{{ variant.id }}" />
+																<button class="btn btn-cart" type="submit" title="{{ 'layout.product.add_to_cart' | t }}">
+																	<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z"/>
+																		<path d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z"/>
+																	</svg>
+																	{{ 'layout.product.add_to_cart' | t }}
+																</button>
+															{% endfor %}
+														{% else %}
+															<a class="btn btn_options" href="{{ product.url }}" title="{{ 'layout.product.choose_variant_button' | t }}">
+																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z"/>
+																	<path d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z"/>
+																</svg>
+																{{ 'layout.product.choose_variant_button' | t }}
+															</a>
+														{% endif %}
+													{% else %}
+														<button class="btn btn-cart btn-disabled" disabled="disabled" title="{{ 'layout.product.unavailable' | t }}">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M20 20H0V6H20V20ZM2 18H18V8H2V18Z"/>
+																<path d="M14 3.99995H12C12 3.49995 11.8 2.99995 11.4 2.59995C10.7 1.89995 9.3 1.89995 8.6 2.59995C8.2 2.89995 8 3.39995 8 3.99995H6C6 2.89995 6.4 1.89995 7.2 1.19995C8.7 -0.300049 11.3 -0.300049 12.9 1.19995C13.6 1.89995 14 2.89995 14 3.99995Z"/>
+															</svg>
+															{{ 'layout.product.unavailable' | t }}
+														</button>
+													{% endif %}
+												</form>
+
+
+												<a class="btn wishlist_btn" href="{{ pages[settings.wishlist_page].url }}" data-product="{{ product.handle }}" data-customer="{{ customer.id }}" title="{{ 'layout.wishlist.remove_from_wishlist' | t }}" data-action="remove" onclick="zemezWishlist(this); return false;">
+							                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 0H13V2H18V4H2V2H7V0Z"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M4 20H16V6H4V20ZM14 18H6V8H14V18Z" />
+													</svg>
+												</a>
+											</div>
+										</div>
+										<div class="product_info">
+											<div class="product_name">
+												<a href="{{ product.url }}">{{ product.title | truncate:50 }}</a>
+											</div>
+											
+											<div class="product_price">
+												{%- assign on_sale = false -%}
+												{% if product.compare_at_price > product.price %}
+													{%- assign on_sale = true -%}
+												{% endif %}
+
+												{% if product.available %}
+													{% if product.variants.size == 1 %}
+														{% if on_sale %}
+															<span class="money money_sale">{{ product.compare_at_price | money }}</span>
+														{% endif %}
+
+														<span class="money">{{ product.price | money }}</span>
+													{% else %}
+														{%- assign prices_sorted = product.variants | sort: 'price' -%}
+														<span class="money">{{ prices_sorted.first.price | money }}</span> <span class="money_like">–</span> <span class="money">{{ prices_sorted.last.price | money }}</span>
+													{% endif %}
+												{% else %}
+													{% if on_sale %}
+														<span class="money money_sale">{{ product.compare_at_price | money }}</span>
+													{% endif %}
+
+													<span class="money">{{ product.price | money }}</span>
+												{% endif %}
+											</div>
+										</div>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+
+				{% else %}
+
+					<p class="alert alert-warning"><a href='/account/login'>{{ 'layout.wishlist.login_to_use_wishlist' | t }}</a></p>
+
+				{% endif %}
+
+				<p id="wishlist_empty" class="alert alert-warning hidden">{{ 'layout.wishlist.empty_wishlist' | t }}</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+{% else %}
+	<script>
+	window.location = '/'
+	</script>
+{% endif %}
+
+{% schema %}
+{
+	"name": "Wishlist page",
+	"class": "section_template section_template__wishlist",
+	"settings": [
+		{
+			"type": "select",
+			"id": "product_img_alignment",
+			"label": "Product image alignment",
+			"default": "center",
+			"options": [
+				{
+					"value": "top",
+					"label": "Top"
+				},
+				{
+					"value": "center",
+					"label": "Middle"
+				},
+				{
+					"value": "bottom",
+					"label": "Bottom"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+
+
+{% javascript %}
+jQuery(document).ready(function($) {
+
+	var isCustomer = $('#wishlist_page').data('customer')
+	
+		if ( isCustomer ) {
+		
+			if ($('.product_wishlist').length == 0) {
+				$('#wishlist_empty').removeClass('hidden');
+	 			$('#wishlist_products_number').html( 0 );
+			}
+	 		else {
+	 			$('#wishlist_products_number').html( $('.product_wishlist').length );
+	 		};
+		}		 		
+		 	
+});
+{% endjavascript %}

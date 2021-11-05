@@ -1,0 +1,202 @@
+
+{%- assign item_size = '380x450' -%}
+
+{%- assign img_alignment = section.settings.img_alignment -%}
+
+{% if section.blocks.size > 3 %}
+	{%- assign carousel = true -%}
+{% else %}
+	{%- assign carousel = false -%}
+{% endif %}	
+	
+<div class="collection_listing_wrap" {% if section.settings.background_image_toggle %} style="background: url( {{ section.settings.background_image | img_url: '1920x1050', crop: 'top' }} );"{% endif %}>
+
+	<div class="container">
+		<h4 class="section_heading">{{ section.settings.section_title | escape }}</h4>
+	</div>
+
+	<div class="container">
+		<div class="row collection_listing__main">
+			{% if carousel %}
+				<div class="swiper-container collections_swiper" id="collections_swiper__{{ section.id }}">
+					<div class="swiper-wrapper">
+			{% endif %}
+
+				{% for block in section.blocks %}
+					{% assign collection = collections[block.settings.item_collection] %}
+					{% assign collection_image = false %}
+					{% if block.settings.image %}
+						{% assign collection_image = true %}
+						{% assign collection_image_src = block.settings.image %}
+					{% endif %}
+					
+					<div class="col-sm-4 col-xs-6 {% if carousel %}swiper-slide{% endif %}">
+						{% include 'collection-listing-item' with item_size, img_alignment, collection_image, collection_image_src %}
+					</div>
+		
+				{% endfor %}
+
+			{% if carousel %}
+					</div>
+				</div>
+				<div id="pagination_{{ section.id }}" class="swiper_pagination sw_p_list_custom"></div>
+
+				<div id="swiper_prev_{{ section.id }}" class="swiper_btn swiper_btn__prev"></div>
+				<div id="swiper_next_{{ section.id }}" class="swiper_btn swiper_btn__next"></div>
+			{% endif %}
+		</div>
+	</div>
+
+	{% if section.settings.show_view_all %}
+		<div class="view_all__wrap">
+			<a href="/collections/" class="btn">{{ 'layout.collection_listing.view_all' | t }}</a>
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Collection list custom",
+	"class": "section section_homepage section_collection-list-custom",
+	"max_blocks": 12,
+	"settings": [
+		{
+			"type": "text",
+			"id": "section_title",
+			"label": "Heading",
+			"default": "Collections"
+		},
+{
+"type": "checkbox",
+"id": "hide_description",
+"label": "Hide description",
+"default": false
+},
+
+		{
+			"type": "select",
+			"id": "img_alignment",
+			"label": "Image alignment",
+			"options": [
+				{
+					"value": "top",
+					"label": "Top"
+				},
+				{
+					"value": "center",
+					"label": "Middle"
+				},
+				{
+					"value": "bottom",
+					"label": "Bottom"
+				}
+			]
+		},
+		{
+			"type": "checkbox",
+			"id": "show_view_all",
+			"label": "Show 'View all' button"
+		},
+		{
+			"type": "header",
+			"content": "Background image"
+		},
+		{
+			"type": "checkbox",
+			"id": "background_image_toggle",
+			"label": "Show background image",
+			"default": false
+		},
+		{
+			"type": "image_picker",
+			"id": "background_image",
+			"label": "Image",
+			"info": "The image should be more than 2050px wide to resize and crop properly"
+		}
+	],
+	"blocks": [
+		{
+			"type": "featured_collection",
+			"name": "Collection",
+			"settings": [
+				{
+					"label": "Collection",
+					"id": "item_collection",
+					"type": "collection"
+				},
+				{
+				"type": "text",
+				"id": "subheading",
+				"label": "Subheading"
+				},
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Collection list custom",
+			"category": "Collections",
+			"settings": {
+
+			},
+			"blocks": [
+				{
+					"type": "featured_collection"
+				},
+				{
+					"type": "featured_collection"
+				},
+				{
+					"type": "featured_collection"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+
+{% javascript %}
+jQuery(document).ready(function($) {
+	$('.collections_swiper').each(function(i) {
+
+		var sliderId = '#' + $(this).attr('id');
+		var sliderVar = $(this).attr('id');
+		var sliderPagination = '#pagination_' + sliderVar.replace('collections_swiper__', '');
+		var sliderPrev = '#swiper_prev_' + sliderVar.replace('collections_swiper__', '');
+		var sliderNext = '#swiper_next_' + sliderVar.replace('collections_swiper__', '');
+		
+		var swiperVar = new Swiper( sliderId, {
+			effect: 'slide',
+			loop: true,
+			autoplayDisableOnInteraction: false,
+			slidesPerView: 3,
+			breakpoints: {
+				
+				575: {
+					slidesPerView: 1
+				}
+			},
+
+			navigation: {
+				nextEl: sliderNext,
+				prevEl: sliderPrev
+			},
+pagination: {
+el: sliderPagination,
+type: 'bullets',
+clickable: true
+}
+
+		});
+
+	
+
+	});
+
+});
+{% endjavascript %}

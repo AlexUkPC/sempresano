@@ -1,0 +1,2149 @@
+{
+  "current": {
+    "type_base_font": "oswald_n4",
+    "base_font_size": "16px",
+    "base_font_color": "#6c6e71",
+    "type_custom_font": "oswald_n4",
+    "custom_font_size": "40px",
+    "custom_font_color": "#171717",
+    "type_header_font": "oswald_n5",
+    "heading_font_size": "30px",
+    "heading_font_color": "#171717",
+    "links_color": "#171717",
+    "links_color_hover": "#31862f",
+    "product_name_color": "#6c6e71",
+    "product_name_color_hover": "#078f5f",
+    "product_price_color": "#171717",
+    "product_price_sale_color": "#6c6e71",
+    "bg_color": "#fcfcfc",
+    "border_color": "#ffffff",
+    "color_1": "#171717",
+    "color_2": "#9fcc2e",
+    "color_3": "#ffffff",
+    "color_4": "#000000",
+    "color_5": "#9fa1a4",
+    "color_6": "#fcfcfc",
+    "color_7": "#184817",
+    "color_8": "#184817",
+    "button_color": "#9fcc2e",
+    "button_text_color": "#ffffff",
+    "button_border_color": "#9fcc2e",
+    "button_hover_color": "#171717",
+    "button_hover_text_color": "#ffffff",
+    "button_hover_border_color": "#171717",
+    "alt_button_color": "#ffffff",
+    "alt_button_text_color": "#171717",
+    "alt_button_border_color": "#ffffff",
+    "alt_button_hover_color": "#171717",
+    "alt_button_hover_text_color": "#ffffff",
+    "alt_button_hover_border_color": "#171717",
+    "favicon": "shopify:\/\/shop_images\/fav.png",
+    "sidebar_toggle": true,
+    "sidebar_position": "sidebar_left",
+    "wishlist_toggle": true,
+    "wishlist_page": "wishlist",
+    "rtl": false,
+    "contact_map": false,
+    "password_link_view": false,
+    "protect": false,
+    "newsletter_form_type": "newsletter_shopify",
+    "newsletter_mailchimp_url": "",
+    "newsletter_popup_toggle": false,
+    "newsletter_popup_text1": "Get special offers <br> & more!",
+    "newsletter_popup_text2": "Sign up and receive <b><span>10%<\/span> off<\/b> <br>on your first order",
+    "newsletter_popup_text3": "Subscribe",
+    "inverted": false,
+    "newsletter_popup_period": "30",
+    "newsletter_popup_bg": "",
+    "badge_toggle": true,
+    "new_products_period": "10000",
+    "new_badge_color": "rgba(0,0,0,0)",
+    "new_badge_text_color": "#171717",
+    "badge_new_toggle": false,
+    "sale_badge_color": "rgba(0,0,0,0)",
+    "sale_badge_text_color": "#d45134",
+    "badge_sale_percent_toggle": false,
+    "badge_sale_toggle": false,
+    "ourstock_badge_color": "#222222",
+    "badge_ourstock_toggle": false,
+    "custom_badge_1_toggle": false,
+    "custom_badge_1": "Sale",
+    "custom_badge_1_text": "Sale",
+    "custom_badge_1_color": "rgba(0,0,0,0)",
+    "custom_badge_1_text_color": "#d45134",
+    "custom_badge_2_toggle": false,
+    "custom_badge_2": "New",
+    "custom_badge_2_text": "New",
+    "custom_badge_2_color": "rgba(0,0,0,0)",
+    "custom_badge_2_text_color": "#171717",
+    "product_reviews": true,
+    "color_option": "Color",
+    "size_option": "Size",
+    "sharing_fb": true,
+    "sharing_tw": true,
+    "sharing_pin": true,
+    "sharing_in": true,
+    "instagram_post_link": "https:\/\/www.instagram.com\/p\/Be-gnDog6kd\/?utm_source=ig_web_copy_link",
+    "sect_all": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#e4e4e4",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fcfcfc",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#31862f",
+    "checkout_button_color": "#31862f",
+    "checkout_error_color": "#ff6d6d",
+    "header_type": "2",
+    "footer_type": "1",
+    "newsletter_title": "Newsletter",
+    "newsletter_tagline": "",
+    "sharing_gplus": true,
+    "product_name_size": "14px",
+    "section_headers_bg_color": "#be3838",
+    "section_headers_alignment": "center",
+    "product_border": false,
+    "sale_type": "text",
+    "color_scheme": "scheme_1",
+    "scheme_1_color_1": "#6fcfb8",
+    "scheme_1_color_2": "#333333",
+    "scheme_2_color_1": "#f2c94c",
+    "scheme_2_color_2": "#242424",
+    "scheme_3_color_1": "#77c126",
+    "scheme_3_color_2": "#fc5d20",
+    "text-animation": true,
+    "base_font": "google_fonts:Roboto",
+    "heading_font": "google_fonts:Roboto",
+    "currency_selector": "0",
+    "supported_currencies": "USD EUR GBP",
+    "show_multiple_currencies": "1",
+    "currency_format": "money_with_currency_format",
+    "default_currency": "USD",
+    "currencies_toggle": true,
+    "currencies_list": "",
+    "checkout_use_header_image": false,
+    "checkout_logo": "",
+    "checkout_use_body_background_image": false,
+    "checkout_use_sidebar_background_image": false,
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#7796A8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#7796A8",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": "0.25",
+    "color_body_bg": "#fff",
+    "type_header_family": "Google_Work+Sans_600_sans",
+    "type_header_base_size": "26px",
+    "type_base_family": "Google_Work+Sans_400_sans",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "sections": {
+      "template-collections-listing": {
+        "type": "template-collections-listing",
+        "blocks": {
+          "1575036694125": {
+            "type": "image",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1575036694125"
+        ],
+        "settings": {
+          "size": "large",
+          "style": "type_1",
+          "img_alignment": "top"
+        }
+      },
+      "template-collection": {
+        "type": "template-collection",
+        "blocks": {
+          "1570457434429": {
+            "type": "collection_image",
+            "settings": {
+              "products_collection": "",
+              "caption_inverted": true
+            }
+          },
+          "1571993194531": {
+            "type": "collection_image",
+            "settings": {
+              "products_collection": "",
+              "caption_inverted": true
+            }
+          },
+          "1572262684277": {
+            "type": "collection_image",
+            "settings": {
+              "products_collection": "",
+              "caption_inverted": true
+            }
+          },
+          "1572262750169": {
+            "type": "collection_image",
+            "settings": {
+              "products_collection": "",
+              "caption_inverted": true
+            }
+          }
+        },
+        "block_order": [
+          "1570457434429",
+          "1571993194531",
+          "1572262684277",
+          "1572262750169"
+        ],
+        "settings": {
+          "items_per_page": "12",
+          "fullwidth_toggle": true,
+          "collection_desc_toggle": false,
+          "collection_tags_toggle": false,
+          "product_img_alignment": "center",
+          "collection_img_alignment": "center",
+          "collection_picture": true
+        }
+      },
+      "template-product": {
+        "type": "template-product",
+        "blocks": {
+          "1524829489002": {
+            "type": "all_tab",
+            "settings": {
+              "title": "Delivery",
+              "page": "delivery-info"
+            }
+          },
+          "1570618849665": {
+            "type": "reviews",
+            "settings": {
+              "title": "Product reviews"
+            }
+          }
+        },
+        "block_order": [
+          "1524829489002",
+          "1570618849665"
+        ],
+        "settings": {
+          "product_view_type": "sticky",
+          "image_alignment": "center",
+          "show_sku": false,
+          "show_short_desk": true,
+          "show_color": true,
+          "show_size": true,
+          "show_vendor": true,
+          "show_product_types": true,
+          "show_barcode": false,
+          "show_weight": false,
+          "show_tags": true,
+          "show_collections": true,
+          "show_share_buttons": true,
+          "show_desc": true,
+          "show_notify_button": true,
+          "show_policy": true,
+          "security_page": "shopify:\/\/policies\/privacy-policy",
+          "security_text": "Security policy",
+          "delivery_page": "shopify:\/\/policies\/refund-policy",
+          "delivery_text": "Delivery policy",
+          "return_page": "shopify:\/\/policies\/terms-of-service",
+          "return_text": "Return policy",
+          "show_related_products": true,
+          "related_products_title": "Related product"
+        }
+      },
+      "template-blog": {
+        "type": "template-blog",
+        "settings": {
+          "size": "small",
+          "pagination_count": "3",
+          "img_alignment": "center"
+        }
+      },
+      "template-article": {
+        "type": "template-article",
+        "settings": {
+          "img_size": "master",
+          "img_alignment": "center"
+        }
+      },
+      "template-about-us": {
+        "type": "template-about-us",
+        "blocks": {
+          "1485527855475": {
+            "type": "text-block",
+            "settings": {
+              "title": "Catering to your requirements, handling your needs with care",
+              "text": "<p>Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use to access the Internet. We work to make your life more enjoyable.<\/p>"
+            }
+          },
+          "1485529201861": {
+            "type": "icons-block",
+            "settings": {
+              "title": "Store events",
+              "icon_1": "search",
+              "title_1": "Icon block with text",
+              "text_1": "<p>We think about the convenience of your choice. Our products are supplied with star rating that should help hesitant buyers to take a decision. What&rsquo;s more, you can search our site if you know exactly what you are looking for or use a bunch of different filters that will considerably save your time and efforts.<\/p>",
+              "icon_2": "truck",
+              "title_2": "Delivery to all regions",
+              "text_2": "<p>We deliver our goods worldwide. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated. The packages are handled with utmost care, so the ordered products will be handed to you safe and sound, just like you expect them to be.<\/p>",
+              "icon_3": "thumbs-o-up",
+              "title_3": "The highest quality of products",
+              "text_3": "<p>We guarantee the highest quality of the products we sell. Several decades of successful operation and millions of happy customers let us feel certain about that. Besides, all items we sell pass thorough quality control, so no characteristics mismatch can escape the eye of our professionals.<\/p>"
+            }
+          },
+          "1485531360014": {
+            "type": "photos-block",
+            "settings": {
+              "title": "Our team",
+              "img_1": "",
+              "title_1": "John Doe",
+              "text_1": "<p>Senior salesman with 15 years of experience. He knows everything about the products he offers.<\/p>",
+              "img_2": "",
+              "title_2": "Jessica Priston",
+              "text_2": "<p>Mega positive shop assistant always ready to help you make the right choice and charm you with a smile.<\/p>",
+              "img_3": "",
+              "title_3": "Sam Kromstain",
+              "text_3": "<p>Wholesale manager. Contact him if you want to buy a batch of the products offered at our store.<\/p>",
+              "img_4": "",
+              "title_4": "Edna Barton",
+              "text_4": "<p>Quality control manager. Her mission is to check the products we ship and settle quality issues if any.<\/p>"
+            }
+          },
+          "1485532165531": {
+            "type": "testimonials-block",
+            "settings": {
+              "title": "Testimonials",
+              "name_1": "Mary Taba",
+              "text_1": "Guys, you rock! Made a purchase at your store recently. The order has been shipped and delivered on time. The quality is superb! The price is quite reasonable. Told all my friends about your excellent service and the variety of choice. I think I&rsquo;ll be your loyal customer in future as well. I wish your store many more years of prosperity.",
+              "name_2": "Virginia Ubert",
+              "text_2": "Thank you again and again! I have experienced the fastest support ever. My order arrived on my door step the following day. Your team is always, friendly and very helpful. You managed to exceed my expectations!",
+              "name_3": "",
+              "text_3": ""
+            }
+          }
+        },
+        "block_order": [
+          "1485527855475",
+          "1485529201861",
+          "1485531360014",
+          "1485532165531"
+        ],
+        "settings": {}
+      },
+      "template-wishlist": {
+        "type": "template-wishlist",
+        "settings": {
+          "product_img_alignment": "center"
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
+        "blocks": {
+          "59712aed-6765-4c4c-b1ba-8382e50fde3e": {
+            "type": "widget_collections",
+            "settings": {
+              "title": "Categorii"
+            }
+          },
+          "1570187000212": {
+            "type": "widget_types",
+            "settings": {
+              "title": "Tip preparat"
+            }
+          },
+          "1570187005516": {
+            "type": "widget_vendors",
+            "settings": {
+              "title": "Producător"
+            }
+          }
+        },
+        "block_order": [
+          "59712aed-6765-4c4c-b1ba-8382e50fde3e",
+          "1570187000212",
+          "1570187005516"
+        ],
+        "settings": {}
+      },
+      "sidebar-blog": {
+        "type": "sidebar-blog",
+        "blocks": {
+          "1570723508479": {
+            "type": "blog_search",
+            "settings": {
+              "placeholder": "Search blog"
+            }
+          },
+          "1526376031917": {
+            "type": "link-list",
+            "settings": {
+              "block_title": "categories",
+              "links": "collections"
+            }
+          },
+          "1570723464089": {
+            "type": "resent_articles",
+            "settings": {
+              "title": "Recent Post"
+            }
+          },
+          "1530529813107": {
+            "type": "blog_tags",
+            "settings": {
+              "title": "Blog tags"
+            }
+          },
+          "1530529473539": {
+            "type": "blog_comments",
+            "settings": {
+              "title": "Blog comments"
+            }
+          }
+        },
+        "block_order": [
+          "1570723508479",
+          "1526376031917",
+          "1570723464089",
+          "1530529813107",
+          "1530529473539"
+        ],
+        "settings": {}
+      },
+      "template-privacy-policy": {
+        "type": "template-privacy-policy",
+        "blocks": {
+          "1503144156672": {
+            "type": "text-block",
+            "settings": {
+              "title": "General information",
+              "text": "<p>Welcome to our Privacy Policy page! When you use our store services, you trust us with your information. This Privacy Policy is meant to help you understand what data we collect, why we collect it, and what we do with it. When you share information with us, we can make our services even better for you. For instance, we can show you more relevant search results and ads, help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we&rsquo;re using information and the ways in which you can protect your privacy. This is important; we hope you will take time to read it carefully. Remember, you can find controls to manage your information and protect your privacy and security. We&rsquo;ve tried to keep it as simple as possible.<\/p>"
+            }
+          },
+          "1503144183486": {
+            "type": "text-block",
+            "settings": {
+              "title": "Right to access, correct and delete data and to object to data processing",
+              "text": "<p>Our customers have the right to access, correct and delete personal data relating to them, and to object to the processing of such data, by addressing a written request, at any time. The Company makes every effort to put in place suitable precautions to safeguard the security and privacy of personal data, and to prevent it from being altered, corrupted, destroyed or accessed by unauthorized third parties. However, the Company does not control each and every risk related to the use of the Internet, and therefore warns the Site users of the potential risks involved in the functioning and use of the Internet. The Site may include links to other web sites or other internet sources. As the Company cannot control these web sites and external sources, the Company cannot be held responsible for the provision or display of these web sites and external sources, and may not be held liable for the content, advertising, products, services or any other material available on or from these web sites or external sources.<\/p>"
+            }
+          },
+          "1503144204191": {
+            "type": "text-block",
+            "settings": {
+              "title": "Management of personal data",
+              "text": "<p>You can view or edit your personal data online for many of our services. You can also make choices about our collection and use of your data. How you can access or control your personal data will depend on which services you use. You can choose whether you wish to receive promotional communications from our store by email, SMS, physical mail, and telephone. If you receive promotional email or SMS messages from us and would like to opt out, you can do so by following the directions in that message. You can also make choices about the receipt of promotional email, telephone calls, and postal mail by visiting and signing into Company Promotional Communications Manager, which allows you to update contact information, manage contact preferences, opt out of email subscriptions, and choose whether to share your contact information with our partners. These choices do not apply to mandatory service communications that are part of certain store services.<\/p>"
+            }
+          },
+          "1503144229373": {
+            "type": "text-block",
+            "settings": {
+              "title": "Information we collect",
+              "text": "<p>Our store collects data to operate effectively and provide you the best experiences with our services. You provide some of this data directly, such as when you create a personal account. We get some of it by recording how you interact with our services by, for example, using technologies like cookies, and receiving error reports or usage data from software running on your device. We also obtain data from third parties (including other companies). For example, we supplement the data we collect by purchasing demographic data from other companies. We also use services from other companies to help us determine a location based on your IP address in order to customize certain services to your location. The data we collect depends on the services and features you use.<\/p>"
+            }
+          },
+          "1503144255733": {
+            "type": "text-block",
+            "settings": {
+              "title": "How we use your information",
+              "text": "<p>Our store uses the data we collect for three basic purposes: to operate our business and provide (including improving and personalizing) the services we offer, to send communications, including promotional communications, and to display advertising. In carrying out these purposes, we combine data we collect through the various store services you use to give you a more seamless, consistent and personalized experience. However, to enhance privacy, we have built in technological and procedural safeguards designed to prevent certain data combinations. For example, we store data we collect from you when you are unauthenticated (not signed in) separately from any account information that directly identifies you, such as your name, email address or phone number.<\/p>"
+            }
+          },
+          "1503144272560": {
+            "type": "text-block",
+            "settings": {
+              "title": "Sharing your information",
+              "text": "<p>We share your personal data with your consent or as necessary to complete any transaction or provide any service you have requested or authorized. For example, we share your content with third parties when you tell us to do so. When you provide payment data to make a purchase, we will share payment data with banks and other entities that process payment transactions or provide other financial services, and for fraud prevention and credit risk reduction. In addition, we share personal data among our controlled affiliates and subsidiaries. We also share personal data with vendors or agents working on our behalf for the purposes described in this statement. For example, companies we've hired to provide customer service support or assist in protecting and securing our systems and services may need access to personal data in order to provide those functions. In such cases, these companies must abide by our data privacy and security requirements and are not allowed to use personal data they receive from us for any other purpose. We may also disclose personal data as part of a corporate transaction such as a merger or sale of assets.&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1503144156672",
+          "1503144183486",
+          "1503144204191",
+          "1503144229373",
+          "1503144255733",
+          "1503144272560"
+        ],
+        "settings": {
+          "email": "multifly@demolink.org"
+        }
+      },
+      "index-map": {
+        "type": "index-map",
+        "settings": {
+          "hide_section": false,
+          "map_height": "small",
+          "map_address": "521 Fifth Avenue, Pelham, NY 10783",
+          "api_key": "AIzaSyDQqXKHDrhkyBISlvJ7m5Z7X67XmfZmUk0",
+          "map_style": "light",
+          "map_captions": true,
+          "map_captions_title": "521 Fifth Avenue, Pelham, NY 10783",
+          "phone_text": "+(001) 23 45 67 89",
+          "map_captions_text": "<p>Monday to Friday <br\/>10am - 6.30pm (NewYork time)<\/p>",
+          "map_captions_button": true
+        }
+      },
+      "template-password": {
+        "type": "template-password",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "header": "We are not ready yet",
+          "message": "Our store will be available soon",
+          "bg_image": "shopify:\/\/shop_images\/banner_1.png",
+          "password_label": "Enter store using password:",
+          "newslatter_form": true,
+          "countdown_timer": true,
+          "timer_date_day": "16",
+          "timer_date_month": "10",
+          "timer_date_year": "2023",
+          "social_menu": true,
+          "social_fb": "https:\/\/www.facebook.com\/zemezlab\/",
+          "social_tw": "https:\/\/twitter.com\/zemezlab",
+          "social_inst": "https:\/\/www.instagram.com\/zemezlabhttps:\/\/www.instagram.com\/zemezlab",
+          "social_pin": "",
+          "social_gplus": "",
+          "social_yt": "https:\/\/www.youtube.com\/channel\/UCPW43un8VFXHe9LxKpR_2Hg"
+        }
+      },
+      "sidebar-sort": {
+        "type": "sidebar-sort",
+        "blocks": {
+          "1528103956973": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Black",
+              "color_tag_items": "#000000"
+            }
+          },
+          "1528103980427": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Gray",
+              "color_tag_items": "#bdbdbd"
+            }
+          },
+          "1528115308234": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Red",
+              "color_tag_items": "#de5050"
+            }
+          },
+          "1528115339079": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Olive",
+              "color_tag_items": "#cda472"
+            }
+          },
+          "1528115398267": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Green",
+              "color_tag_items": "#25901a"
+            }
+          },
+          "1528115463279": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Brown",
+              "color_tag_items": "#864809"
+            }
+          },
+          "1528115500668": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Beige",
+              "color_tag_items": "#ebddc5"
+            }
+          },
+          "1528115558465": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "Blue",
+              "color_tag_items": "#4351ca"
+            }
+          },
+          "1528115760736": {
+            "type": "color_tag",
+            "settings": {
+              "color_tag": "DarkBlue",
+              "color_tag_items": "#190790"
+            }
+          },
+          "1528115612871": {
+            "type": "name_tag",
+            "settings": {
+              "name_tag": "L"
+            }
+          },
+          "1528105473622": {
+            "type": "name_tag",
+            "settings": {
+              "name_tag": "XL"
+            }
+          },
+          "1528115621419": {
+            "type": "name_tag",
+            "settings": {
+              "name_tag": "XXL"
+            }
+          }
+        },
+        "block_order": [
+          "1528103956973",
+          "1528103980427",
+          "1528115308234",
+          "1528115339079",
+          "1528115398267",
+          "1528115463279",
+          "1528115500668",
+          "1528115558465",
+          "1528115760736",
+          "1528115612871",
+          "1528105473622",
+          "1528115621419"
+        ],
+        "settings": {
+          "show_section": false,
+          "title": "Sort",
+          "text": "find",
+          "filter_category": true,
+          "filter_type": true,
+          "custom_tags_caption_1": "Size",
+          "custom_tags_1": "L,XL,XXL",
+          "custom_tags_caption_2": "",
+          "custom_tags_2": "",
+          "button": "Sort",
+          "color_option_heading": "Color",
+          "tag_option_heading": "Size"
+        }
+      },
+      "template-faq": {
+        "type": "template-faq",
+        "blocks": {
+          "1525509923782": {
+            "type": "tab-block",
+            "settings": {
+              "block_title": "Shopping Information",
+              "element_1_header": "What Shipping Methods Are Available?",
+              "element_1_text": "<p>With the great pleasure we are offering you our goods<br> &bull;&nbsp; Fashion satisfies our willingness to be attractive<br> &bull;&nbsp; That is why we are offering you the result of great market and technological r<br> &bull;&nbsp; The unique combination of fair price, extraordinary style and perfect quality<br>So, this circumstance forced all leading successful companies to explore all needs and wishes of different groups of potential clients very deeply.<\/p>",
+              "element_2_header": "How Long Will It Take To Get My Package?",
+              "element_2_text": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunre magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<\/p>",
+              "element_3_header": "How Long Will It Take To Get My Package?",
+              "element_3_text": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunre magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<\/p>",
+              "element_4_header": "How Long Will It Take To Get My Package?",
+              "element_4_text": "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunre magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.<\/p>",
+              "element_5_header": "",
+              "element_5_text": "",
+              "element_6_header": "",
+              "element_6_text": ""
+            }
+          },
+          "1525510286784": {
+            "type": "tab-block",
+            "settings": {
+              "block_title": "General Information",
+              "element_1_header": "What Payment Methods Are Accepted",
+              "element_1_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_2_header": "Is Buying On-Line Safe?",
+              "element_2_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_3_header": "What Payment Methods Are Accepted",
+              "element_3_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_4_header": "",
+              "element_4_text": "",
+              "element_5_header": "",
+              "element_5_text": "",
+              "element_6_header": "",
+              "element_6_text": ""
+            }
+          },
+          "1525510549417": {
+            "type": "tab-block",
+            "settings": {
+              "block_title": "Orders and Returns",
+              "element_1_header": "How do I place an Order?",
+              "element_1_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_2_header": "Do I need an account to place an order?",
+              "element_2_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_3_header": "How Can I Cancel Or Change My Order?",
+              "element_3_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_4_header": "How Do I Track My Order?",
+              "element_4_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_5_header": "",
+              "element_5_text": "",
+              "element_6_header": "",
+              "element_6_text": ""
+            }
+          },
+          "1525510653657": {
+            "type": "tab-block",
+            "settings": {
+              "block_title": "Payment Information",
+              "element_1_header": "What Payment Methods Are Accepted",
+              "element_1_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_2_header": "Is Buying On-Line Safe?",
+              "element_2_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_3_header": "What Payment Methods Are Accepted",
+              "element_3_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_4_header": "What Payment Methods Are Accepted",
+              "element_4_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_5_header": "What Payment Methods Are Accepted",
+              "element_5_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_6_header": "",
+              "element_6_text": ""
+            }
+          },
+          "1525510758084": {
+            "type": "tab-block",
+            "settings": {
+              "block_title": "Warranty",
+              "element_1_header": "What Payment Methods Are Accepted",
+              "element_1_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_2_header": "Is Buying On-Line Safe?",
+              "element_2_text": "<p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 24 hours after your order is placed. Within 72 hours of you placing your order, you will receive an expected delivery date. When the order ships, you will receive another email with the tracking number and a link to trace the order online with the carrier.<\/p>",
+              "element_3_header": "",
+              "element_3_text": "",
+              "element_4_header": "",
+              "element_4_text": "",
+              "element_5_header": "",
+              "element_5_text": "",
+              "element_6_header": "",
+              "element_6_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1525509923782",
+          "1525510286784",
+          "1525510549417",
+          "1525510653657",
+          "1525510758084"
+        ],
+        "settings": {
+          "show_title": false
+        }
+      },
+      "template-contact": {
+        "type": "template-contact",
+        "settings": {
+          "phone_title": "CUSTOMER SERVICE",
+          "phone_text": "+09123 456 789",
+          "phone_text_info": "<p>Monday to Friday<\/p>\n<p>10am - 6.30pm (NewYork time)<\/p>",
+          "phone_title_2": "PRODUCTS & ORDERS",
+          "phone_text_2": "+09123 456 789",
+          "phone_text_info_2": "<p>Monday to Friday<\/p>\n<p>10am - 6.30pm (NewYork time)<\/p>",
+          "location_title": "STORE LOCATOR",
+          "location_text": "521 Fifth Avenue, Pelham, NY 10783"
+        }
+      },
+      "template-services": {
+        "type": "template-services",
+        "blocks": {
+          "1525765512903": {
+            "type": "service-block",
+            "settings": {
+              "icon": "wallet",
+              "title": "Cash & Carry",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<p><br> &bull;&nbsp; Lorem ipsum dolor sit amet <br> &bull;&nbsp; Sed do eiusmod tempor incididunt<br> &bull;&nbsp; Ut labore et dolore magna aliqua.<br> &bull;&nbsp; Quis nostrud exercitation ullamco<\/p>"
+            }
+          },
+          "1525765841730": {
+            "type": "service-block",
+            "settings": {
+              "icon": "tags",
+              "title": "Pick-Up from a Post Parcel",
+              "text": "<p>Point in your City<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<p><br> &bull;&nbsp; Lorem ipsum dolor sit amet <br> &bull;&nbsp; Sed do eiusmod tempor incididunt<br> &bull;&nbsp; Ut labore et dolore magna aliqua.<br> &bull;&nbsp; Quis nostrud exercitation ullamco<\/p>"
+            }
+          },
+          "1525765898942": {
+            "type": "service-block",
+            "settings": {
+              "icon": "bag",
+              "title": "Shipment to The Door",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<p><br> &bull;&nbsp; Lorem ipsum dolor sit amet <br> &bull;&nbsp; Sed do eiusmod tempor incididunt<br> &bull;&nbsp; Ut labore et dolore magna aliqua.<br> &bull;&nbsp; Quis nostrud exercitation ullamco<\/p>"
+            }
+          },
+          "1525767411000": {
+            "type": "delivery",
+            "settings": {
+              "title": "International Delivery",
+              "image": "",
+              "text": "<p><strong>Pick-Up from a Post Parcel Point in your City<\/strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<p><\/p>\n<p><\/p>\n<p>1.&nbsp;&nbsp;Lorem ipsum dolor sit amet <br>2.&nbsp;&nbsp;Sed do eiusmod tempor incididunt<br>3.&nbsp; Ut labore et dolore magna aliqua.<\/p>\n<p><\/p>\n<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "note": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+          }
+        },
+        "block_order": [
+          "1525765512903",
+          "1525765841730",
+          "1525765898942",
+          "1525767411000"
+        ],
+        "settings": {
+          "delivery_title": ""
+        }
+      },
+      "footer-1": {
+        "type": "footer-1",
+        "blocks": {
+          "1569245185848": {
+            "type": "linklist",
+            "settings": {
+              "links": "navigare-rapida"
+            }
+          },
+          "1569071510286": {
+            "type": "linklist",
+            "settings": {
+              "links": "termeni-si-conditii"
+            }
+          },
+          "1569242264523": {
+            "type": "contacts",
+            "settings": {
+              "contacts_title": "Informatii clienti",
+              "contacts_address": "<p>Luni - Vineri  <strong>09:00 - 19:00<\/strong><br\/>Pentru comenzi in weekend precomanda cu 48 de ore inainte!\t<br\/><\/p>",
+              "contacts_phone": "0731141396 \/ 0765340108",
+              "contacts_email": "sempresano.comenzi@yahoo.com"
+            }
+          },
+          "3f253167-76b6-45db-9487-ac5d4a4b9da2": {
+            "type": "contacts",
+            "settings": {
+              "contacts_title": "OUR GUARANTEES",
+              "contacts_address": "<p>Shipping in 3 days<\/p><p>Free returns within 14 days<\/p><p>Secure payments<\/p>",
+              "contacts_phone": "",
+              "contacts_email": ""
+            }
+          }
+        },
+        "block_order": [
+          "1569245185848",
+          "1569071510286",
+          "1569242264523",
+          "3f253167-76b6-45db-9487-ac5d4a4b9da2"
+        ],
+        "settings": {
+          "newsletter": true,
+          "newsletter_title": "Aboneaza-te...",
+          "newsletter_text": "...pentru a primi oferte speciale si a fi la curent cu cele mai noi preparate!",
+          "powered_toggle": true,
+          "payment_icons_toggle": true,
+          "amazon_payments": false,
+          "apple_pay": false,
+          "american_express": false,
+          "bitcoin": false,
+          "dankort": false,
+          "diners_club": false,
+          "discover": false,
+          "dogecoin": false,
+          "dwolla": false,
+          "jcb": false,
+          "litecoin": false,
+          "maestro": true,
+          "master": true,
+          "paypal": false,
+          "visa": true,
+          "google-wallet": false,
+          "google_pay": false,
+          "shopify_pay": false,
+          "social_menu": true,
+          "social_fb": "https:\/\/www.facebook.com\/sempresano.catering",
+          "social_tw": "https:\/\/twitter.com\/",
+          "social_inst": "https:\/\/www.instagram.com\/",
+          "social_pin": "\/",
+          "social_yt": "https:\/\/www.youtube.com\/"
+        }
+      },
+      "helper": {
+        "type": "helper",
+        "settings": {}
+      },
+      "header-2": {
+        "type": "header-2",
+        "blocks": {
+          "1568649904694": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "ACASA",
+              "link": "\/",
+              "badge_text": "",
+              "bg_color": "rgba(0,0,0,0)",
+              "links": "main-menu"
+            }
+          },
+          "b53fd1fb-5147-497c-a929-787b4264c423": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "MANCARE",
+              "link": "shopify:\/\/collections\/mancare",
+              "badge_text": "",
+              "bg_color": "#159ec9",
+              "links": "main-menu"
+            }
+          },
+          "0c06c987-2346-4078-b933-6a8fdf8497e6": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "LOLIPOP",
+              "link": "shopify:\/\/collections\/lolipop",
+              "badge_text": "",
+              "bg_color": "#159ec9",
+              "links": ""
+            }
+          },
+          "920ea9a6-415b-4fd5-8efd-6ac9fbe3e089": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "EVENIMENTE",
+              "link": "shopify:\/\/collections\/evenimente",
+              "badge_text": "",
+              "bg_color": "#159ec9",
+              "links": ""
+            }
+          },
+          "d30fb77b-b40d-4a12-8a0a-9cbe686742eb": {
+            "type": "link-linklist",
+            "settings": {
+              "title": "PARASTASE",
+              "link": "shopify:\/\/collections\/parastase",
+              "badge_text": "",
+              "bg_color": "#159ec9",
+              "links": ""
+            }
+          },
+          "17092ae3-946f-4459-9127-8ad993d007f8": {
+            "type": "link-simple",
+            "settings": {
+              "title": "CONTACT",
+              "link": "shopify:\/\/pages\/contact",
+              "badge_text": "",
+              "bg_color": "#159ec9"
+            }
+          }
+        },
+        "block_order": [
+          "1568649904694",
+          "b53fd1fb-5147-497c-a929-787b4264c423",
+          "0c06c987-2346-4078-b933-6a8fdf8497e6",
+          "920ea9a6-415b-4fd5-8efd-6ac9fbe3e089",
+          "d30fb77b-b40d-4a12-8a0a-9cbe686742eb",
+          "17092ae3-946f-4459-9127-8ad993d007f8"
+        ],
+        "settings": {
+          "logo_type": "img",
+          "logo_width": 200,
+          "logo_height": 80,
+          "logo_main": "shopify:\/\/shop_images\/sempresano_casa_regala_green.png",
+          "logo_slogan": "",
+          "background_toggle": true,
+          "bg_color": "#7dac0a",
+          "top_pannel_text": "catering la domiciliu - evenimente corporate - evenimente private - meniuri gradinite si scoli",
+          "top_pannel_link": "shopify:\/\/pages\/delivery-info",
+          "social_menu": true,
+          "social_fb": "https:\/\/www.facebook.com\/zemezlab\/",
+          "social_tw": "https:\/\/twitter.com\/zemezlab",
+          "social_inst": "https:\/\/www.instagram.com\/zemezlab",
+          "social_pin": "",
+          "social_yt": "https:\/\/www.youtube.com\/channel\/UCPW43un8VFXHe9LxKpR_2Hg",
+          "header_search": true,
+          "header_search_ajax": true,
+          "currency_selector": false,
+          "supported_currencies": "USD EUR GBP",
+          "header_user": true,
+          "header_cart": true,
+          "ajax_cart": true,
+          "background_toggle_2": true,
+          "bg_color_2": "#ffffff",
+          "megamenu_toggle": true
+        }
+      },
+      "template-cart": {
+        "type": "template-cart",
+        "settings": {
+          "show_policy": true,
+          "security_page": "shopify:\/\/policies\/terms-of-service",
+          "security_text": "Security policy",
+          "delivery_page": "shopify:\/\/policies\/privacy-policy",
+          "delivery_text": "Delivery policy",
+          "return_page": "shopify:\/\/policies\/refund-policy",
+          "return_text": "Return policy"
+        }
+      },
+      "index-banners": {
+        "type": "index-banners",
+        "blocks": {
+          "1570717078324": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "minimal",
+              "revert": false,
+              "item_img": "shopify:\/\/shop_images\/collection_3.png",
+              "item_title": "<p>Buy Online<\/p>",
+              "item_subtitle": "",
+              "item_text": "Limited time offers!",
+              "inverted": true,
+              "item_link": "shopify:\/\/collections\/indica-strain",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          },
+          "1570717082515": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "minimal",
+              "revert": false,
+              "item_img": "shopify:\/\/shop_images\/collection_1_a8a81592-d66e-4581-bd47-cea75423ccd1.png",
+              "item_title": "",
+              "item_subtitle": "",
+              "item_text": "",
+              "inverted": false,
+              "item_link": "shopify:\/\/collections\/sale",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          },
+          "1570717085655": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "minimal",
+              "revert": false,
+              "item_img": "shopify:\/\/shop_images\/blog_3.png",
+              "item_title": "<p>TRENDING CANNABIS PRODUCT<\/p>",
+              "item_subtitle": "",
+              "item_text": "Shop pre-rolls with our collection of indica-dominant",
+              "inverted": true,
+              "item_link": "shopify:\/\/collections\/all",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570717078324",
+          "1570717082515",
+          "1570717085655"
+        ],
+        "settings": {
+          "section_title": "",
+          "sect_view": "full_width"
+        }
+      },
+      "index-banners_demo_1": {
+        "type": "index-banners_demo_1",
+        "blocks": {
+          "1570717374761": {
+            "type": "banner_50",
+            "settings": {
+              "banner_style": "telling",
+              "item_img": "shopify:\/\/shop_images\/banner_3.png",
+              "item_subtitle": "",
+              "item_title": "Upgrade to a Fully-fledged Multifly!",
+              "item_text": "Sale",
+              "inverted": true,
+              "item_link": "shopify:\/\/collections",
+              "button_text": "SHOP",
+              "button_2_text": ""
+            }
+          },
+          "1570717389249": {
+            "type": "banner_50",
+            "settings": {
+              "banner_style": "telling",
+              "item_img": "shopify:\/\/shop_images\/banner_4.png",
+              "item_subtitle": "",
+              "item_title": "HYBRID STRAIN",
+              "item_text": "",
+              "inverted": true,
+              "item_link": "shopify:\/\/collections\/all",
+              "button_text": "SHOP",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570717374761",
+          "1570717389249"
+        ],
+        "settings": {
+          "section_title": ""
+        }
+      },
+      "index-banners_demo_2": {
+        "type": "index-banners_demo_2",
+        "blocks": {
+          "1570718620961": {
+            "type": "banner_100",
+            "settings": {
+              "banner_style": "telling",
+              "item_img": "shopify:\/\/shop_images\/banner_1.png",
+              "item_subtitle": "Many cannabis products are made from hybrid plants",
+              "item_title": "<p>SATIVA STRAIN<\/p>",
+              "item_text": "New collection",
+              "inverted": false,
+              "item_link": "shopify:\/\/collections",
+              "button_text": "Shop now",
+              "item_2_link": "shopify:\/\/collections\/all",
+              "button_2_text": "best proposition"
+            }
+          }
+        },
+        "block_order": [
+          "1570718620961"
+        ],
+        "settings": {
+          "section_title": ""
+        }
+      },
+      "index-collection-list": {
+        "type": "index-collection-list",
+        "blocks": {
+          "1570718772183": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "beauty"
+            }
+          },
+          "1570718801901": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "hybrid-strain"
+            }
+          },
+          "1570718863632": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "indica-strain"
+            }
+          },
+          "1570718882094": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "personal-care"
+            }
+          }
+        },
+        "block_order": [
+          "1570718772183",
+          "1570718801901",
+          "1570718863632",
+          "1570718882094"
+        ],
+        "settings": {
+          "section_title": "Collections",
+          "collections_layout": "boxed",
+          "style": "type_1",
+          "img_alignment": "top",
+          "show_view_all": false
+        }
+      },
+      "index-collection-list-demo": {
+        "type": "index-collection-list-demo",
+        "blocks": {
+          "1570719817259": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "sativa-strain"
+            }
+          },
+          "1570719821334": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "sale"
+            }
+          },
+          "1570719822580": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "personal-care"
+            }
+          },
+          "1570719823654": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "indica-strain"
+            }
+          }
+        },
+        "block_order": [
+          "1570719817259",
+          "1570719821334",
+          "1570719822580",
+          "1570719823654"
+        ],
+        "settings": {
+          "section_title": "Collections",
+          "collections_layout": "full_width",
+          "style": "type_2",
+          "img_alignment": "top",
+          "show_view_all": false
+        }
+      },
+      "index-products-carousel": {
+        "type": "index-products-carousel",
+        "settings": {
+          "section_title": "Popular products",
+          "section_text": "View all",
+          "section_link": "shopify:\/\/collections\/indica-strain",
+          "section_collection": "indica-strain",
+          "products_count": "8",
+          "img_size": "medium",
+          "img_alignment": "top"
+        }
+      },
+      "index-slideshow": {
+        "type": "index-slideshow",
+        "blocks": {
+          "1570720233200": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_1.png",
+              "img_alignment": "top",
+              "caption_position": "center",
+              "inverted": false,
+              "caption_txt2": "Shop pre-rolls with our collection of indica-dominant",
+              "caption_txt1": "<p>INDICA<\/p><p> STRAIN<\/p>",
+              "caption_txt3": "Shop now",
+              "caption_link": "shopify:\/\/collections\/indica-strain",
+              "caption_txt4": "best proposition",
+              "caption_link_2": "shopify:\/\/collections"
+            }
+          },
+          "1570720236302": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_2.png",
+              "img_alignment": "top",
+              "caption_position": "right",
+              "inverted": true,
+              "caption_txt2": "",
+              "caption_txt1": "<p>Many cannabis products are made from hybrid plants<\/p>",
+              "caption_txt3": "SHOP NOW",
+              "caption_link": "shopify:\/\/collections",
+              "caption_txt4": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570720233200",
+          "1570720236302"
+        ],
+        "settings": {
+          "slideshow_layout": "full_width",
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "small",
+          "slideshow_pagination": "dynamicBullets",
+          "slideshow_effect": "slide"
+        }
+      },
+      "index-slideshow-demo": {
+        "type": "index-slideshow-demo",
+        "blocks": {
+          "1570720403662": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_2.png",
+              "img_alignment": "top",
+              "caption_position": "right",
+              "inverted": false,
+              "caption_txt2": "",
+              "caption_txt1": "<p>SATIVA STRAIN<\/p>",
+              "caption_txt3": "SHOP NOW",
+              "caption_link": "shopify:\/\/collections",
+              "caption_txt4": "VIEW NOW",
+              "caption_link_2": "shopify:\/\/collections\/all"
+            }
+          },
+          "1570720547701": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_1.png",
+              "img_alignment": "top",
+              "caption_position": "center",
+              "inverted": false,
+              "caption_txt2": "Learn more about the differences between sativa.",
+              "caption_txt1": "<p>HYBRID STRAIN<\/p>",
+              "caption_txt3": "SHOP NOW",
+              "caption_link": "shopify:\/\/collections\/indica-strain",
+              "caption_txt4": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570720403662",
+          "1570720547701"
+        ],
+        "settings": {
+          "slideshow_layout": "boxed",
+          "autoplay": true,
+          "autoplay_speed": "7000",
+          "slideshow_height": "small",
+          "slideshow_pagination": "fraction",
+          "slideshow_effect": "fade"
+        }
+      },
+      "index-testimonials": {
+        "type": "index-testimonials",
+        "blocks": {
+          "1570720694537": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one.",
+              "author": "Jessica Priston"
+            }
+          },
+          "1570720742315": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "Thank you again and again! I have experienced the fastest support ever. My order arrived on my doorstep the following day. Your team is always friendly and very helpful.",
+              "author": "John Doe"
+            }
+          },
+          "1570720757398": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Hi, guys! I want to thank you for my very very quick delivery and I just love my order! Your company efficient services and customer care are second to none! I am very happy!",
+              "author": "Sam Kromstain"
+            }
+          },
+          "1570720786279": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times.",
+              "author": "Edna Barton"
+            }
+          }
+        },
+        "block_order": [
+          "1570720694537",
+          "1570720742315",
+          "1570720757398",
+          "1570720786279"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "style": "type_2",
+          "caption_text": ""
+        }
+      },
+      "index-testimonials-demo-1": {
+        "type": "index-testimonials-demo-1",
+        "blocks": {
+          "1570720825646": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Hi, guys! I'm so impressed!!! Your service is unbeaten, support staff is so friendly...very knowledgeable and professional team!",
+              "author": "John Doe"
+            }
+          },
+          "1570720836630": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "WOW!!! I have no words! It was a unique and very enjoyable experience. You have such a diverse variety of beautiful products of the highest quality plus superb service.",
+              "author": "Jessica Priston"
+            }
+          },
+          "1570720838987": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one.",
+              "author": "Sam Kromstain"
+            }
+          },
+          "1570720841492": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Thank you again and again! I have experienced the fastest support ever. My order arrived on my doorstep the following day. Your team is always friendly and very helpful.",
+              "author": "Edna Barton"
+            }
+          }
+        },
+        "block_order": [
+          "1570720825646",
+          "1570720836630",
+          "1570720838987",
+          "1570720841492"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "style": "type_1",
+          "caption_text": "Reviews from:"
+        }
+      },
+      "index-testimonials-demo-2": {
+        "type": "index-testimonials-demo-2",
+        "blocks": {
+          "1570721072578": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one.",
+              "author": "Edna Barton"
+            }
+          },
+          "1570721079893": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Thank you again and again! I have experienced the fastest support ever. My order arrived on my doorstep the following day. Your team is always friendly and very helpful.",
+              "author": "Sam Kromstain"
+            }
+          },
+          "1570721082528": {
+            "type": "quote",
+            "settings": {
+              "star": "4",
+              "quote": "Hi, guys! I want to thank you for my very very quick delivery and I just love my order! Your company efficient services and customer care are second to none!",
+              "author": "Jessica Priston"
+            }
+          },
+          "1570721084630": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times.",
+              "author": "John Doe"
+            }
+          }
+        },
+        "block_order": [
+          "1570721072578",
+          "1570721079893",
+          "1570721082528",
+          "1570721084630"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "style": "type_3",
+          "caption_text": "Reviews from:"
+        }
+      },
+      "index-image-with-text": {
+        "type": "index-image-with-text",
+        "blocks": {
+          "1570721294900": {
+            "type": "heading",
+            "settings": {
+              "text": "<p>it’s easy, fast, and secure<\/p>"
+            }
+          },
+          "1570721310079": {
+            "type": "text",
+            "settings": {
+              "text": "Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc."
+            }
+          },
+          "1570721321613": {
+            "type": "list",
+            "settings": {
+              "text": "<p>• We guarantee the highest quality<br\/>• We deliver our goods worldwide<br\/>• We work to make your life more enjoyable<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1570721294900",
+          "1570721310079",
+          "1570721321613"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/banner_4.png",
+          "layout": "right",
+          "img_size": "small",
+          "img_alignment": "center",
+          "centred": true
+        }
+      },
+      "index-featured-products": {
+        "type": "index-featured-products",
+        "settings": {
+          "section_title": "Featured products",
+          "section_collection": "sale",
+          "products_limit": "4",
+          "img_size": "280x280",
+          "img_alignment": "top"
+        }
+      },
+      "index-newsletter": {
+        "type": "index-newsletter",
+        "settings": {
+          "hide_section": false,
+          "title": "NEWSLETTER",
+          "text": "Trends, new arrivals, offers, sign-up to our newsletter and enjoy exclusive sales!",
+          "newsletter_inverted": false,
+          "background_image_toggle": false,
+          "background_toggle": true,
+          "bg_color": "#ffffff"
+        }
+      },
+      "index-blog-articles": {
+        "type": "index-blog-articles",
+        "blocks": {
+          "53311d4a-28df-4b53-a91a-487abfbd6903": {
+            "type": "image",
+            "settings": {
+              "article": "news\/health-is-one-of-most-important-things-in-our-life"
+            }
+          },
+          "c8f1f6e8-2d56-42b5-b1ad-df723688244f": {
+            "type": "image",
+            "settings": {
+              "article": "news\/national-prescription-drug-take-back-day"
+            }
+          },
+          "8cd8269d-a5f7-42fc-8089-f3d3072cbd23": {
+            "type": "image",
+            "settings": {
+              "article": "news\/drug-shortages-has-the-fda-response-made-an-impact"
+            }
+          }
+        },
+        "block_order": [
+          "53311d4a-28df-4b53-a91a-487abfbd6903",
+          "c8f1f6e8-2d56-42b5-b1ad-df723688244f",
+          "8cd8269d-a5f7-42fc-8089-f3d3072cbd23"
+        ],
+        "settings": {
+          "section_title": "",
+          "section_blog": "blog",
+          "section_blog_limit": "3",
+          "img_alignment": "top",
+          "text_position": "overlay",
+          "blog_author": true
+        }
+      },
+      "template-contact-form": {
+        "type": "template-contact-form",
+        "settings": {
+          "item_form_title": "Have a question about a product, our company, or just want to chat? Email us!",
+          "item_form_text": "We will be glad to assist you in any question and encourage you to share your ideas and improvements with us."
+        }
+      },
+      "template-account": {
+        "type": "template-account",
+        "settings": {
+          "welcome_text": "From your \"My Account\" page you have the ability to view your recent account activity and update your account information. Just select a link below."
+        }
+      },
+      "index-banners-about": {
+        "type": "index-banners-about",
+        "blocks": {
+          "1572872518824": {
+            "type": "banner_100",
+            "settings": {
+              "banner_style": "telling",
+              "item_img": "shopify:\/\/shop_images\/banner_2.png",
+              "item_title": "<p>The Highest Quality<\/p><p>of Products<\/p>",
+              "item_subtitle": "",
+              "item_text": "",
+              "inverted": true,
+              "item_link": "shopify:\/\/pages\/contact-us",
+              "button_text": "Shop now",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1572872518824"
+        ],
+        "settings": {
+          "section_title": ""
+        }
+      },
+      "index-banners-about-2": {
+        "type": "index-banners-about-2",
+        "blocks": {
+          "1572872696820": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "minimal",
+              "item_img": "shopify:\/\/shop_images\/collection_1_a8a81592-d66e-4581-bd47-cea75423ccd1.png",
+              "item_subtitle": "",
+              "item_title": "",
+              "item_text": "",
+              "inverted": false,
+              "item_link": "shopify:\/\/collections\/beauty",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          },
+          "1572872735490": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "minimal",
+              "item_img": "shopify:\/\/shop_images\/collection_3.png",
+              "item_subtitle": "",
+              "item_title": "",
+              "item_text": "",
+              "inverted": false,
+              "item_link": "shopify:\/\/collections\/hybrid-strain",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          },
+          "1572872748283": {
+            "type": "banner_33",
+            "settings": {
+              "banner_style": "telling",
+              "item_img": "shopify:\/\/shop_images\/collection_2.png",
+              "item_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+              "item_title": "Delivery to all regions",
+              "item_text": "We deliver our goods worldwide. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated.",
+              "inverted": true,
+              "item_link": "shopify:\/\/pages\/delivery-info",
+              "button_text": "",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1572872696820",
+          "1572872735490",
+          "1572872748283"
+        ],
+        "settings": {
+          "section_title": ""
+        }
+      },
+      "index-image-with-text-about": {
+        "type": "index-image-with-text-about",
+        "blocks": {
+          "1572872790802": {
+            "type": "heading",
+            "settings": {
+              "text": "<p>About us<\/p>"
+            }
+          },
+          "1572872808778": {
+            "type": "text",
+            "settings": {
+              "text": "Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc."
+            }
+          }
+        },
+        "block_order": [
+          "1572872790802",
+          "1572872808778"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/banner_4.png",
+          "layout": "right",
+          "img_size": "small",
+          "img_alignment": "top",
+          "centred": true
+        }
+      },
+      "index-single-product": {
+        "type": "index-single-product",
+        "settings": {
+          "single_product": "afghan-kush",
+          "product_view_type": "carousel-horizontal",
+          "image_alignment": "top",
+          "show_sku": false,
+          "show_short_desk": true,
+          "show_color": true,
+          "show_size": true,
+          "show_vendor": false,
+          "show_product_types": true,
+          "show_barcode": false,
+          "show_weight": false,
+          "show_tags": false,
+          "show_collections": false,
+          "show_buybutton": true,
+          "buybutton_text": "Buy in one click",
+          "show_policy": false,
+          "security_page": "shopify:\/\/policies\/privacy-policy",
+          "security_text": "Security policy",
+          "delivery_page": "shopify:\/\/pages\/delivery-info",
+          "delivery_text": "Delivery policy",
+          "return_page": "shopify:\/\/policies\/refund-policy",
+          "return_text": "Return policy",
+          "product_short_info": "<h5>Product details<\/h5>\n<p>• Smooth woven fabric<\/p>\n<p>• The kind that doesn't stretch<\/p>\n<p>• Main: 100% Rayon.<\/p>"
+        }
+      },
+      "index-lookbook": {
+        "type": "index-lookbook",
+        "blocks": {
+          "1574776576172": {
+            "type": "item",
+            "settings": {
+              "item_product": "gbd-god-bud-dried-cannabis-flower",
+              "item_x": 19,
+              "item_y": 32,
+              "item_horizontal_align": "right",
+              "item_vertical_align": "bottom"
+            }
+          },
+          "1574776608534": {
+            "type": "item",
+            "settings": {
+              "item_product": "namaste-d-bubba",
+              "item_x": 30,
+              "item_y": 60,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "bottom"
+            }
+          },
+          "1588079778241": {
+            "type": "item",
+            "settings": {
+              "item_product": "sativa",
+              "item_x": 45,
+              "item_y": 51,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "top"
+            }
+          }
+        },
+        "block_order": [
+          "1574776576172",
+          "1574776608534",
+          "1588079778241"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/banner_2.png",
+          "img_alignment": "top"
+        }
+      },
+      "index-image-with-text-overlay": {
+        "type": "index-image-with-text-overlay",
+        "blocks": {
+          "1580304252267": {
+            "type": "header_h2",
+            "settings": {
+              "title": "<p>New Collection<\/p>"
+            }
+          },
+          "1580303943077": {
+            "type": "button",
+            "settings": {
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/collections"
+            }
+          }
+        },
+        "block_order": [
+          "1580304252267",
+          "1580303943077"
+        ],
+        "settings": {
+          "hide_section": false,
+          "section_height": "large",
+          "section_view": "full_width",
+          "image": "shopify:\/\/shop_images\/banner_2.png",
+          "img_alignment": "bottom",
+          "parallax": false,
+          "img_alignment_2": "top",
+          "parallax_2": false,
+          "caption_align": "right",
+          "inverted": true,
+          "caption_bg_color": "#ffffff",
+          "caption_bg_color_opacity": 0
+        }
+      },
+      "sect_all": {
+        "type": "sect_all",
+        "settings": {}
+      },
+      "index-product_360": {
+        "type": "index-product_360",
+        "settings": {
+          "single_product": "pure-sun-cbd",
+          "heading_txt": "buy weed online right here",
+          "subheading_txt": "",
+          "description_txt": "",
+          "button_txt": "Shop now"
+        }
+      },
+      "1600344621580": {
+        "type": "index-image-with-text-overlay",
+        "blocks": {
+          "1600345832934": {
+            "type": "header_h4",
+            "settings": {
+              "subtitle": "LIVRARE LA DOMICILIU ORIUNDE IN BUCURESTI",
+              "h4_color": "#ffffff"
+            }
+          },
+          "1600345758539": {
+            "type": "header_h2",
+            "settings": {
+              "title": "<p>proaspat.delicios<\/p>",
+              "h2_color": "#ffffff"
+            }
+          },
+          "1600345774891": {
+            "type": "text",
+            "settings": {
+              "text": "LIVRAT ACASA",
+              "p_color": "#ffffff"
+            }
+          },
+          "1600345784006": {
+            "type": "button",
+            "settings": {
+              "button_label": "COMANDA ACUM",
+              "button_link": "shopify:\/\/collections"
+            }
+          }
+        },
+        "block_order": [
+          "1600345832934",
+          "1600345758539",
+          "1600345774891",
+          "1600345784006"
+        ],
+        "settings": {
+          "hide_section": false,
+          "section_height": "large",
+          "section_view": "full_width",
+          "img_alignment": "top",
+          "parallax": false,
+          "image_2": "shopify:\/\/shop_images\/test_9e513278-5f9a-410a-9f06-6fd0947bb767.jpg",
+          "img_alignment_2": "top",
+          "parallax_2": false,
+          "caption_align": "left",
+          "inverted": false,
+          "caption_bg_color": "rgba(0,0,0,0)",
+          "caption_bg_color_opacity": 0
+        }
+      },
+      "1600961574539": {
+        "type": "index-image-with-text-overlay",
+        "disabled": true,
+        "blocks": {
+          "1600963370759": {
+            "type": "header_h4",
+            "settings": {
+              "subtitle": "cu noi poti organiza",
+              "h4_color": ""
+            }
+          },
+          "1600963347631": {
+            "type": "header_h2",
+            "settings": {
+              "title": "<p>cele mai cool<\/p><p>evenimente<\/p>",
+              "h2_color": ""
+            }
+          },
+          "1600963395776": {
+            "type": "button",
+            "settings": {
+              "button_label": "vezi detalii",
+              "button_link": "shopify:\/\/collections\/hybrid-strain"
+            }
+          }
+        },
+        "block_order": [
+          "1600963370759",
+          "1600963347631",
+          "1600963395776"
+        ],
+        "settings": {
+          "hide_section": false,
+          "section_height": "medium",
+          "section_view": "full_width",
+          "image": "shopify:\/\/shop_images\/lily-banse--YHSwy6uqvk-unsplash.jpg",
+          "img_alignment": "top",
+          "parallax": false,
+          "img_alignment_2": "bottom",
+          "parallax_2": false,
+          "caption_align": "right",
+          "inverted": true,
+          "caption_bg_color": "",
+          "caption_bg_color_opacity": 0.5
+        }
+      },
+      "1600964566041": {
+        "type": "index-divider",
+        "settings": {
+          "section_view": "boxed",
+          "padding_top": 53,
+          "padding_bottom": 0,
+          "margin_top": 90,
+          "margin_bottom": 0,
+          "background_color": "",
+          "tablet_padding_top": 5,
+          "tablet_padding_bottom": 0,
+          "tablet_margin_top": 50,
+          "tablet_margin_bottom": 0
+        }
+      },
+      "1635941073d9f20fc6": {
+        "type": "index-collection-list",
+        "blocks": {
+          "1635941073d9f20fc6-0": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "mancare"
+            }
+          },
+          "1635941073d9f20fc6-1": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "lolipop"
+            }
+          },
+          "1635941073d9f20fc6-2": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "evenimente"
+            }
+          },
+          "1635941073d9f20fc6-3": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "parastase"
+            }
+          }
+        },
+        "block_order": [
+          "1635941073d9f20fc6-0",
+          "1635941073d9f20fc6-1",
+          "1635941073d9f20fc6-2",
+          "1635941073d9f20fc6-3"
+        ],
+        "settings": {
+          "section_title": "PROASPAT - DELICIOS - LIVRAT ACASA",
+          "collections_layout": "boxed",
+          "style": "type_2",
+          "img_alignment": "top",
+          "show_view_all": false
+        }
+      },
+      "16359413956cba026d": {
+        "type": "index-featured-products-tabs",
+        "blocks": {
+          "370def3e-5cf2-4a02-8bcc-e63bae0f0273": {
+            "type": "collection_tab",
+            "settings": {
+              "block_collection_title": "",
+              "block_collection": "luni"
+            }
+          },
+          "d6a74cc9-507d-4902-8fea-35353bd1bf29": {
+            "type": "collection_tab",
+            "settings": {
+              "block_collection_title": "",
+              "block_collection": "marti"
+            }
+          },
+          "08f65d0a-f851-4687-8844-1acbe4c5b152": {
+            "type": "collection_tab",
+            "settings": {
+              "block_collection_title": "",
+              "block_collection": "miercuri"
+            }
+          },
+          "a2c070a0-f50e-4165-bbcd-c189126908b7": {
+            "type": "collection_tab",
+            "settings": {
+              "block_collection_title": "",
+              "block_collection": "joi"
+            }
+          },
+          "2aff755e-f511-41f4-93f9-8eea2fae1dfe": {
+            "type": "collection_tab",
+            "settings": {
+              "block_collection_title": "",
+              "block_collection": "vineri"
+            }
+          }
+        },
+        "block_order": [
+          "370def3e-5cf2-4a02-8bcc-e63bae0f0273",
+          "d6a74cc9-507d-4902-8fea-35353bd1bf29",
+          "08f65d0a-f851-4687-8844-1acbe4c5b152",
+          "a2c070a0-f50e-4165-bbcd-c189126908b7",
+          "2aff755e-f511-41f4-93f9-8eea2fae1dfe"
+        ],
+        "settings": {
+          "section_title": "Meniul zilei",
+          "section_text": "",
+          "section_link": "",
+          "products_limit": "4",
+          "img_size": "560x560",
+          "img_alignment": "top"
+        }
+      },
+      "1635942598a0641a84": {
+        "type": "index-lookbook",
+        "disabled": true,
+        "blocks": {
+          "ccd06e82-2531-4401-9339-d23d5a3324be": {
+            "type": "item",
+            "settings": {
+              "item_product": "piept-de-pui-la-gratar",
+              "item_x": 65,
+              "item_y": 25,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "bottom"
+            }
+          },
+          "8b59320e-85a3-46dd-bc3c-f71da0381221": {
+            "type": "item",
+            "settings": {
+              "item_product": "luni-v2",
+              "item_x": 22,
+              "item_y": 50,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "bottom"
+            }
+          },
+          "51ad7aa0-f7d1-4e07-bdc0-89ddc44d6d16": {
+            "type": "item",
+            "settings": {
+              "item_product": "joi-v1",
+              "item_x": 51,
+              "item_y": 54,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "bottom"
+            }
+          },
+          "769612d7-0d23-4b5d-919b-b1a8781e2d34": {
+            "type": "item",
+            "settings": {
+              "item_product": "vineri-v2",
+              "item_x": 64,
+              "item_y": 65,
+              "item_horizontal_align": "left",
+              "item_vertical_align": "bottom"
+            }
+          }
+        },
+        "block_order": [
+          "ccd06e82-2531-4401-9339-d23d5a3324be",
+          "8b59320e-85a3-46dd-bc3c-f71da0381221",
+          "51ad7aa0-f7d1-4e07-bdc0-89ddc44d6d16",
+          "769612d7-0d23-4b5d-919b-b1a8781e2d34"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/spencer-davis-5UeN8VrCxvs-unsplash.jpg",
+          "img_alignment": "top"
+        }
+      },
+      "1635968437b9c0e22e": {
+        "type": "index-divider",
+        "settings": {
+          "section_view": "boxed",
+          "padding_top": 26,
+          "padding_bottom": 0,
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "background_color": "",
+          "tablet_padding_top": 0,
+          "tablet_padding_bottom": 0,
+          "tablet_margin_top": 0,
+          "tablet_margin_bottom": 0
+        }
+      },
+      "16359692999c05edec": {
+        "type": "index-divider",
+        "settings": {
+          "section_view": "full_width",
+          "padding_top": 45,
+          "padding_bottom": 0,
+          "margin_top": 0,
+          "margin_bottom": 0,
+          "background_color": "",
+          "tablet_padding_top": 0,
+          "tablet_padding_bottom": 0,
+          "tablet_margin_top": 0,
+          "tablet_margin_bottom": 0
+        }
+      },
+      "1636048964a24c428d": {
+        "type": "index-testimonials",
+        "blocks": {
+          "1636048964a24c428d-0": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Am comandat pentru un eveniment și a fost totul foarte bine. Mâncare buna, ambalare perfecta, livrare punctuală, exact ce trebuie! Bravo!",
+              "author": "George Popa"
+            }
+          },
+          "1636048964a24c428d-1": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Totul este excepțional. De la modul în care este distribuită mâncarea, până la gustul acesteia.\nRecomand cu încredere.",
+              "author": "Madalina Dragomir"
+            }
+          },
+          "1636048964a24c428d-2": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "O recomand din toată inima pentru că am întâlnit în această firmă Calitate! Seriozitate! Bunătate!",
+              "author": "Darius Aurelian Roman"
+            }
+          }
+        },
+        "block_order": [
+          "1636048964a24c428d-0",
+          "1636048964a24c428d-1",
+          "1636048964a24c428d-2"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "style": "type_1",
+          "caption_text": "Reviews from:"
+        }
+      }
+    },
+    "content_for_index": [
+      "1600344621580",
+      "1635968437b9c0e22e",
+      "1635941073d9f20fc6",
+      "16359413956cba026d",
+      "1600964566041",
+      "1600961574539",
+      "16359692999c05edec",
+      "1635942598a0641a84",
+      "1636048964a24c428d"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "content_for_index": []
+    }
+  }
+}
