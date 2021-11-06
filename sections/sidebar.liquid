@@ -1,6 +1,6 @@
 <div class="sidebar">
-	{% assign days_of_week = "Luni,Marți,Miercuri,Joi,Vineri" | split: ","| escape | handleize | replace: '-amp-', '-' %}
 	{% for block in section.blocks %}
+	{% assign days_of_week = "Luni,Marți,Miercuri,Joi,Vineri" | split: "," %}
 		{% case block.type %}
 			{% when 'widget_collections' %}
 				<div class="sidebar_widget sidebar_widget__collections">
@@ -15,7 +15,7 @@
 									{% if tmp_col_size > 0 %}
 										{% assign tmp_col = collection.title | escape | handleize | replace: '-amp-', '-' %}
 									{% endif %}
-									{% unless days_of_week contains tmp_col %}
+									{% unless days_of_week contains collection.title %}
 										<li>
 											<a {% if tmp_col_size > 0 and tmp_col == handle %}class="active"{% endif %} href="{{ collection.url }}">{{ collection.title | escape }}</a>
 										</li>
@@ -40,7 +40,7 @@
 										{% assign tmp_col = collection.title | escape | handleize | replace: '-amp-', '-' %}
 									{% endif %}
 			
-									{% if days_of_week contains tmp_col %}
+									{% if days_of_week contains collection.title %}
 										<li>
 											<a {% if tmp_col_size > 0 and tmp_col == handle %}class="active"{% endif %} href="{{ collection.url }}">{{ collection.title | escape }}</a>
 										</li>
