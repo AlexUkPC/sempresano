@@ -9,9 +9,9 @@
 	<div class="page_container">
       	<div class="header_banner">
           <div class="container_big">
-            <{{ section.settings.announcement_pannel_h_1 }}>{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
-            <{{ section.settings.announcement_pannel_h_2 }}>{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
-            <{{ section.settings.announcement_pannel_h_3 }}>{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
+            <{{ section.settings.announcement_pannel_h_1 }} style="font-weight: {{section.settings.announcement_pannel_text_1_weight}}; font-size: {{section.settings.announcement_pannel_text_1_font_size}}">{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
+            <{{ section.settings.announcement_pannel_h_2 }} style="font-weight: {{section.settings.announcement_pannel_text_2_weight}}; font-size: {{section.settings.announcement_pannel_text_2_font_size}}">{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
+            <{{ section.settings.announcement_pannel_h_3 }} style="font-weight: {{section.settings.announcement_pannel_text_3_weight}}; font-size: {{section.settings.announcement_pannel_text_3_font_size}}">{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
             <a class="btn btn_alt" href="#">{{ section.settings.announcement_pannel_btn_text }}</a>
           </div>
         </div>
@@ -80,10 +80,11 @@
 					{% if section.settings.megamenu_toggle %}
 						<nav id="megamenu" class="megamenu">
 							<h2 id="megamenu_mobile_toggle" style="display: none;" title="{{ 'layout.header.menu' | t }}">
+							{% assign burger_color = section.settings.burger_color %}
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect y="3" width="20" height="2" fill="#9FCC2E"/>
-									<rect y="9" width="20" height="2" fill="#9FCC2E"/>
-									<rect y="15" width="20" height="2" fill="#9FCC2E"/>
+									<rect y="3" width="20" height="2" fill="{{burger_color}}"/>
+									<rect y="9" width="20" height="2" fill="{{burger_color}}"/>
+									<rect y="15" width="20" height="2" fill="{{burger_color}}"/>
 								</svg>
 							</h2>
 
@@ -527,8 +528,8 @@
 	        "type":      "range",
 	        "id":        "logo_width",
 	        "min":       100,
-	        "max":        200,
-	        "step":       1,
+	        "max":        400,
+	        "step":       10,
 	        "unit":       "px",
 	        "label":     "Logo width",
 	        "default":   160
@@ -537,7 +538,7 @@
 	        "type":      "range",
 	        "id":        "logo_height",
 	        "min":       30,
-	        "max":        80,
+	        "max":        160,
 	        "step":       10,
 	        "unit":       "px",
 	        "label":     "Logo height",
@@ -557,6 +558,11 @@
 			"type": "text",
 			"id": "logo_slogan",
 			"label": "Logo slogan"
+		},
+		{
+			"type": "color",
+			"id": "burger_color",
+			"label": "Burger color"
 		},
 		// TOP PANNEL ===================================================================================
 		{
@@ -593,6 +599,16 @@
 		},
 		{
 			"type": "text",
+			"id": "announcement_pannel_text_1_weight",
+			"label": "Announcement pannel text 1 weight(100,200,400...)"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_1_font_size",
+			"label": "Announcement pannel text 1 fontsize(with measure unit)"
+		},
+		{
+			"type": "text",
 			"id": "announcement_pannel_text_2",
 			"label": "Announcement pannel text 2"
 		},
@@ -621,6 +637,16 @@
 		},
 		{
 			"type": "text",
+			"id": "announcement_pannel_text_2_weight",
+			"label": "Announcement pannel text 2 weight(100,200,400...)"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_2_font_size",
+			"label": "Announcement pannel text 2 fontsize(with measure unit)"
+		},
+		{
+			"type": "text",
 			"id": "announcement_pannel_text_3",
 			"label": "Announcement pannel text 3"
 		},
@@ -646,6 +672,16 @@
 					"label": "h5"
 				}
 			]
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_3_weight",
+			"label": "Announcement pannel text 3 weight(100,200,400...)"
+		},
+		{
+			"type": "text",
+			"id": "announcement_pannel_text_3_font_size",
+			"label": "Announcement pannel text 3 fontsize(with measure unit)"
 		},
 		{
 			"type": "text",

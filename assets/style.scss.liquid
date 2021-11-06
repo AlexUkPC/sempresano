@@ -4491,10 +4491,13 @@ header.megamenu_stuck {
   }
   .btn {
     padding: 10px 18px;
-    border-radius: 5px;
+    border-radius: 0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
   }
+	.btn_alt{
+		border: 1px solid #fff;
+	}
 }
 
 .header_layout_2 {
@@ -4508,7 +4511,7 @@ header.megamenu_stuck {
 			padding: 0 15px;
 			.top_text_link {
 				font-size: 16px;
-				font-weight: 500;
+				font-weight: 400;
 				color: $color_3;
 				transition: 0.5s;
 				position: relative;
@@ -4713,7 +4716,7 @@ header.megamenu_stuck {
 	.zemez_wishlist_total {
         width: 29px;
         height: 29px;
-        line-height: 28px;
+        line-height: 31px;
         background: $color_3;
         color: $color_1;
         text-align: center;
@@ -8855,6 +8858,9 @@ span{
 			font-weight: bold;
 			margin-bottom: 15px;
 		}
+		textarea{
+			border: 1px solid black;
+		}
 	}
 	.btn_return {
 		margin-top: 25px;
@@ -9527,7 +9533,7 @@ span{
 	}
 }
 
-.sidebar_widget {background: #F5F5F5;padding: 30px;}
+.sidebar_widget {padding: 30px;}
 .sidebar_widget + .sidebar_widget {margin-top: 15px;}
 
 // COPY PROTECTION ====================================================================================================
@@ -9874,5 +9880,9 @@ body {
   	color: unset !important;
 }
 .shopify-policy__container{
-  	max-width: 1200px!important;
+  	max-width: 960px!important;
+}
+.shopify-section.section.section_homepage.section_collection-list, .shopify-section.section.section_homepage.section_featured-products-tabs{
+	max-width: 960px!important;
+	margin: auto;
 }

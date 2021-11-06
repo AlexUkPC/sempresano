@@ -3,7 +3,7 @@
 	{% assign days_of_week = "Luni,Marți,Miercuri,Joi,Vineri" | split: "," %}
 		{% case block.type %}
 			{% when 'widget_collections' %}
-				<div class="sidebar_widget sidebar_widget__collections">
+				<div class="sidebar_widget sidebar_widget__collections" style="background: {{ section.settings.sidebar_color }}">
 						<h6 class="widget_header linklist_menu_title">{{ block.settings.title | escape }}</h6>
 
 						<div class="widget_content">
@@ -27,7 +27,7 @@
 					</div>
 
 			{% when 'widget_dow' %}	
-				<div class="sidebar_widget sidebar_widget__collections">
+				<div class="sidebar_widget sidebar_widget__collections" style="background: {{ section.settings.sidebar_color }}">
 						<h6 class="widget_header linklist_menu_title">{{ block.settings.title | escape }}</h6>
 
 						<div class="widget_content">
@@ -52,7 +52,7 @@
 					</div>
 
 			{% when 'widget_linklist' %}
-				<div class="sidebar_widget sidebar_widget__linklist">
+				<div class="sidebar_widget sidebar_widget__linklist" style="background: {{ section.settings.sidebar_color }}">
 						<h6 class="widget_header linklist_menu_title">{{ block.settings.title | escape }}</h6>
 
 						<div class="widget_content">
@@ -107,7 +107,7 @@
 					</div>
 
 			{% when 'widget_types' %}
-				<div class="sidebar_widget sidebar_widget__types">
+				<div class="sidebar_widget sidebar_widget__types"  style="background: {{ section.settings.sidebar_color }}">
 					<h6 class="widget_header linklist_menu_title">{{ block.settings.title | escape }}</h6>
 
 					<div class="widget_content">
@@ -129,7 +129,7 @@
 				</div>
 
 			{% when 'widget_vendors' %}
-				<div class="sidebar_widget sidebar_widget__vendors">
+				<div class="sidebar_widget sidebar_widget__vendors" style="background: {{ section.settings.sidebar_color }}">
 					<h6 class="widget_header linklist_menu_title">{{ block.settings.title | escape }}</h6>
 
 					<div class="widget_content">
@@ -164,6 +164,11 @@
 		{
 			"type": "header",
 			"content": "Sidebar widgets"
+		},
+		{
+			"type": "color",
+			"id": "sidebar_color",
+			"label": "Sidebar color"
 		}
 	],
 	"blocks": [
