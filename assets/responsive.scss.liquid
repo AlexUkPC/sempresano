@@ -974,7 +974,13 @@ $color_8: {{ settings.color_8 }};
 	}
 }
 
-
+.sidebar_widget{
+	padding: 10px;
+	h6{
+		margin-top: 0;		
+	}
+}
+.sidebar_widget + .sidebar_widget {margin-top: 15px;}
 
 // 6.9. HEADER ======================================================================================================================================
 header {
@@ -1581,7 +1587,10 @@ header {
 
 // 6.1. PAGE STYLES =================================================================================================================================
 .sidebar_small {
-	order: 3;
+	order: 1;
+}
+.sidebar_on.left-sidebar {
+	order: 2;
 }
 
 
@@ -2026,7 +2035,7 @@ header {
 .page_sidebar {
 	padding: 10px 0 30px 0;
 	.sidebar_widget__banner {max-width: 270px;}
-	.sidebar_widget + .sidebar_widget {margin-top: 30px;}
+	.sidebar_widget + .sidebar_widget {margin-top: 15px;}
 }
 
 
@@ -3192,15 +3201,18 @@ footer {
 			font-size: 14px;
 			line-height: 14px;
 			padding-left: 11px;
-			width: 25%;
+			width: 30%;
 		}
 		.product_options__sort label {
 			font-size: 14px;
 			line-height: 14px;
-			width: 40px;
+			width: 35%;
 		}
 		 .product_options__sort .select-wrapper {
-			width: 122px;
+			width: 152px;
+			select {
+				font-size: 14px;
+			}
 		}
 	}
 	.btn{
