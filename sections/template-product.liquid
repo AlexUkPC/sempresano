@@ -396,12 +396,16 @@
 							</div>
 						</div>
 						<div class="wishlist__info">
-							<a href="{{ routes.account_login_url }}" class="btn wishlist_btn wishlist_login">
-								<span>Adaugă la preferințe</span>
-
+						{% if customer.metafields.zemez_modules.wishlist contains product.handle %}
+							<a href="{{ pages[settings.zemez_wishlist_page].url }}" data-product="{{ product.handle }}" data-customer="{{ customer.id }}" data-action="remove" onclick="zemezWishlist(this); return false;" class="btn wishlist_btn wishlist_login">
+								<span>Șterge din lista de preferințe</span>
 							</a>
+						{% else %}
+							<a href="{{ pages[settings.zemez_wishlist_page].url }}" data-product="{{ product.handle }}" data-customer="{{ customer.id }}" data-action="add" onclick="zemezWishlist(this); return false;" class="btn wishlist_btn wishlist_login">
+								<span>Adaugă la preferințe</span>
+							</a>
+						{% endif %}
 						</div>
-
 					</div>
 				</form>
 
