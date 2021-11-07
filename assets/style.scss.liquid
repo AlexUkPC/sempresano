@@ -5740,8 +5740,11 @@ footer {
       color: $color_4;
       
       &.active {
-        color: $color_1;
+        color: $color_2;
       }
+			&:hover {
+				color: $color_2;
+			}
     }
     .tab_content {
       position: relative;
@@ -7384,13 +7387,16 @@ background-image: none;
 		margin-top: 15px;
 	}
 	.product_count {
+		width: 30%;
+		display: flex;
+		justify-content: flex-start;
 		font-size: 16px;
 		@media (min-width: 1300px) {
 			font-size: 18px;
 		}
 	}
 	.product_options__sort {
-		width: 30%;
+		width: 40%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -7406,7 +7412,7 @@ background-image: none;
 
 		.select-wrapper {
 			position: relative;
-			width: 130px;
+			width: 50%;
 			margin: 20px 0;
 			z-index: 0;
 			display: flex;
@@ -7414,7 +7420,7 @@ background-image: none;
 		}
 
 		.select-wrapper select {
-			width: 130px;
+
 			height: 28px;
 			padding: 0;
 			font-size: 18px;
@@ -7451,6 +7457,8 @@ background-image: none;
 	}
 	.product_view {
 		width: 30%;
+		display: flex;
+		justify-content: flex-end;
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -8973,6 +8981,9 @@ span{
 			}
 			textarea {
 				margin-top: 5px;
+			}
+			input, textarea{
+				border: 1px solid black;
 			}
 			.form-group-btn {
 				margin-top: 30px;
