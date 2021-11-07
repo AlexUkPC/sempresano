@@ -1,0 +1,111 @@
+<div>
+	<div class="row" >
+		<div class="col-12 col-sm-12 col-md-6">
+			<div class="row">
+				{% assign i = 0 %}
+				{% assign half = section.blocks.size | divided_by: 2.0 | ceil  %}
+				{% assign missing_cols = 12 | minus: section.blocks.size | divided_by: 2 %}
+				{% for i in (1..missing_cols) %}
+					<div class="col-0 col-sm-0 col-md-2 p-0" >
+					</div>
+				{% endfor %}
+				{% for block in section.blocks %}
+					{% if i == half %}
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6">
+								<div class="row">
+					{% endif %}
+					<div class="col-3 col-sm-3 col-md-2 p-0">
+						<a href="{% if block.setting.preparat_link.size > 0 %}{{block.settings.preparat_link}}{% else %} https://sempresanocatering.myshopify.com/collections/types?q={{block.settings.text | capitalize}} {% endif %}" style="text-align: center;color: {{ section.settings.text_color }};">
+							<img style="width: 100%" class="blur-up lazyload" src="{{ block.settings.preparat_pic | img_url: img_min_size, crop: block.settings.img_alignment }}" alt="{{ block.settings.image.alt }}"data-src="{{ block.settings.preparat_pic | img_url: img_size, crop: block.settings.img_alignment }}">
+							<p style="margin: {{section.settings.text_margin_top}}px 0 {{section.settings.text_margin_bottom}}px;">{{block.settings.text}}</p>
+						</a>
+					</div>
+					{% assign i=i | plus: 1 %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Tip Preparat",
+	"class": "section section_homepage section_product_type",
+	"max_blocks": 12,
+	"settings": [
+		{
+			"type":      "range",
+			"id":        "text_margin_top",
+			"min":       -30,
+			"max":        60,
+			"step":       1,
+			"unit":       "px",
+			"label":     "Text margin top",
+			"default":   5
+		},
+		{
+			"type":      "range",
+			"id":        "text_margin_bottom",
+			"min":       0,
+			"max":        60,
+			"step":       1,
+			"unit":       "px",
+			"label":     "Text margin bottom",
+			"default":   5
+		},
+		{
+			"type": "color",
+			"id": "text_color",
+			"label": "Text color"
+		}
+	],
+	"blocks": [
+		{
+			"type": "tip_preparat",
+			"name": "Tip Preparat",
+			"settings": [
+				{
+					"label": "Tip preparat",
+					"id": "text",
+					"type": "text"
+				},
+				{
+					"label": "Link tip preparat(add only if different from default)",
+					"id": "preparat_link",
+					"type": "url"
+				},
+				{
+					"type": "image_picker",
+					"id": "preparat_pic",
+					"label": "Tip preparat picture"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Tip Preparat",
+			"category": "Tip Preparat",
+			"settings": {
+
+			},
+			"blocks": [
+				{
+					"type": "tip_preparat"
+				},
+				{
+					"type": "tip_preparat"
+				},
+				{
+					"type": "tip_preparat"
+				},
+				{
+					"type": "tip_preparat"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
