@@ -12,7 +12,7 @@
             <{{ section.settings.announcement_pannel_h_1 }} style="font-weight: {{section.settings.announcement_pannel_text_1_weight}}; font-size: {{section.settings.announcement_pannel_text_1_font_size}}">{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
             <{{ section.settings.announcement_pannel_h_2 }} style="font-weight: {{section.settings.announcement_pannel_text_2_weight}}; font-size: {{section.settings.announcement_pannel_text_2_font_size}}">{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
             <{{ section.settings.announcement_pannel_h_3 }} style="font-weight: {{section.settings.announcement_pannel_text_3_weight}}; font-size: {{section.settings.announcement_pannel_text_3_font_size}}">{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
-            <a class="btn btn_alt" href="#">{{ section.settings.announcement_pannel_btn_text }}</a>
+            <a class="btn btn_alt" href="{{ section.settings.announcement_pannel_btn_link }}">{{ section.settings.announcement_pannel_btn_text }}</a>
           </div>
         </div>
 		<div class="top_pannel" {% if section.settings.background_toggle %} style="background-color: {{ section.settings.bg_color }}"{% endif %}>
@@ -20,23 +20,23 @@
 				{% if section.settings.social_menu %}
 					<ul class="social_menu">
 						{% if section.settings.social_fb.size > 0 %}
-							<li><a href="{{ section.settings.social_fb }}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="{{ section.settings.social_fb }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						{% endif %}
 
 						{% if section.settings.social_tw.size > 0 %}
-							<li><a href="{{ section.settings.social_tw }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="{{ section.settings.social_tw }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 						{% endif %}
 
 						{% if section.settings.social_inst.size > 0 %}
-							<li><a href="{{ section.settings.social_inst }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="{{ section.settings.social_inst }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 						{% endif %}
 
 						{% if section.settings.social_pin.size > 0 %}
-							<li><a href="{{ section.settings.social_pin }}"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li><a href="{{ section.settings.social_pin }}" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 						{% endif %}
 
 						{% if section.settings.social_yt.size > 0 %}
-							<li><a href="{{ section.settings.social_yt }}"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							<li><a href="{{ section.settings.social_yt }}" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 						{% endif %}
 					</ul>
 				{% endif %}
@@ -687,6 +687,11 @@
 			"type": "text",
 			"id": "announcement_pannel_btn_text",
 			"label": "Announcement pannel btn text"
+		},
+		{
+			"type": "url",
+			"id": "announcement_pannel_btn_link",
+			"label": "Announcement pannel btn link"
 		},
 		{
 			"type": "header",
