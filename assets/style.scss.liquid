@@ -136,6 +136,8 @@ $color_5: {{ settings.color_5 }};
 $color_6: {{ settings.color_6 }};
 $color_7: {{ settings.color_7 }};
 $color_8: {{ settings.color_8 }};
+$color_icon: {{ settings.color_icon }};
+$color_hover_icon: {{ settings.color_hover_icon }};
 $product_name_color: {{ settings.product_name_color }};
 $product_name_color_hover: {{ settings.product_name_color_hover }};
 $product_price_color: {{ settings.product_price_color }};
@@ -3326,13 +3328,13 @@ font-size: 18px;
 			}
 
 			svg {
-				fill: $heading_font_color;
+				fill: $color_icon;
 				vertical-align: middle;
 				@include transition(0.2s);
 			}
 
 			&:hover svg {
-				fill: $links_color_hover;
+				fill: $color_hover_icon;
 			}
 			&:hover {
 				background: transparent;
@@ -3354,14 +3356,14 @@ font-size: 18px;
 			}
 
 			svg {
-				stroke: $heading_font_color;
+				stroke: $color_icon;
 				fill: transparent;
 				vertical-align: middle;
 				@include transition(0.2s);
 			}
 
 			&:hover svg {
-				stroke: $links_color_hover;
+				stroke: $color_hover_icon;
 				fill: transparent
 			}
 			&:hover {
@@ -9248,12 +9250,12 @@ span{
 		@include transition(.3s,opacity);
 
 		svg {
-			fill: $heading_font_color;
+			fill: $color_icon;
 			vertical-align: middle;
 			@include transition(0.2s);
 		}
 		&:hover svg {
-			fill: $links_color_hover;
+			fill: $color_hover_icon;
 		}
 	}
 	.wishlist_btn {

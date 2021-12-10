@@ -360,6 +360,20 @@
         "type": "color",
         "id": "alt_button_hover_border_color",
         "label": "Button hover border color"
+      },
+      {
+        "type": "paragraph",
+        "content": "Quick View and Wishlist icon color"
+      },
+      {
+        "type": "color",
+        "id": "color_icon",
+        "label": "Normal color"
+      },
+      {
+        "type": "color",
+        "id": "color_hover_icon",
+        "label": "Hover color"
       }
     ]
   },
