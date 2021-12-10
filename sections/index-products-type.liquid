@@ -17,7 +17,7 @@
 								<div class="row">
 					{% endif %}
 					<div class="col-3 col-sm-3 col-md-2 p-0">
-						<a href="{% if block.setting.preparat_link.size > 0 %}{{block.settings.preparat_link}}{% else %} https://sempresanocatering.myshopify.com/collections/types?q={{block.settings.text | capitalize}} {% endif %}" style="text-align: center;color: {{ section.settings.text_color }};">
+						<a href="{% if block.setting.preparat_link.size > 0 %}{{block.settings.preparat_link}}{% else %} https://sempresanocatering.myshopify.com/collections/types?q={{block.settings.text | capitalize}}& {% endif %}" style="text-align: center;color: {{ section.settings.text_color }};">
 							<img style="width: 100%" class="blur-up lazyload" src="{{ block.settings.preparat_pic | img_url: img_min_size }}" alt="{{block.settings.text}}"data-src="{{ block.settings.preparat_pic | img_url: img_size }}">
 							<p style="margin: {{section.settings.text_margin_top}}px 0 {{section.settings.text_margin_bottom}}px;">{{block.settings.text}}</p>
 						</a>
