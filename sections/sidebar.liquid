@@ -120,7 +120,7 @@
 										{% assign tmp_type = product_type | escape | handleize  %}
 									{% endif %}
 
-									<li><a {% if tmp_title and tmp_title == tmp_type  %}class="active"{% endif %} href="{{ product_type | url_for_type }}">{{ product_type }}</a></li>
+									<li><a {% if tmp_title and tmp_title == tmp_type  %}class="active"{% endif %} href="{{ product_type | url_for_type }}&">{{ product_type }}</a></li>
 
 								{% endif %}
 							{% endfor %}
@@ -141,7 +141,7 @@
 									{% assign tmp_vendor = vendor | escape | handleize %}
 								{% endif %}
 
-								<li><a {% if tmp_title and tmp_title == tmp_vendor %}class="active"{% endif %} href="{{ vendor | url_for_vendor }}">{{ vendor }}</a></li>
+								<li><a {% if tmp_title and tmp_title == tmp_vendor %}class="active"{% endif %} href="{{ vendor | url_for_vendor }}&">{{ vendor }}</a></li>
 
 							{% endfor %}
 						</ul>
