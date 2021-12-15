@@ -1,6 +1,6 @@
 {%- assign productsCount = section.settings.products_limit | plus: 0 -%}
 
-<div class="container layout_boxed">
+<div class="container layout_boxed" id="{{section.settings.section_id}}">
   {% if section.blocks.size > 0 %}
     <div class="tab_content_wrapper">
       <div class="tab_navigation row justify-content-start align-items-baseline">
@@ -86,6 +86,11 @@
 	"class": "section section_homepage section_featured-products-tabs",
 	"max_blocks": 5,
 	"settings": [
+	{
+		"type": "text",
+		"id": "section_id",
+		"label": "ID"
+	},
 	{
 		"type": "text",
 		"id": "section_title",
