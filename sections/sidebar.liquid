@@ -112,7 +112,7 @@
 
 					<div class="widget_content">
 						<ul class="list_links">
-							{% for product_type in shop.types %}
+							{% for product_type in collection.all_types %}
 								{% if product_type.size > 0 %}
 
 									{% if canonical_url contains 'types' %}
