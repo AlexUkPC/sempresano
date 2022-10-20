@@ -1,0 +1,10 @@
+{% include 'tyslo-config-version' %}
+<script src="https://quickfb.tyslo.com/config.json?shop=sempresanocatering.myshopify.com&v={{tysloConfigVersion}}"
+  crossorigin="anonymous"></script>
+<script>(window.jQuery && window.$) || document.write('<script src="https://code.jquery.com/jquery-3.6.0.min.js">\x3C/script>')
+  var productCollections = {{ product.collections | json}};
+</script>
+<link rel="stylesheet" href="https://quickfb.tyslo.com/quickform.css">
+
+<div id="tyslo"></div>
+<script src="https://quickfb.tyslo.com/quickform.js" crossorigin="anonymous"></script>

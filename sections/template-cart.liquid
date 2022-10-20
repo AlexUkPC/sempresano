@@ -31,7 +31,7 @@
 											</p>
 
 											<div class="cart_item__name">
-												<span class="money">{{ item.price | money }}</span>
+												<span class="money"><div class="qb-price-item" data-id="{{ item.key }}">{{ item.price | money }}</div></span>
 											</div>
 										</td>
 
@@ -43,7 +43,7 @@
 										</td>
 
 										<td class="column_total_sum">
-											<span class="money">{{ item.line_price | money }}</span>
+											<span class="money"><div class="qb-total-line-item" data-id="{{ item.key }}">{{ item.line_price | money }}</div></span>
 										</td>
 
 										<td class="column_remove">

@@ -1,43 +1,45 @@
 {
   "current": {
-    "type_base_font": "oswald_n4",
+    "type_base_font": "open_sans_n4",
     "base_font_size": "16px",
     "base_font_color": "#6c6e71",
-    "type_custom_font": "oswald_n4",
+    "type_custom_font": "sans-serif",
     "custom_font_size": "40px",
     "custom_font_color": "#171717",
-    "type_header_font": "oswald_n5",
+    "type_header_font": "sans-serif",
     "heading_font_size": "30px",
     "heading_font_color": "#171717",
     "links_color": "#171717",
-    "links_color_hover": "#31862f",
+    "links_color_hover": "#9fcc2e",
     "product_name_color": "#6c6e71",
     "product_name_color_hover": "#078f5f",
     "product_price_color": "#171717",
     "product_price_sale_color": "#6c6e71",
     "bg_color": "#fcfcfc",
-    "border_color": "#ffffff",
+    "border_color": "rgba(0,0,0,0)",
     "color_1": "#171717",
     "color_2": "#9fcc2e",
-    "color_3": "#ffffff",
+    "color_3": "#fcfcfc",
     "color_4": "#000000",
     "color_5": "#9fa1a4",
     "color_6": "#fcfcfc",
-    "color_7": "#184817",
-    "color_8": "#184817",
-    "button_color": "#9fcc2e",
+    "color_7": "#9fcc2e",
+    "color_8": "#a0ce2d",
+    "button_color": "#a0ce2d",
     "button_text_color": "#ffffff",
-    "button_border_color": "#9fcc2e",
-    "button_hover_color": "#171717",
+    "button_border_color": "#a0ce2d",
+    "button_hover_color": "#8ebc1c",
     "button_hover_text_color": "#ffffff",
-    "button_hover_border_color": "#171717",
-    "alt_button_color": "#ffffff",
-    "alt_button_text_color": "#171717",
+    "button_hover_border_color": "rgba(0,0,0,0)",
+    "alt_button_color": "#8ebc1c",
+    "alt_button_text_color": "#ffffff",
     "alt_button_border_color": "#ffffff",
     "alt_button_hover_color": "#171717",
     "alt_button_hover_text_color": "#ffffff",
     "alt_button_hover_border_color": "#171717",
-    "favicon": "shopify:\/\/shop_images\/fav.png",
+    "color_icon": "#a0ce2d",
+    "color_hover_icon": "#8ebc1c",
+    "favicon": "shopify:\/\/shop_images\/Logo_modificat.png",
     "sidebar_toggle": true,
     "sidebar_position": "sidebar_left",
     "wishlist_toggle": true,
@@ -57,8 +59,8 @@
     "newsletter_popup_bg": "",
     "badge_toggle": true,
     "new_products_period": "10000",
-    "new_badge_color": "rgba(0,0,0,0)",
-    "new_badge_text_color": "#171717",
+    "new_badge_color": "#a0ce2d",
+    "new_badge_text_color": "#ffffff",
     "badge_new_toggle": false,
     "sale_badge_color": "rgba(0,0,0,0)",
     "sale_badge_text_color": "#d45134",
@@ -66,16 +68,16 @@
     "badge_sale_toggle": false,
     "ourstock_badge_color": "#222222",
     "badge_ourstock_toggle": false,
-    "custom_badge_1_toggle": false,
-    "custom_badge_1": "Sale",
-    "custom_badge_1_text": "Sale",
-    "custom_badge_1_color": "rgba(0,0,0,0)",
-    "custom_badge_1_text_color": "#d45134",
+    "custom_badge_1_toggle": true,
+    "custom_badge_1": "regula",
+    "custom_badge_1_text": "Precomanda 24 ore",
+    "custom_badge_1_color": "#d45134",
+    "custom_badge_1_text_color": "#ffffff",
     "custom_badge_2_toggle": false,
-    "custom_badge_2": "New",
-    "custom_badge_2_text": "New",
-    "custom_badge_2_color": "rgba(0,0,0,0)",
-    "custom_badge_2_text_color": "#171717",
+    "custom_badge_2": "Nou",
+    "custom_badge_2_text": "Nou",
+    "custom_badge_2_color": "#d45134",
+    "custom_badge_2_text_color": "#fcfcfc",
     "product_reviews": true,
     "color_option": "Color",
     "size_option": "Size",
@@ -86,19 +88,19 @@
     "instagram_post_link": "https:\/\/www.instagram.com\/p\/Be-gnDog6kd\/?utm_source=ig_web_copy_link",
     "sect_all": true,
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/s_c094fea4-fcfa-4a6f-8a96-caa746e08ac3.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
-    "checkout_body_background_color": "#e4e4e4",
+    "checkout_body_background_color": "#fcfcfc",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fcfcfc",
     "checkout_heading_font": "Helvetica Neue",
     "checkout_body_font": "Helvetica Neue",
-    "checkout_accent_color": "#31862f",
-    "checkout_button_color": "#31862f",
-    "checkout_error_color": "#ff6d6d",
+    "checkout_accent_color": "#171717",
+    "checkout_button_color": "#9fcc2e",
+    "checkout_error_color": "#d45134",
     "header_type": "2",
     "footer_type": "1",
     "newsletter_title": "Newsletter",
@@ -186,7 +188,8 @@
           "1570457434429": {
             "type": "collection_image",
             "settings": {
-              "products_collection": "",
+              "products_collection": "meniuri-copii",
+              "image": "shopify:\/\/shop_images\/Gradinite.jpg",
               "caption_inverted": true
             }
           },
@@ -250,22 +253,22 @@
           "1570618849665"
         ],
         "settings": {
-          "product_view_type": "sticky",
+          "product_view_type": "carousel",
           "image_alignment": "center",
           "show_sku": false,
           "show_short_desk": true,
           "show_color": true,
           "show_size": true,
           "show_vendor": true,
-          "show_product_types": true,
+          "show_product_types": false,
           "show_barcode": false,
           "show_weight": false,
-          "show_tags": true,
-          "show_collections": true,
+          "show_tags": false,
+          "show_collections": false,
           "show_share_buttons": true,
           "show_desc": true,
           "show_notify_button": true,
-          "show_policy": true,
+          "show_policy": false,
           "security_page": "shopify:\/\/policies\/privacy-policy",
           "security_text": "Security policy",
           "delivery_page": "shopify:\/\/policies\/refund-policy",
@@ -370,6 +373,12 @@
               "title": "Categorii"
             }
           },
+          "4bfaf72d-f316-4908-960d-a22bea214c65": {
+            "type": "widget_dow",
+            "settings": {
+              "title": "Meniu zilnic"
+            }
+          },
           "1570187000212": {
             "type": "widget_types",
             "settings": {
@@ -385,10 +394,13 @@
         },
         "block_order": [
           "59712aed-6765-4c4c-b1ba-8382e50fde3e",
+          "4bfaf72d-f316-4908-960d-a22bea214c65",
           "1570187000212",
           "1570187005516"
         ],
-        "settings": {}
+        "settings": {
+          "sidebar_color": "#ffffff"
+        }
       },
       "sidebar-blog": {
         "type": "sidebar-blog",
@@ -510,23 +522,21 @@
       "template-password": {
         "type": "template-password",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logo.png",
           "header": "We are not ready yet",
           "message": "Our store will be available soon",
-          "bg_image": "shopify:\/\/shop_images\/banner_1.png",
           "password_label": "Enter store using password:",
           "newslatter_form": true,
           "countdown_timer": true,
-          "timer_date_day": "16",
-          "timer_date_month": "10",
-          "timer_date_year": "2023",
+          "timer_date_day": "31",
+          "timer_date_month": "12",
+          "timer_date_year": "2021",
           "social_menu": true,
-          "social_fb": "https:\/\/www.facebook.com\/zemezlab\/",
-          "social_tw": "https:\/\/twitter.com\/zemezlab",
-          "social_inst": "https:\/\/www.instagram.com\/zemezlabhttps:\/\/www.instagram.com\/zemezlab",
+          "social_fb": "https:\/\/www.facebook.com\/sempresano.catering",
+          "social_tw": "",
+          "social_inst": "https:\/\/www.instagram.com\/sempresano.catering\/",
           "social_pin": "",
           "social_gplus": "",
-          "social_yt": "https:\/\/www.youtube.com\/channel\/UCPW43un8VFXHe9LxKpR_2Hg"
+          "social_yt": ""
         }
       },
       "sidebar-sort": {
@@ -751,14 +761,14 @@
       "template-contact": {
         "type": "template-contact",
         "settings": {
-          "phone_title": "CUSTOMER SERVICE",
-          "phone_text": "+09123 456 789",
-          "phone_text_info": "<p>Monday to Friday<\/p>\n<p>10am - 6.30pm (NewYork time)<\/p>",
-          "phone_title_2": "PRODUCTS & ORDERS",
-          "phone_text_2": "+09123 456 789",
-          "phone_text_info_2": "<p>Monday to Friday<\/p>\n<p>10am - 6.30pm (NewYork time)<\/p>",
-          "location_title": "STORE LOCATOR",
-          "location_text": "521 Fifth Avenue, Pelham, NY 10783"
+          "phone_title": "CALL CENTER",
+          "phone_text": "0731141396",
+          "phone_text_info": "<p>Luni - Duminică | 09:00 - 19:00<\/p>",
+          "phone_title_2": "",
+          "phone_text_2": "",
+          "phone_text_info_2": "",
+          "location_title": "EMAIL",
+          "location_text": "sempresano.comenzi@yahoo.com"
         }
       },
       "template-services": {
@@ -826,17 +836,17 @@
           "1569242264523": {
             "type": "contacts",
             "settings": {
-              "contacts_title": "Informatii clienti",
-              "contacts_address": "<p>Luni - Vineri  <strong>09:00 - 19:00<\/strong><br\/>Pentru comenzi in weekend precomanda cu 48 de ore inainte!\t<br\/><\/p>",
+              "contacts_title": "Informații clienți",
+              "contacts_address": "<p>Luni - Vineri  <strong>09:00 - 15:00<\/strong><br\/><br\/><\/p>",
               "contacts_phone": "0731141396 \/ 0765340108",
-              "contacts_email": "sempresano.comenzi@yahoo.com"
+              "contacts_email": "comenzi@sempresano.ro"
             }
           },
           "3f253167-76b6-45db-9487-ac5d4a4b9da2": {
             "type": "contacts",
             "settings": {
-              "contacts_title": "OUR GUARANTEES",
-              "contacts_address": "<p>Shipping in 3 days<\/p><p>Free returns within 14 days<\/p><p>Secure payments<\/p>",
+              "contacts_title": "Preparate delicioase",
+              "contacts_address": "<p>Furnizor al <\/p><p>Casei Regale a României<\/p><p>Sempre Sano Catering<\/p>",
               "contacts_phone": "",
               "contacts_email": ""
             }
@@ -849,9 +859,18 @@
           "3f253167-76b6-45db-9487-ac5d4a4b9da2"
         ],
         "settings": {
+          "footer_pannel_text_1": "Poftă Bună!",
+          "footer_pannel_h_1": "h2",
+          "footer_pannel_text_2": "",
+          "footer_pannel_h_2": "h4",
+          "footer_pannel_btn_text": "Comandă acum",
+          "footer_pannel_btn_url": "shopify:\/\/pages\/contact",
           "newsletter": true,
-          "newsletter_title": "Aboneaza-te...",
-          "newsletter_text": "...pentru a primi oferte speciale si a fi la curent cu cele mai noi preparate!",
+          "newsletter_title": "Abonează-te...",
+          "newsletter_text": "...pentru a primi oferte speciale și a fi la curent cu cele mai noi preparate!",
+          "copyright_toggle": true,
+          "copyright_text": "Sempre Sano Catering",
+          "copyright_link": "https:\/\/sempresanocatering.myshopify.com",
           "powered_toggle": true,
           "payment_icons_toggle": true,
           "amazon_payments": false,
@@ -874,10 +893,10 @@
           "shopify_pay": false,
           "social_menu": true,
           "social_fb": "https:\/\/www.facebook.com\/sempresano.catering",
-          "social_tw": "https:\/\/twitter.com\/",
-          "social_inst": "https:\/\/www.instagram.com\/",
-          "social_pin": "\/",
-          "social_yt": "https:\/\/www.youtube.com\/"
+          "social_tw": "",
+          "social_inst": "https:\/\/www.instagram.com\/sempresano.catering\/",
+          "social_pin": "",
+          "social_yt": ""
         }
       },
       "helper": {
@@ -887,51 +906,44 @@
       "header-2": {
         "type": "header-2",
         "blocks": {
+          "0a1ffad6-06d0-40e7-808c-25cdfed51def": {
+            "type": "link-simple",
+            "disabled": true,
+            "settings": {
+              "title": "OFERTA DE IARNĂ",
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0551\/7357\/8888\/files\/2OFERTA-DE-IARNA-2021-cu-poze.pdf?v=1639829781",
+              "badge_text": "NOU",
+              "bg_color": "#d45134"
+            }
+          },
           "1568649904694": {
             "type": "link-linklist",
+            "disabled": true,
             "settings": {
-              "title": "ACASA",
+              "title": "ACASĂ",
               "link": "\/",
               "badge_text": "",
               "bg_color": "rgba(0,0,0,0)",
-              "links": "main-menu"
+              "links": ""
             }
           },
           "b53fd1fb-5147-497c-a929-787b4264c423": {
             "type": "link-linklist",
+            "disabled": true,
             "settings": {
-              "title": "MANCARE",
-              "link": "shopify:\/\/collections\/mancare",
+              "title": "DESPRE",
+              "link": "shopify:\/\/pages\/despre",
               "badge_text": "",
               "bg_color": "#159ec9",
-              "links": "main-menu"
+              "links": ""
             }
           },
           "0c06c987-2346-4078-b933-6a8fdf8497e6": {
             "type": "link-linklist",
+            "disabled": true,
             "settings": {
-              "title": "LOLIPOP",
-              "link": "shopify:\/\/collections\/lolipop",
-              "badge_text": "",
-              "bg_color": "#159ec9",
-              "links": ""
-            }
-          },
-          "920ea9a6-415b-4fd5-8efd-6ac9fbe3e089": {
-            "type": "link-linklist",
-            "settings": {
-              "title": "EVENIMENTE",
-              "link": "shopify:\/\/collections\/evenimente",
-              "badge_text": "",
-              "bg_color": "#159ec9",
-              "links": ""
-            }
-          },
-          "d30fb77b-b40d-4a12-8a0a-9cbe686742eb": {
-            "type": "link-linklist",
-            "settings": {
-              "title": "PARASTASE",
-              "link": "shopify:\/\/collections\/parastase",
+              "title": "CLIENȚI",
+              "link": "shopify:\/\/pages\/clienți",
               "badge_text": "",
               "bg_color": "#159ec9",
               "links": ""
@@ -939,38 +951,65 @@
           },
           "17092ae3-946f-4459-9127-8ad993d007f8": {
             "type": "link-simple",
+            "disabled": true,
             "settings": {
               "title": "CONTACT",
               "link": "shopify:\/\/pages\/contact",
               "badge_text": "",
               "bg_color": "#159ec9"
             }
+          },
+          "cf9f6f01-3680-4ec0-bc2d-ab17a264c08b": {
+            "type": "link-simple",
+            "disabled": true,
+            "settings": {
+              "title": "Produse",
+              "link": "shopify:\/\/collections\/all",
+              "badge_text": "",
+              "bg_color": "#159ec9"
+            }
           }
         },
         "block_order": [
+          "0a1ffad6-06d0-40e7-808c-25cdfed51def",
           "1568649904694",
           "b53fd1fb-5147-497c-a929-787b4264c423",
           "0c06c987-2346-4078-b933-6a8fdf8497e6",
-          "920ea9a6-415b-4fd5-8efd-6ac9fbe3e089",
-          "d30fb77b-b40d-4a12-8a0a-9cbe686742eb",
-          "17092ae3-946f-4459-9127-8ad993d007f8"
+          "17092ae3-946f-4459-9127-8ad993d007f8",
+          "cf9f6f01-3680-4ec0-bc2d-ab17a264c08b"
         ],
         "settings": {
           "logo_type": "img",
-          "logo_width": 200,
+          "logo_width": 150,
           "logo_height": 80,
-          "logo_main": "shopify:\/\/shop_images\/sempresano_casa_regala_green.png",
-          "logo_slogan": "",
+          "logo_main": "shopify:\/\/shop_images\/s.png",
+          "logo_slogan": "Furnizor al Casei Regale a României",
+          "burger_color": "#a0ce2d",
+          "announcement_pannel_text_1": "SempreSano Delivery 🚚 Luni - Duminică 09:00 - 16:00                                        Telefon: 0765340108 \/ 0731141396",
+          "announcement_pannel_h_1": "h4",
+          "announcement_pannel_text_1_weight": "300",
+          "announcement_pannel_text_1_font_size": "16px",
+          "announcement_pannel_text_2": "",
+          "announcement_pannel_h_2": "h4",
+          "announcement_pannel_text_2_weight": "",
+          "announcement_pannel_text_2_font_size": "",
+          "announcement_pannel_text_3": "",
+          "announcement_pannel_h_3": "h4",
+          "announcement_pannel_text_3_weight": "",
+          "announcement_pannel_text_3_font_size": "",
+          "announcement_pannel_btn_text": "Comandă online",
+          "announcement_pannel_btn_link": "shopify:\/\/collections\/all",
           "background_toggle": true,
-          "bg_color": "#7dac0a",
-          "top_pannel_text": "catering la domiciliu - evenimente corporate - evenimente private - meniuri gradinite si scoli",
-          "top_pannel_link": "shopify:\/\/pages\/delivery-info",
+          "bg_color": "#fcfcfc",
+          "color": "#fcfcfc",
+          "top_pannel_text": "",
+          "top_pannel_link": "shopify:\/\/collections",
           "social_menu": true,
-          "social_fb": "https:\/\/www.facebook.com\/zemezlab\/",
-          "social_tw": "https:\/\/twitter.com\/zemezlab",
-          "social_inst": "https:\/\/www.instagram.com\/zemezlab",
+          "social_fb": "https:\/\/www.facebook.com\/sempresano.catering",
+          "social_tw": "",
+          "social_inst": "https:\/\/www.instagram.com\/sempresano.catering\/",
           "social_pin": "",
-          "social_yt": "https:\/\/www.youtube.com\/channel\/UCPW43un8VFXHe9LxKpR_2Hg",
+          "social_yt": "",
           "header_search": true,
           "header_search_ajax": true,
           "currency_selector": false,
@@ -979,8 +1018,8 @@
           "header_cart": true,
           "ajax_cart": true,
           "background_toggle_2": true,
-          "bg_color_2": "#ffffff",
-          "megamenu_toggle": true
+          "bg_color_2": "#fcfcfc",
+          "megamenu_toggle": false
         }
       },
       "template-cart": {
@@ -988,11 +1027,11 @@
         "settings": {
           "show_policy": true,
           "security_page": "shopify:\/\/policies\/terms-of-service",
-          "security_text": "Security policy",
+          "security_text": "Termeni de utilizare",
           "delivery_page": "shopify:\/\/policies\/privacy-policy",
-          "delivery_text": "Delivery policy",
+          "delivery_text": "Politica de livrare",
           "return_page": "shopify:\/\/policies\/refund-policy",
-          "return_text": "Return policy"
+          "return_text": "Politică de retur"
         }
       },
       "index-banners": {
@@ -1313,6 +1352,7 @@
         "blocks": {
           "1570720694537": {
             "type": "quote",
+            "disabled": true,
             "settings": {
               "star": "4",
               "quote": "Hi, my order arrived yesterday. I love it! Thank you! What a fast service...you guys are great! I wish every site was like this one.",
@@ -1321,6 +1361,7 @@
           },
           "1570720742315": {
             "type": "quote",
+            "disabled": true,
             "settings": {
               "star": "4",
               "quote": "Thank you again and again! I have experienced the fastest support ever. My order arrived on my doorstep the following day. Your team is always friendly and very helpful.",
@@ -1329,6 +1370,7 @@
           },
           "1570720757398": {
             "type": "quote",
+            "disabled": true,
             "settings": {
               "star": "5",
               "quote": "Hi, guys! I want to thank you for my very very quick delivery and I just love my order! Your company efficient services and customer care are second to none! I am very happy!",
@@ -1337,6 +1379,7 @@
           },
           "1570720786279": {
             "type": "quote",
+            "disabled": true,
             "settings": {
               "star": "4",
               "quote": "I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times.",
@@ -1351,8 +1394,8 @@
           "1570720786279"
         ],
         "settings": {
-          "title": "Testimonials",
-          "style": "type_2",
+          "title": "",
+          "style": "type_1",
           "caption_text": ""
         }
       },
@@ -1549,14 +1592,14 @@
       "template-contact-form": {
         "type": "template-contact-form",
         "settings": {
-          "item_form_title": "Have a question about a product, our company, or just want to chat? Email us!",
-          "item_form_text": "We will be glad to assist you in any question and encourage you to share your ideas and improvements with us."
+          "item_form_title": "Pentru mai multe întrebări, detalii, sugestii sau reclamații vă rugăm să ne contactați la Call Centerul Sempre Sano sau cu un email la care vă vom raspunde în cel mai scurt timp.",
+          "item_form_text": "Vom fi bucuroși să vă ajutăm în orice întrebare și să vă încurajăm să ne împărtășiți ideile și îmbunătățirile dvs."
         }
       },
       "template-account": {
         "type": "template-account",
         "settings": {
-          "welcome_text": "From your \"My Account\" page you have the ability to view your recent account activity and update your account information. Just select a link below."
+          "welcome_text": "Din pagina „Contul meu” aveți posibilitatea de a vedea activitatea recentă a contului și de a vă actualiza informațiile contului. Doar selectați un link de mai jos."
         }
       },
       "index-banners-about": {
@@ -1564,15 +1607,16 @@
         "blocks": {
           "1572872518824": {
             "type": "banner_100",
+            "disabled": true,
             "settings": {
               "banner_style": "telling",
-              "item_img": "shopify:\/\/shop_images\/banner_2.png",
               "item_title": "<p>The Highest Quality<\/p><p>of Products<\/p>",
               "item_subtitle": "",
               "item_text": "",
               "inverted": true,
               "item_link": "shopify:\/\/pages\/contact-us",
               "button_text": "Shop now",
+              "item_2_link": "",
               "button_2_text": ""
             }
           }
@@ -1589,43 +1633,46 @@
         "blocks": {
           "1572872696820": {
             "type": "banner_33",
+            "disabled": true,
             "settings": {
               "banner_style": "minimal",
-              "item_img": "shopify:\/\/shop_images\/collection_1_a8a81592-d66e-4581-bd47-cea75423ccd1.png",
               "item_subtitle": "",
               "item_title": "",
               "item_text": "",
               "inverted": false,
               "item_link": "shopify:\/\/collections\/beauty",
               "button_text": "",
+              "item_2_link": "",
               "button_2_text": ""
             }
           },
           "1572872735490": {
             "type": "banner_33",
+            "disabled": true,
             "settings": {
               "banner_style": "minimal",
-              "item_img": "shopify:\/\/shop_images\/collection_3.png",
               "item_subtitle": "",
               "item_title": "",
               "item_text": "",
               "inverted": false,
               "item_link": "shopify:\/\/collections\/hybrid-strain",
               "button_text": "",
+              "item_2_link": "",
               "button_2_text": ""
             }
           },
           "1572872748283": {
             "type": "banner_33",
+            "disabled": true,
             "settings": {
               "banner_style": "telling",
-              "item_img": "shopify:\/\/shop_images\/collection_2.png",
               "item_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
               "item_title": "Delivery to all regions",
               "item_text": "We deliver our goods worldwide. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated.",
               "inverted": true,
               "item_link": "shopify:\/\/pages\/delivery-info",
               "button_text": "",
+              "item_2_link": "",
               "button_2_text": ""
             }
           }
@@ -1645,13 +1692,13 @@
           "1572872790802": {
             "type": "heading",
             "settings": {
-              "text": "<p>About us<\/p>"
+              "text": "<p>Poveste<\/p>"
             }
           },
           "1572872808778": {
             "type": "text",
             "settings": {
-              "text": "Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc."
+              "text": "Sempre Sano – Mereu Sanatos – am ales acest nume pentru a reflecta specificul italienesc al mancarii sanatoase, echilibrate, preparate cu ingrediente naturale si dupa retete traditionale pe care noi le utilizam din belsug, dar si ideea de prietenie, de afacere de familie – o treaba de familie foarte bine facuta.  In aprilie 2011 am deschis primul punct de lucru aflat in sectorul 3 , insa dorind ca totul sa fie ca la carte , am format echipa, am testat si am inceput sa livram abia la inceputul lunii septembrie 2011 cand totul era organizat conform standardelor impuse.    La – Sempre Sano – am impartit activitatea in mai multe sectoare de piata, astfel incat in momentul de fata livram zilnic catre scoli si gradinite meniul de pranz, livram catre locuri de joaca care organizeaza petreceri, organizam evenimente private (nunta, botez, aniversari…etc.) si corporate."
             }
           }
         },
@@ -1660,8 +1707,7 @@
           "1572872808778"
         ],
         "settings": {
-          "hide_section": false,
-          "image": "shopify:\/\/shop_images\/banner_4.png",
+          "hide_section": true,
           "layout": "right",
           "img_size": "small",
           "img_alignment": "top",
@@ -1793,32 +1839,33 @@
       },
       "1600344621580": {
         "type": "index-image-with-text-overlay",
+        "disabled": true,
         "blocks": {
           "1600345832934": {
             "type": "header_h4",
             "settings": {
-              "subtitle": "LIVRARE LA DOMICILIU ORIUNDE IN BUCURESTI",
-              "h4_color": "#ffffff"
+              "subtitle": "LIVRARE LA DOMICILIU ORIUNDE ÎN BUCUREȘTI",
+              "h4_color": "#313131"
             }
           },
           "1600345758539": {
             "type": "header_h2",
             "settings": {
-              "title": "<p>proaspat.delicios<\/p>",
-              "h2_color": "#ffffff"
+              "title": "<p>proaspăt.delicios<\/p>",
+              "h2_color": "#313131"
             }
           },
           "1600345774891": {
             "type": "text",
             "settings": {
-              "text": "LIVRAT ACASA",
-              "p_color": "#ffffff"
+              "text": "PREPARATELE SEMPRE SANO LA TINE ACASĂ",
+              "p_color": "#a0ce2d"
             }
           },
           "1600345784006": {
             "type": "button",
             "settings": {
-              "button_label": "COMANDA ACUM",
+              "button_label": "COMANDĂ ACUM",
               "button_link": "shopify:\/\/collections"
             }
           }
@@ -1835,7 +1882,7 @@
           "section_view": "full_width",
           "img_alignment": "top",
           "parallax": false,
-          "image_2": "shopify:\/\/shop_images\/test_9e513278-5f9a-410a-9f06-6fd0947bb767.jpg",
+          "image_2": "shopify:\/\/shop_images\/banner_aff_-_Copywq.jpg",
           "img_alignment_2": "top",
           "parallax_2": false,
           "caption_align": "left",
@@ -1908,6 +1955,31 @@
       "1635941073d9f20fc6": {
         "type": "index-collection-list",
         "blocks": {
+          "ccf91c1d-fe75-454a-a40d-58e96aef6dc7": {
+            "type": "featured_collection",
+            "disabled": true,
+            "settings": {
+              "item_collection": "oferta-de-pasti"
+            }
+          },
+          "619789ac-e9bb-4ae2-8ad2-dfeedcb95ca2": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "meniul-zilei"
+            }
+          },
+          "24dc9804-5e6e-4e30-a292-c69a4b25ee5d": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "platouri"
+            }
+          },
+          "ee55e838-c52e-47a0-ade4-572516f2b652": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "preparate"
+            }
+          },
           "1635941073d9f20fc6-0": {
             "type": "featured_collection",
             "settings": {
@@ -1918,6 +1990,12 @@
             "type": "featured_collection",
             "settings": {
               "item_collection": "lolipop"
+            }
+          },
+          "0232ea35-d04c-4e85-90c3-15292e38426e": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "meniuri-copii"
             }
           },
           "1635941073d9f20fc6-2": {
@@ -1931,20 +2009,41 @@
             "settings": {
               "item_collection": "parastase"
             }
+          },
+          "4734c410-4c7b-4507-b656-0091fe6281b8": {
+            "type": "featured_collection",
+            "disabled": true,
+            "settings": {
+              "item_collection": "infinity"
+            }
+          },
+          "351b3819-2b62-4afd-b949-dc769d8b88bf": {
+            "type": "featured_collection",
+            "settings": {
+              "item_collection": "wraps"
+            }
           }
         },
         "block_order": [
+          "ccf91c1d-fe75-454a-a40d-58e96aef6dc7",
+          "619789ac-e9bb-4ae2-8ad2-dfeedcb95ca2",
+          "24dc9804-5e6e-4e30-a292-c69a4b25ee5d",
+          "ee55e838-c52e-47a0-ade4-572516f2b652",
           "1635941073d9f20fc6-0",
           "1635941073d9f20fc6-1",
+          "0232ea35-d04c-4e85-90c3-15292e38426e",
           "1635941073d9f20fc6-2",
-          "1635941073d9f20fc6-3"
+          "1635941073d9f20fc6-3",
+          "4734c410-4c7b-4507-b656-0091fe6281b8",
+          "351b3819-2b62-4afd-b949-dc769d8b88bf"
         ],
         "settings": {
-          "section_title": "PROASPAT - DELICIOS - LIVRAT ACASA",
+          "section_title": "PROASPĂT - DELICIOS - LIVRAT ACASĂ",
           "collections_layout": "boxed",
           "style": "type_2",
           "img_alignment": "top",
-          "show_view_all": false
+          "show_view_all": false,
+          "light_font": false
         }
       },
       "16359413956cba026d": {
@@ -1994,9 +2093,10 @@
           "2aff755e-f511-41f4-93f9-8eea2fae1dfe"
         ],
         "settings": {
+          "section_id": "meniul_zilei",
           "section_title": "Meniul zilei",
           "section_text": "",
-          "section_link": "",
+          "section_link": "shopify:\/\/collections\/meniul-zilei",
           "products_limit": "4",
           "img_size": "560x560",
           "img_alignment": "top"
@@ -2019,7 +2119,7 @@
           "8b59320e-85a3-46dd-bc3c-f71da0381221": {
             "type": "item",
             "settings": {
-              "item_product": "luni-v2",
+              "item_product": "luni-varianta-2",
               "item_x": 22,
               "item_y": 50,
               "item_horizontal_align": "left",
@@ -2029,7 +2129,7 @@
           "51ad7aa0-f7d1-4e07-bdc0-89ddc44d6d16": {
             "type": "item",
             "settings": {
-              "item_product": "joi-v1",
+              "item_product": "joi-varianta-1",
               "item_x": 51,
               "item_y": 54,
               "item_horizontal_align": "left",
@@ -2039,7 +2139,7 @@
           "769612d7-0d23-4b5d-919b-b1a8781e2d34": {
             "type": "item",
             "settings": {
-              "item_product": "vineri-v2",
+              "item_product": "vineri-varianta-2",
               "item_x": 64,
               "item_y": 65,
               "item_horizontal_align": "left",
@@ -2115,21 +2215,451 @@
               "quote": "O recomand din toată inima pentru că am întâlnit în această firmă Calitate! Seriozitate! Bunătate!",
               "author": "Darius Aurelian Roman"
             }
+          },
+          "f3e4e9c9-9396-423b-97ae-d4a3a807942c": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Buna ziua, La multi ani!\nAs vrea sa va multumesc pentru preparatele de Anul Nou, gatite cu grija! Au fost foarte gustoase si bune. Felicitari!\n\nAn Nou cu realizari si lucruri frumoase in viata dvs. !",
+              "author": "Luminita Scarlatescu"
+            }
+          },
+          "892ccc78-7c7a-42b3-8a6c-76d6b71f1e80": {
+            "type": "quote",
+            "settings": {
+              "star": "5",
+              "quote": "Suntem mai bogati de cand v-am cunoscut! Sunteti minunati! Aveti toata aprecierea noastra, admiratia si respectul! Va iubim si va dorim un 2022 grozav! ❤❤❤",
+              "author": "Anonim"
+            }
           }
         },
         "block_order": [
           "1636048964a24c428d-0",
           "1636048964a24c428d-1",
-          "1636048964a24c428d-2"
+          "1636048964a24c428d-2",
+          "f3e4e9c9-9396-423b-97ae-d4a3a807942c",
+          "892ccc78-7c7a-42b3-8a6c-76d6b71f1e80"
         ],
         "settings": {
           "title": "Testimonials",
           "style": "type_1",
-          "caption_text": "Reviews from:"
+          "caption_text": "Recenzii de la:"
+        }
+      },
+      "1639204464f2e76abe": {
+        "type": "index-slideshow",
+        "blocks": {
+          "1639204464f2e76abe-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sempresano.ro.png",
+              "img_alignment": "top",
+              "caption_position": "left",
+              "inverted": true,
+              "caption_txt2": "LIVRARE LA DOMICILIU ORIUNDE ÎN BUCUREȘTI",
+              "caption_txt1": "<p>MUCENICI GUSTOȘI PENTRU POFTICIOȘI!<\/p>",
+              "caption_txt3": "COMANDĂ ACUM",
+              "caption_link": "shopify:\/\/products\/mucenici",
+              "caption_txt4": "VIEW NOW",
+              "caption_link_2": ""
+            }
+          },
+          "86f2b891-b959-40ce-a666-4a1dabf1bdbd": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5.jpg",
+              "img_alignment": "top",
+              "caption_position": "left",
+              "inverted": true,
+              "caption_txt2": "LIVRARE LA DOMICILIU ORIUNDE ÎN BUCUREȘTI",
+              "caption_txt1": "<p>Platou coaste<\/p>",
+              "caption_txt3": "COMANDĂ ACUM",
+              "caption_link": "shopify:\/\/products\/platou-coaste",
+              "caption_txt4": "VIEW NOW",
+              "caption_link_2": ""
+            }
+          },
+          "1639204464f2e76abe-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/03.04.2022_-_banner_site_Oferta_de_Paste_-_varianta_3.png",
+              "img_alignment": "top",
+              "caption_position": "left",
+              "inverted": true,
+              "caption_txt2": "",
+              "caption_txt1": "",
+              "caption_txt3": "COMANDĂ ACUM",
+              "caption_link": "shopify:\/\/collections\/oferta-de-pasti",
+              "caption_txt4": "",
+              "caption_link_2": ""
+            }
+          },
+          "d6ebfa8f-2cbf-490b-9027-ba72e437a2bb": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cats_a60fcdd2-d04c-4fc1-8bbc-d88f3d24f303.jpg",
+              "img_alignment": "top",
+              "caption_position": "center",
+              "inverted": false,
+              "caption_txt2": "",
+              "caption_txt1": "",
+              "caption_txt3": "COMANDĂ ACUM",
+              "caption_link": "shopify:\/\/collections\/platouri",
+              "caption_txt4": "COMANDĂ ACUM",
+              "caption_link_2": "shopify:\/\/collections\/meniul-zilei"
+            }
+          }
+        },
+        "block_order": [
+          "1639204464f2e76abe-1",
+          "86f2b891-b959-40ce-a666-4a1dabf1bdbd",
+          "1639204464f2e76abe-0",
+          "d6ebfa8f-2cbf-490b-9027-ba72e437a2bb"
+        ],
+        "settings": {
+          "slideshow_layout": "full_width",
+          "autoplay": true,
+          "autoplay_speed": "5000",
+          "slideshow_height": "medium",
+          "slideshow_pagination": "fraction",
+          "slideshow_effect": "slide"
+        }
+      },
+      "index-products-type": {
+        "type": "index-products-type",
+        "blocks": {
+          "7f89b1f8-2f68-48c9-be70-ce8e9e54f92f": {
+            "type": "tip_preparat",
+            "disabled": true,
+            "settings": {
+              "text": "OFERTA PASTI",
+              "preparat_link": "shopify:\/\/collections\/oferta-de-pasti",
+              "preparat_link_home": "shopify:\/\/collections\/oferta-de-pasti",
+              "preparat_pic": "shopify:\/\/shop_images\/23.03.2022_-_Cosul_de_Paste.png"
+            }
+          },
+          "d0591b6b-334c-4231-9aa4-c9b1cfa8ec94": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "MENIUL ZILEI",
+              "preparat_link": "shopify:\/\/collections\/meniul-zilei",
+              "preparat_link_home": "#meniul_zilei",
+              "preparat_pic": "shopify:\/\/shop_images\/meniul_zilei.png"
+            }
+          },
+          "a4b37bba-129f-41a4-8ccb-d91f67535c97": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "PLATOURI",
+              "preparat_link": "shopify:\/\/collections\/platouri",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/platouri.png"
+            }
+          },
+          "5a94af70-839f-42f8-a6cc-f989c6af97d2": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "PREPARATE",
+              "preparat_link": "shopify:\/\/collections\/preparate",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/preparate.png"
+            }
+          },
+          "cf38d44d-c0ad-4acd-82a4-fb4d6a998d45": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "CATERING DOMICILIU",
+              "preparat_link": "shopify:\/\/collections\/mancare",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/catering_domiciliu.png"
+            }
+          },
+          "ae04165a-eff9-455d-8ca6-dbdf36dbd54c": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "LOLYPOP DELICE",
+              "preparat_link": "shopify:\/\/collections\/lolipop",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/lolypop_delice.png"
+            }
+          },
+          "b5b931f6-7738-4103-b27c-3e48fd758512": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "MENIURI COPII",
+              "preparat_link": "shopify:\/\/collections\/meniuri-copii",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/meniuri_copii.png"
+            }
+          },
+          "53d1fcce-3ab5-4df5-9bd5-dccec88c1323": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "GARDEN PARTY",
+              "preparat_link": "shopify:\/\/collections\/evenimente",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/garden_party.png"
+            }
+          },
+          "e0fd79bb-4142-421d-9bc6-a16016d1e58b": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "PARASTASE",
+              "preparat_link": "shopify:\/\/collections\/parastase",
+              "preparat_link_home": "#",
+              "preparat_pic": "shopify:\/\/shop_images\/PARASTAS.png"
+            }
+          },
+          "fa5b1be4-d5ca-4b4b-8ca3-23698cb8cd5c": {
+            "type": "tip_preparat",
+            "disabled": true,
+            "settings": {
+              "text": "INFINITY",
+              "preparat_link": "shopify:\/\/collections\/infinity",
+              "preparat_link_home": "shopify:\/\/collections\/infinity",
+              "preparat_pic": "shopify:\/\/shop_images\/Infinity_Logo_f429900c-4dca-4f27-b2de-1223b1060119.png"
+            }
+          },
+          "1fa45820-9043-4645-9fec-578e38b06647": {
+            "type": "tip_preparat",
+            "settings": {
+              "text": "WRAP'S",
+              "preparat_link": "shopify:\/\/collections\/wraps",
+              "preparat_link_home": "shopify:\/\/collections\/wraps",
+              "preparat_pic": "shopify:\/\/shop_images\/Wrap_-_iconita_83e220f0-6849-4e42-803c-1de2adee893b.png"
+            }
+          }
+        },
+        "block_order": [
+          "7f89b1f8-2f68-48c9-be70-ce8e9e54f92f",
+          "d0591b6b-334c-4231-9aa4-c9b1cfa8ec94",
+          "a4b37bba-129f-41a4-8ccb-d91f67535c97",
+          "5a94af70-839f-42f8-a6cc-f989c6af97d2",
+          "cf38d44d-c0ad-4acd-82a4-fb4d6a998d45",
+          "ae04165a-eff9-455d-8ca6-dbdf36dbd54c",
+          "b5b931f6-7738-4103-b27c-3e48fd758512",
+          "53d1fcce-3ab5-4df5-9bd5-dccec88c1323",
+          "e0fd79bb-4142-421d-9bc6-a16016d1e58b",
+          "fa5b1be4-d5ca-4b4b-8ca3-23698cb8cd5c",
+          "1fa45820-9043-4645-9fec-578e38b06647"
+        ],
+        "settings": {
+          "text_margin_top": 0,
+          "text_margin_bottom": 38,
+          "text_color": "#313131",
+          "bold": true
+        }
+      },
+      "163968587283ed5250": {
+        "type": "index-info-strip",
+        "disabled": true,
+        "settings": {
+          "hide_section": false,
+          "title": "dfgdfgdfgd",
+          "subtitle": "gdfgdfgdf",
+          "button_text": "gdfgdf",
+          "button_link": "shopify:\/\/policies\/legal-notice",
+          "background_toggle": true,
+          "bg_color": "#292929"
+        }
+      },
+      "index-image-with-text-2rows": {
+        "type": "index-image-with-text-2rows",
+        "blocks": {
+          "4d19f7aa-9800-41ae-86af-ff1daf52415e": {
+            "type": "heading",
+            "settings": {
+              "text": "<p>POVESTE<\/p>"
+            }
+          },
+          "d1a747ea-b670-4353-a829-63e919330617": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Sempre Sano – Mereu Sanatos – am ales acest nume pentru a reflecta specificul italienesc al mancarii sanatoase, echilibrate, preparate cu ingrediente naturale si dupa retete traditionale pe care noi le utilizam din belsug, dar si ideea de prietenie, de afacere de familie – o treaba de familie foarte bine facuta.<\/p>"
+            }
+          },
+          "2a4f4642-accc-4230-afaf-b8c8352a9757": {
+            "type": "text",
+            "settings": {
+              "text": "<p>In aprilie 2011 am deschis primul punct de lucru aflat in sectorul 3 , insa dorind ca totul sa fie ca la carte , am format echipa, am testat si am inceput sa livram abia la inceputul lunii septembrie 2011 cand totul era organizat conform standardelor impuse.<\/p>"
+            }
+          },
+          "7c9cda22-3dc1-4c8a-b582-c919a31de048": {
+            "type": "text",
+            "settings": {
+              "text": "<p>La – Sempre Sano – am impartit activitatea in mai multe sectoare de piata, astfel incat in momentul de fata livram zilnic catre scoli si gradinite meniul de pranz, livram catre locuri de joaca care organizeaza petreceri, organizam evenimente private (nunta, botez, aniversari…etc.) si corporate.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "4d19f7aa-9800-41ae-86af-ff1daf52415e",
+          "d1a747ea-b670-4353-a829-63e919330617",
+          "2a4f4642-accc-4230-afaf-b8c8352a9757",
+          "7c9cda22-3dc1-4c8a-b582-c919a31de048"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/poza_despre_green.jpg",
+          "layout": "left",
+          "img_size": "small",
+          "img_alignment": "top",
+          "centred": false
+        }
+      },
+      "index-client-list": {
+        "type": "index-client-list",
+        "blocks": {
+          "26093c6f-0f6a-4724-9611-12cfe34b24fd": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Alexandrion",
+              "photo_client": "shopify:\/\/shop_images\/alexandrion_ss.jpg"
+            }
+          },
+          "84953f08-6310-45cc-a1c9-a20ed49c0a13": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Grădina Botanică",
+              "photo_client": "shopify:\/\/shop_images\/bradinabot_ss_acad8777-d2af-43f1-92a3-371b38216023.jpg"
+            }
+          },
+          "2bbe9455-6055-413d-88b1-37e4937687a4": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Depanero",
+              "photo_client": "shopify:\/\/shop_images\/depanero_ss.jpg"
+            }
+          },
+          "8e184004-eb41-4926-98af-f5f330b1ba9a": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "eMAG",
+              "photo_client": "shopify:\/\/shop_images\/emag_ss.jpg"
+            }
+          },
+          "18b32367-f795-4d91-9c3c-97f52ace40fc": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Franke",
+              "photo_client": "shopify:\/\/shop_images\/franke.jpg"
+            }
+          },
+          "28813cae-6687-45f2-a771-1d7a2a27c427": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Federația Română de Baschet",
+              "photo_client": "shopify:\/\/shop_images\/frbasket_ss.jpg"
+            }
+          },
+          "7518177b-35cd-4308-b89a-4a645f083b6e": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Fundația Calaea Victoriei",
+              "photo_client": "shopify:\/\/shop_images\/fundatiacv_ss.jpg"
+            }
+          },
+          "8cfbe5f5-2788-4a66-8382-ac54abd7aa9e": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Jockey Club",
+              "photo_client": "shopify:\/\/shop_images\/jockey_ss.jpg"
+            }
+          },
+          "e3b541da-c976-49c4-97db-5ce2df3838d4": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Nexus",
+              "photo_client": "shopify:\/\/shop_images\/nexus_ss.jpg"
+            }
+          },
+          "345e5fbc-19c2-44b4-887c-61fde02b0b30": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Oracle",
+              "photo_client": "shopify:\/\/shop_images\/oracle_ss.jpg"
+            }
+          },
+          "bd8be18a-0ac6-44f2-bded-5c925b33909e": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "Institutul SPER",
+              "photo_client": "shopify:\/\/shop_images\/sper_ss.jpg"
+            }
+          },
+          "b388f79c-f226-444f-9bb7-361b5bf3a9a4": {
+            "type": "featured_client",
+            "settings": {
+              "item_client": "UP - Cheque Dejeuner",
+              "photo_client": "shopify:\/\/shop_images\/up_ss.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "26093c6f-0f6a-4724-9611-12cfe34b24fd",
+          "84953f08-6310-45cc-a1c9-a20ed49c0a13",
+          "2bbe9455-6055-413d-88b1-37e4937687a4",
+          "8e184004-eb41-4926-98af-f5f330b1ba9a",
+          "18b32367-f795-4d91-9c3c-97f52ace40fc",
+          "28813cae-6687-45f2-a771-1d7a2a27c427",
+          "7518177b-35cd-4308-b89a-4a645f083b6e",
+          "8cfbe5f5-2788-4a66-8382-ac54abd7aa9e",
+          "e3b541da-c976-49c4-97db-5ce2df3838d4",
+          "345e5fbc-19c2-44b4-887c-61fde02b0b30",
+          "bd8be18a-0ac6-44f2-bded-5c925b33909e",
+          "b388f79c-f226-444f-9bb7-361b5bf3a9a4"
+        ],
+        "settings": {
+          "section_title": "ClientI",
+          "clients_layout": "boxed",
+          "style": "type_1",
+          "img_size": "small",
+          "img_alignment": "top",
+          "show_view_all": false,
+          "light_font": false
+        }
+      },
+      "1639830491f77a6fb3": {
+        "type": "index-image-with-text-2rows",
+        "blocks": {
+          "1639830491f77a6fb3-0": {
+            "type": "heading",
+            "settings": {
+              "text": "<p><strong>COMUNICAT<\/strong><\/p>"
+            }
+          },
+          "1639830491f77a6fb3-1": {
+            "type": "subheading",
+            "settings": {
+              "text": "10 mai 2020"
+            }
+          },
+          "1639830491f77a6fb3-2": {
+            "type": "text",
+            "settings": {
+              "text": "<p>După cum știți, pentru noi românii, 10 mai -”Ziua Regalităţii”, marchează trei momente importante: începutul domniei lui Carol I, Independenţa de stat şi încoronarea primului rege al ţării. Trei motive de bucurie, de sărbătoare, trei motive pentru a ne aduna și a retrăi anii de glorie ai țării noastre. <\/p><p>De când Majestatea Sa Regele Mihai I al României a trecut în veșnicie această zi a fost și una de evocare a personalității sale speciale, care a marcat și cotinuă să marcheze istoria modernă a României. Practic 10 mai a fost, este și va fi mereu o zi de evocare a unei Românii de care tuturor ne e dor, a unei Românii pe care o purtăm în gând. O zi de bucurie! Și cum românii când sunt voioși nu uită să fie buni, și când sunt voioși și buni ei sărbătoresc, de cele mai multe ori cu o masă bună, an de an Casa Regală a României oferea cu această ocazie un Garden Party. <\/p><p>Anul acesta 2020 este un an aparte și el necesită niște măsuri aparte. Garden Party-ul nu va mai avea loc, din motive evidente pentru toată lumea, dar momentul nu putea rămâne nemarcat. Sempre Sano Catering (www.sempresano.ro), furnizor al Casei Regale a României în data de 10 mai , va asigura 70 portii de mâncare pentru cei din linia întâi -Centrul Național de Conducere si Coordonare a Interventiei Ciolpani, și la statuia Regelui Mihai va fi depus un aranjament floral din partea Liceului Pedagogic Ortodox Anastasia Popescu. <\/p><p>În felul acesta pe 10 mai îi onorăm atât pe cei care s-au ocupat de trecutul țării noastre cât și pe cei care veghează la viitorul ei. <\/p><p>Cu consideratie, <\/p><p>Mihaela Dumitru, Sempre Sano Catering<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1639830491f77a6fb3-0",
+          "1639830491f77a6fb3-1",
+          "1639830491f77a6fb3-2"
+        ],
+        "settings": {
+          "hide_section": false,
+          "image": "shopify:\/\/shop_images\/poza_comunicat.jpg",
+          "layout": "left",
+          "img_size": "small",
+          "img_alignment": "top",
+          "centred": true
         }
       }
     },
     "content_for_index": [
+      "1639204464f2e76abe",
       "1600344621580",
       "1635968437b9c0e22e",
       "1635941073d9f20fc6",
@@ -2138,7 +2668,9 @@
       "1600961574539",
       "16359692999c05edec",
       "1635942598a0641a84",
-      "1636048964a24c428d"
+      "1636048964a24c428d",
+      "163968587283ed5250",
+      "1639830491f77a6fb3"
     ]
   },
   "presets": {

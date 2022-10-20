@@ -3,7 +3,7 @@
     "header": {
       "menu": "Meniu",
       "currency": "Monedă",
-      "my_account": "Cont",
+      "my_account": "Contul meu",
       "logout": "Delogare",
       "search": "Caută preparat",
       "search_caption": "Cauți un produs anume?",
@@ -83,7 +83,7 @@
       "new_old": "Cele mai noi"
     },
     "wishlist": {
-      "wishlist": "Preferințe",
+      "wishlist": "Favorite",
       "wishlist_items": "produs(e)",
       "add_to_wishlist": "Adaugă la preferințe",
       "added_to_wishlist": "Produsul a fost adăugat în lista de preferințe",
@@ -274,7 +274,7 @@
       "total_weight": "Greutate totală",
       "total_price": "Preț total",
       "add_note": "Adaugă informații suplimentare",
-      "currency_notification": "{{ shop_name }} process all orders in {{ shop_currency }}. Shipping & taxes calculated at checkout.",
+      "currency_notification": "{{ shop_name }} procesează toate comenzile în {{ shop_currency }}. Livrarea și taxele sunt calculate la finalizara comenzii.",
       "continue_shopping": "Continuă cumpărăturile",
       "proceed_to_checkout": "Mergi la checkout",
       "product_added": "Produs adăugat cu succes în coșul de cumpărături!",
@@ -689,6 +689,9 @@
         "klarna_pay_now_label": "Plătește acum cu Klarna",
         "bancontact_label": "Bancontact"
       }
+    },
+    "errors": {
+      "reset_password_html": "Această adresă de e-mail este deja asociată unui cont. Dacă acest cont este al dumneavoastră, vă puteți <a href=\"\/account\/login?return_url=%2Faccount\">reseta parola<\/a>."
     }
   }
 }

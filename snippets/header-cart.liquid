@@ -30,7 +30,7 @@
 								<img class="item_img" src="{{ item | img_url: '140x140', crop: 'center' }}"  alt="{{ item.title | escape }}" />
 								<div class="item_desc">
 									<a class="product_title" href="{{ item.product.url }}">{{ item.product.title | truncate:25 }}</a>
-									<span class="money">{{ item.price | money }}</span>
+									<span class="money"><div class="qb-price-item" data-id="{{ item.key }}">{{ item.price | money }}</div></span>
 									<p class="product_quantity">Cantitate: {{ item.quantity }}</p>
 									<a class="item_remove_btn" href="#" item-id="{{ item.id }}">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
