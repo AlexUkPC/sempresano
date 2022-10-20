@@ -3,7 +3,7 @@
       <div class="container">
         <{{section.settings.footer_pannel_h_1}}>{{ section.settings.footer_pannel_text_1 }}</{{section.settings.footer_pannel_h_1}}>
         <{{section.settings.footer_pannel_h_2}}>{{ section.settings.footer_pannel_text_2 }}</{{section.settings.footer_pannel_h_2}}>
-      	<a class="btn" href="#">{{ section.settings.footer_pannel_btn_text }}</a>
+      	<a class="btn" href="{{ section.settings.footer_pannel_btn_url }}">{{ section.settings.footer_pannel_btn_text }}</a>
       </div>  
     </div>
   
@@ -239,6 +239,11 @@
 			"type": "text",
 			"id": "footer_pannel_btn_text",
 			"label": "Footer pannel btn text"
+		},
+		{
+			"type": "url",
+			"id": "footer_pannel_btn_url",
+			"label": "Footer pannel btn url"
 		},
 		{
 			"type": "header",

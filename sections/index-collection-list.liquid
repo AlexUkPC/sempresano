@@ -27,7 +27,7 @@
 				{% assign collection_image_src = block.settings.image %}
 			{% endif %}
 		
-			<div class="col-sm-6 p-0 {{ section.settings.style }}">
+			<div class="col-md-3 col-sm-6 p-0 {{ section.settings.style }}">
 				{% include 'collection-listing-item' with item_size, img_alignment, collection_image, collection_image_src %}
 			</div>
 
@@ -107,6 +107,11 @@
 			"type": "checkbox",
 			"id": "show_view_all",
 			"label": "Show 'View all' button"
+		},
+		{
+			"type": "checkbox",
+			"id": "light_font",
+			"label": "Light font"
 		}
 	],
 	"blocks": [

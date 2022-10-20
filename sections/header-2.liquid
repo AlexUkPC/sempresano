@@ -12,12 +12,7 @@
             <{{ section.settings.announcement_pannel_h_1 }} style="font-weight: {{section.settings.announcement_pannel_text_1_weight}}; font-size: {{section.settings.announcement_pannel_text_1_font_size}}">{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
             <{{ section.settings.announcement_pannel_h_2 }} style="font-weight: {{section.settings.announcement_pannel_text_2_weight}}; font-size: {{section.settings.announcement_pannel_text_2_font_size}}">{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
             <{{ section.settings.announcement_pannel_h_3 }} style="font-weight: {{section.settings.announcement_pannel_text_3_weight}}; font-size: {{section.settings.announcement_pannel_text_3_font_size}}">{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
-            <a class="btn btn_alt" href="{{ section.settings.announcement_pannel_btn_link }}">{{ section.settings.announcement_pannel_btn_text }}</a>
-          </div>
-        </div>
-		<div class="top_pannel" {% if section.settings.background_toggle %} style="background-color: {{ section.settings.bg_color }}"{% endif %}>
-			<div class="container_big {% unless section.settings.social_menu and section.settings.currency_selector %} top_pannel_content_wrapper{% endunless %}">
-				{% if section.settings.social_menu %}
+            {% if section.settings.social_menu %}
 					<ul class="social_menu">
 						{% if section.settings.social_fb.size > 0 %}
 							<li><a href="{{ section.settings.social_fb }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -40,7 +35,6 @@
 						{% endif %}
 					</ul>
 				{% endif %}
-
 				{% if section.settings.top_pannel_text.size > 0 and section.settings.top_pannel_link.size > 0 %}
 					<a class="top_text_link" href="{{ section.settings.top_pannel_link }}">{{ section.settings.top_pannel_text | upcase }}</a>
 				{% endif %}
@@ -58,8 +52,9 @@
 
 					<script src="//cdn.shopify.com/s/javascripts/currencies.js"></script>
 					<script src="{{ 'currency-tools.js' | asset_url }}"></script>
-				</div>
-			</div>
+          </div>
+        </div>
+		
 		</div>
 
 		<div class="header_row_1"> 
@@ -433,6 +428,33 @@
 							</ul>
 						</nav>
 					{% endif %}
+						<nav id="megamenu" class="megamenu">
+							<h2 id="megamenu_mobile_toggle" style="display: none;" title="{{ 'layout.header.menu' | t }}">
+							{% assign burger_color = section.settings.burger_color %}
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect y="3" width="20" height="2" fill="{{burger_color}}"/>
+									<rect y="9" width="20" height="2" fill="{{burger_color}}"/>
+									<rect y="15" width="20" height="2" fill="{{burger_color}}"/>
+								</svg>
+							</h2>
+
+							<div id="megamenu_mobile_close" style="display: none;">
+								<div class="close_icon"></div>
+							</div>
+							<ul id="megamenu_level__1" class="level_1 megamenu">
+								<a href="https://sempresano.ro/collections/meniul-zilei"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/meniul_zilei_small.png?v=1639762483" alt=""> MENIUL ZILEI</li></a>
+								<a href="https://sempresano.ro/collections/platouri"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/platouri_small.png?v=1639762506" alt=""> PLATOURI</li></a>
+								<a href="https://sempresano.ro/collections/preparate"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/preparate_small.png?v=1639762525" alt=""> PREPARATE</li></a>
+								<a href="https://sempresano.ro/collections/mancare"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/catering_domiciliu_small.png?v=1639762543" alt=""> CATERING DOMICILIU</li></a>
+								<a href="https://sempresano.ro/collections/lolipop"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/lolypop_delice_small.png?v=1639762561" alt=""> LOLYPOP</li></a>
+								<a href="https://sempresano.ro/collections/meniuri-copii"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/meniuri_copii_small.png?v=1639762594" alt=""> MENIURI COPII</li></a>
+								<a href="https://sempresano.ro/collections/evenimente"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/garden_party_small.png?v=1639762577" alt=""> GARDEN PARTY</li></a>
+								<a href="https://sempresano.ro/collections/parastase"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/PARASTAS_small.png?v=1639762611" alt=""> PARASTASE</li></a>
+								<a href="https://sempresano.ro/collections/infinity"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/Infinity_Logo_f429900c-4dca-4f27-b2de-1223b1060119_small.png?v=1645972328" alt=""> INFINITY</li></a>
+								<a href="https://sempresano.ro/collections/wraps"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/Wrap_-_iconita_83e220f0-6849-4e42-803c-1de2adee893b_small.png?v=1646139503" alt=""> WRAP'S</li></a>
+								<a href="https://sempresano.ro/collections/oferta-de-pasti"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/23.03.2022_-_Cosul_de_Paste_small.png?v=1648024146" alt=""> OFERTA PASTI</li></a>
+							</ul>
+						</nav>
 				</div>
 
 				{% comment %}<div class="header_item_center">
@@ -710,6 +732,12 @@
 			"default": "#201F20"
 		},
 		{
+			"type": "color",
+			"id": "color",
+			"label": "Text color",
+			"default": "#000000"
+		},
+		{
 			"type": "text",
 			"id": "top_pannel_text",
 			"label": "Top pannel link text"
@@ -846,7 +874,7 @@
 		{
 			"type": "checkbox",
 			"id": "megamenu_toggle",
-			"label": "Show megamenu"
+			"label": "Show megamenu(NU MERGE - foloseste meniul normal)"
 		}
 	],
 	"blocks": [

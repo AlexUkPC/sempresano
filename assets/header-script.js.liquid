@@ -137,6 +137,8 @@
 			if ( $(window).width() > 991 ) {
 				$('#megamenu').removeClass('megamenu_mobile').addClass('megamenu_desktop');
 
+				$('#product-type').removeClass('product-type_mobile').addClass('product-type_desktop');
+
 				$('#megamenu_level__1').superfish();
 
 				$('#megamenu .level_1, #megamenu .level_2, #megamenu .level_3').removeAttr('style');
@@ -154,7 +156,8 @@
 			else {
 				$('#megamenu_level__1, #megamenu_mobile_close').hide();
 				$('#megamenu').removeClass('megamenu_desktop').addClass('megamenu_mobile');
-
+				$('#product-type').removeClass('product-type_desktop').addClass('product-type_mobile');
+				
 				$('#megamenu_level__1').superfish('destroy');
 
 				if ( mobFlag == 0 ) {

@@ -332,10 +332,10 @@ jQuery(function($){
 								jQuery('#quick_view__add').removeAttr('disabled').removeClass('disabled');
 								// VARIANT PRICES
 								if( variant.price < variant.compare_at_price ){
-									jQuery('#quick_view__price').html('<span class="money item_price">' + Shopify.formatMoney(variant.price, "{{ shop.money_format }}") + '</span><span class="money compare-at-price money_sale">' + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + '</span><span class="money_sale_percent">Save' + parseInt( 100 - ( variant.price*100 )/variant.compare_at_price ) + '%</span>');
+									jQuery('#quick_view__price').html('<span class="money item_price">' + Shopify.formatMoney(variant.price, theme.moneyFormat) + '</span><span class="money compare-at-price money_sale">' + Shopify.formatMoney(variant.compare_at_price, theme.moneyFormat) + '</span><span class="money_sale_percent">Save' + parseInt( 100 - ( variant.price*100 )/variant.compare_at_price ) + '%</span>');
 								}
 								else {
-									jQuery('#quick_view__price').html('<span class="money item_price">' + Shopify.formatMoney(variant.price, "{{ shop.money_format }}") + '</span>');
+									jQuery('#quick_view__price').html('<span class="money item_price">' + Shopify.formatMoney(variant.price, theme.moneyFormat) + '</span>');
 								};
 								
 								// PRODUCT QUANTITY
@@ -348,7 +348,7 @@ jQuery(function($){
 							} else {
 								jQuery('#quick_view__add').addClass('disabled').attr('disabled', 'disabled'); // set add-to-cart button to unavailable class and disable button
 								jQuery('#quick_view__availability span').removeClass('notify_success').addClass('notify_danger').html( '{% assign X = 'layout.product.unavailable' | t %}{% if X.size > 0 %}{{ X }}{% else %}Unavailable{% endif %}' );
-								jQuery('#quick_view__price').html('<span class="money">' + Shopify.formatMoney(product.price, "{{ shop.money_format }}") + '</span>');
+								jQuery('#quick_view__price').html('<span class="money">' + Shopify.formatMoney(product.price, theme.moneyFormat) + '</span>');
 							};
 							
 							// COLOR & SIZE OPTIONS

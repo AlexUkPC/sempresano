@@ -1,4 +1,4 @@
-<div>
+<div id="product-type">
 	<div class="row" >
 		<div class="col-12 col-sm-12 col-md-6">
 			<div class="row">
@@ -17,9 +17,9 @@
 								<div class="row">
 					{% endif %}
 					<div class="col-3 col-sm-3 col-md-2 p-0">
-						<a href="{{block.settings.preparat_link}}" style="text-align: center;color: {{ section.settings.text_color }};">
+						<a href="{% if template == 'index' and block.settings.preparat_link_home!='#' %}  {{ block.settings.preparat_link_home}} {% else %} {{ block.settings.preparat_link }}  {% endif %}" style="text-align: center;color: {{ section.settings.text_color }};">
 							<img style="width: 100%" class="blur-up lazyload" src="{{ block.settings.preparat_pic | img_url: img_min_size }}" alt="{{block.settings.text}}"data-src="{{ block.settings.preparat_pic | img_url: img_size }}">
-							<p style="margin: {{section.settings.text_margin_top}}px 0 {{section.settings.text_margin_bottom}}px;">{{block.settings.text}}</p>
+							<p style="margin: {{section.settings.text_margin_top}}px 0 {{section.settings.text_margin_bottom}}px;{% if section.settings.bold %}font-weight: bold;{% endif %}">{{block.settings.text}}</p>
 						</a>
 					</div>
 					{% assign i=i | plus: 1 %}
@@ -59,6 +59,12 @@
 			"type": "color",
 			"id": "text_color",
 			"label": "Text color"
+		},
+		{
+			"type": "checkbox",
+			"id": "bold",
+			"label": "Bold",
+			"default": true
 		}
 	],
 	"blocks": [
@@ -74,6 +80,11 @@
 				{
 					"label": "Link tip preparat(add only if different from default)",
 					"id": "preparat_link",
+					"type": "url"
+				},
+				{
+					"label": "Link tip preparat(add # for everyone or add #section_name)",
+					"id": "preparat_link_home",
 					"type": "url"
 				},
 				{
