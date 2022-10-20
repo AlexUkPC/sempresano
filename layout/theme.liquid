@@ -161,7 +161,7 @@
 		{% endif %}
 
 
-	{% include 'appikon-discounts' %}{% include 'tyslo' %}   <!--{% include 'revy-bundle-script' %}--> {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
+	 {% include 'appikon-discounts' %}{% include 'tyslo' %}   {% comment %}<!--{% include 'revy-bundle-script' %}--> {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %} {% endcomment %}
         </body>
 <script crossorigin='anonymous' src="https://widebundle.com/scripttag.php?shop=sempresanocatering.myshopify.com&v={{ "now" | date: "%s"}}"></script>
 </html>
