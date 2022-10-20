@@ -1,5 +1,6 @@
 <div id="pseudo_sticky_block"></div>
 {% capture logo_size %}{{ section.settings.logo_width }}x{{ section.settings.logo_height | minus: 12 }}{% endcapture %}
+{% capture anpc_size %}{{ section.settings.anpc_width }}x{{ section.settings.anpc_height | minus: 12 }}{% endcapture %}
 
 {% if settings.password_link_view %}
 	<a class="btn password_page_btn" href="/password">View password page</a>
@@ -7,38 +8,51 @@
 
 <header id="page_header" class="header_layout_2" {% if section.settings.background_toggle_2 %} style="background-color: {{ section.settings.bg_color_2 }}"{% endif %}>
 	<div class="page_container">
-      	<div class="header_banner">
-          <div class="container_big">
-            <{{ section.settings.announcement_pannel_h_1 }} style="font-weight: {{section.settings.announcement_pannel_text_1_weight}}; font-size: {{section.settings.announcement_pannel_text_1_font_size}}">{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
-            <{{ section.settings.announcement_pannel_h_2 }} style="font-weight: {{section.settings.announcement_pannel_text_2_weight}}; font-size: {{section.settings.announcement_pannel_text_2_font_size}}">{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
-            <{{ section.settings.announcement_pannel_h_3 }} style="font-weight: {{section.settings.announcement_pannel_text_3_weight}}; font-size: {{section.settings.announcement_pannel_text_3_font_size}}">{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
-            {% if section.settings.social_menu %}
-					<ul class="social_menu">
-						{% if section.settings.social_fb.size > 0 %}
-							<li><a href="{{ section.settings.social_fb }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						{% endif %}
+			<div class="header_banner">
+				<div class="container_big">
+					<{{ section.settings.announcement_pannel_h_1 }} style="font-weight: {{section.settings.announcement_pannel_text_1_weight}}; font-size: {{section.settings.announcement_pannel_text_1_font_size}}">{{ section.settings.announcement_pannel_text_1 }}</{{ section.settings.announcement_pannel_h_1 }}>
+					<{{ section.settings.announcement_pannel_h_2 }} style="font-weight: {{section.settings.announcement_pannel_text_2_weight}}; font-size: {{section.settings.announcement_pannel_text_2_font_size}}">{{ section.settings.announcement_pannel_text_2 }}</{{ section.settings.announcement_pannel_h_2 }}>
+					<div class="anpc">
+					{% if section.settings.anpc_left %}
+						<a class="anpc_left" href="{{ section.settings.anpc_left_url }}" target="_blank">
+							<img src="{{ section.settings.anpc_left | img_url: anpc_size  }}" alt="ANPC" >
+						</a>
+					{% endif %}
+					{% if section.settings.anpc_right %}
+						<a class="anpc_right" href="{{ section.settings.anpc_right_url }}" target="_blank">
+							<img src="{{ section.settings.anpc_right | img_url: anpc_size  }}" alt="ANPC" >
+						</a>
+					{% endif %}
+					</div>
+					<{{ section.settings.announcement_pannel_h_3 }} style="font-weight: {{section.settings.announcement_pannel_text_3_weight}}; font-size: {{section.settings.announcement_pannel_text_3_font_size}}">{{ section.settings.announcement_pannel_text_3 }}</{{ section.settings.announcement_pannel_h_3 }}>
+					{% if section.settings.social_menu %}
+						<ul class="social_menu">
+							{% if section.settings.social_fb.size > 0 %}
+								<li><a href="{{ section.settings.social_fb }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							{% endif %}
 
-						{% if section.settings.social_tw.size > 0 %}
-							<li><a href="{{ section.settings.social_tw }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						{% endif %}
+							{% if section.settings.social_tw.size > 0 %}
+								<li><a href="{{ section.settings.social_tw }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							{% endif %}
 
-						{% if section.settings.social_inst.size > 0 %}
-							<li><a href="{{ section.settings.social_inst }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						{% endif %}
+							{% if section.settings.social_inst.size > 0 %}
+								<li><a href="{{ section.settings.social_inst }}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							{% endif %}
 
-						{% if section.settings.social_pin.size > 0 %}
-							<li><a href="{{ section.settings.social_pin }}" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-						{% endif %}
+							{% if section.settings.social_pin.size > 0 %}
+								<li><a href="{{ section.settings.social_pin }}" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							{% endif %}
 
-						{% if section.settings.social_yt.size > 0 %}
-							<li><a href="{{ section.settings.social_yt }}" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-						{% endif %}
-					</ul>
-				{% endif %}
-				{% if section.settings.top_pannel_text.size > 0 and section.settings.top_pannel_link.size > 0 %}
-					<a class="top_text_link" href="{{ section.settings.top_pannel_link }}">{{ section.settings.top_pannel_text | upcase }}</a>
-				{% endif %}
-
+							{% if section.settings.social_yt.size > 0 %}
+								<li><a href="{{ section.settings.social_yt }}" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							{% endif %}
+						</ul>
+					{% endif %}
+					{% if section.settings.top_pannel_text.size > 0 and section.settings.top_pannel_link.size > 0 %}
+						<a class="top_text_link" href="{{ section.settings.top_pannel_link }}">{{ section.settings.top_pannel_text | upcase }}</a>
+					{% endif %}
+					
+				</div>
 				<div class="header_currency">
 					{% if section.settings.currency_selector %}
 						{% include 'header-currency' %}
@@ -52,9 +66,8 @@
 
 					<script src="//cdn.shopify.com/s/javascripts/currencies.js"></script>
 					<script src="{{ 'currency-tools.js' | asset_url }}"></script>
-          </div>
-        </div>
-		
+				</div>
+			</div>
 		</div>
 
 		<div class="header_row_1"> 
@@ -442,7 +455,7 @@
 								<div class="close_icon"></div>
 							</div>
 							<ul id="megamenu_level__1" class="level_1 megamenu">
-              					<a href="https://sempresano.ro/collections/oferta-de-pasti"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/23.03.2022_-_Cosul_de_Paste_small.png?v=1648024146" alt=""> OFERTA PASTI</li></a>
+              					{% comment %} <a href="https://sempresano.ro/collections/oferta-de-pasti"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/23.03.2022_-_Cosul_de_Paste_small.png?v=1648024146" alt=""> OFERTA PASTI</li></a> {% endcomment %}
 								<a href="https://sempresano.ro/collections/meniul-zilei"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/meniul_zilei_small.png?v=1639762483" alt=""> MENIUL ZILEI</li></a>
 								<a href="https://sempresano.ro/collections/platouri"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/platouri_small.png?v=1639762506" alt=""> PLATOURI</li></a>
 								<a href="https://sempresano.ro/collections/preparate"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/preparate_small.png?v=1639762525" alt=""> PREPARATE</li></a>
@@ -451,7 +464,7 @@
 								<a href="https://sempresano.ro/collections/meniuri-copii"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/meniuri_copii_small.png?v=1639762594" alt=""> MENIURI COPII</li></a>
 								<a href="https://sempresano.ro/collections/evenimente"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/garden_party_small.png?v=1639762577" alt=""> GARDEN PARTY</li></a>
 								<a href="https://sempresano.ro/collections/parastase"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/PARASTAS_small.png?v=1639762611" alt=""> PARASTASE</li></a>
-								<a href="https://sempresano.ro/collections/infinity"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/Infinity_Logo_f429900c-4dca-4f27-b2de-1223b1060119_small.png?v=1645972328" alt=""> INFINITY</li></a>
+								{% comment %} <a href="https://sempresano.ro/collections/infinity"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/Infinity_Logo_f429900c-4dca-4f27-b2de-1223b1060119_small.png?v=1645972328" alt=""> INFINITY</li></a> {% endcomment %}
 								<a href="https://sempresano.ro/collections/wraps"><li><img src="https://cdn.shopify.com/s/files/1/0551/7357/8888/files/Wrap_-_iconita_83e220f0-6849-4e42-803c-1de2adee893b_small.png?v=1646139503" alt=""> WRAP'S</li></a>
 							</ul>
 						</nav>
@@ -817,7 +830,51 @@
 			"label": "Currencies you wish to support",
 			"info": "Separate your currency codes with a space. Use the ISO 4217 3-letter currency code. [CLICK HERE](http:\/\/www.xe.com\/iso4217.php) for a complete list of currency codes. Example: CAD USD."
 		},
-
+		// ANPC
+		{
+			"type": "header",
+			"content": "ANPC"
+		},
+		{
+			"type": "image_picker",
+			"id": "anpc_left",
+			"label": "Imagine stanga ANPC"
+		},
+		{
+			"type": "url",
+			"id": "anpc_left_url",
+			"label": "Link imagine stanga ANPC"
+		},
+		{
+			"type": "image_picker",
+			"id": "anpc_right",
+			"label": "Imagine dreapta ANPC"
+		},
+		{
+			"type": "url",
+			"id": "anpc_right_url",
+			"label": "Link imagine dreapta ANPC"
+		},
+		{
+	        "type":      "range",
+	        "id":        "anpc_width",
+	        "min":       200,
+	        "max":        230,
+	        "step":       1,
+	        "unit":       "px",
+	        "label":     "Anpc width",
+	        "default":   210
+		},
+		{
+	        "type":      "range",
+	        "id":        "anpc_height",
+	        "min":       40,
+	        "max":        60,
+	        "step":       1,
+	        "unit":       "px",
+	        "label":     "Anpc height",
+	        "default":   50
+		},
 		// ACCOUNT LINKS ==================================================================================
 		{
 			"type": "header",
